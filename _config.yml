@@ -1,1 +1,5 @@
 theme: jekyll-theme-minimal
+title: Machine Learning for the Web
+description:  Making Machine Learning a first-class web citizen
+logo: https://avatars2.githubusercontent.com/u/42399997
+show_downloads: false
