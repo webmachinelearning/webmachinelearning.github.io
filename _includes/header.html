@@ -1,0 +1,62 @@
+<header class="site-header" role="banner">
+  
+  <div class="wrapper">
+    <div class="nav-grid">
+      <div class="logo">
+        <a class="link link--dia" href="{{ "/" | relative_url }}">
+          {%- include logosvg.html -%}
+        </a>
+      </div>
+      <div class="mobileburger">
+        <svg class="burger-svg">
+          <defs>
+            <filter id="gooeyness">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" result="blur" />
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10"
+                result="gooeyness" />
+              <feComposite in="SourceGraphic" in2="gooeyness" operator="atop" />
+            </filter>
+          </defs>
+        </svg>
+
+        <div class="plate plateshow" onclick="this.classList.toggle('active')">
+          <svg class="burger" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+            <path class="line line1" d="M 50,35 H 30 M 50,35 H 70 V 38 H 30 V 41 H 70" />
+            <path class="line line2" d="M 50,50 H 30 V 47 H 70 V 44 H 30" />
+            <path class="line line3" d="M 50,50 H 70 V 53 H 30 V 56 H 70" />
+            <path class="line line4" d="M 50,65 H 70 M 50,65 H 30 V 62 H 70 V 59 H 30" />
+          </svg>
+          <svg class="x" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+            <path class="line" d="M 34,32 L 66,68" />
+            <path class="line" d="M 66,32 L 34,68" />
+          </svg>
+          <nav class="menu">
+            <ol>
+              <li class="menu-item">
+                <a class="link link--dia" href="{{ 'webnn' | relative_url }}">WebNN</a>
+                <ol class="sub-menu">
+                  <li class="menu-item"><a href="{{ 'webnn-getstarted' | relative_url }}">Get Started</a></li>
+                  <!-- <li class="menu-item"><a href="{{ 'webnn-spec' | relative_url }}">Spec</a></li> -->
+                  <li class="menu-item"><a href="{{ 'webnn-samples' | relative_url }}">Samples</a></li>
+                </ol>
+              </li>
+              <li class="menu-item"><a class="link link--dia" href="{{ 'modelloader' | relative_url }}">Model Loader</a></li>
+              <!-- <li class="menu-item"><a class="link link--dia" href="{{ 'blog' | relative_url }}">Blog</a></li> -->
+              <li class="menu-item"><a class="link link--dia" href="{{ 'community' | relative_url }}">Community</a></li>
+              <li class="menu-item">
+                <a class="link link--dia faq" href="https://github.com/webmachinelearning/">Running Code</a>
+                <ol class="sub-menu">
+                  <li class="menu-item"><a href="https://github.com/webmachinelearning/webnn-polyfill">WebNN Polyfill</a></li>
+                  <li class="menu-item"><a href="https://github.com/webmachinelearning/webnn-samples">WebNN Samples</a></li>
+                  <li class="menu-item"><a href="https://github.com/webmachinelearning/webnn-native">WebNN Native</a></li>
+                </ol>
+              </li>
+              <!-- <li class="menu-item"><a class="link link--dia faq" href="{{ 'faq' | relative_url }}">FAQ</a></li> -->
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>

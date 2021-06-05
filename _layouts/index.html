@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+{%- include head.html -%}
+
+<body>
+
+  {%- include header.html -%}
+
+  <main>
+
+    <div class="wrapper">
+
+      <div class="herobar my">
+        <div class="hb-item">
+          <div class="titleeffect">
+            <div class="box">
+              <div class="title">
+                <h1 class="t">Web Machine Learning<span></span></h1>
+              </div>
+              <div class="role">
+                <p class="t">Enable efficient ML inference in the browser</p>
+              </div>
+              <p class="des">{{ content }}</p>
+            </div>
+
+            <div class="buttons">
+              <a class="button button--atlas getstarted" href="{{ 'community' | relative_url }}"><span>Join us</span>
+                <div class="marquee" aria-hidden="true">
+                  <div class="marqueeinner"><span>Join us</span><span>Join us</span><span>Join us</span><span>Join
+                      us</span></div>
+                </div>
+              </a><a class="button buttonwhite" href="{{ 'webnn' | relative_url }}">WebNN API</a>
+            </div>
+
+          </div>
+        </div>
+        
+
+        <div class="hero">
+          <div class="typing">
+            Web
+            <svg class="heart" viewBox="0 0 32 29.6">
+              <path
+                d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+            </svg>
+            Machine Learning
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <!-- {%- include blog-list-top2.html -%} -->
+
+    {%- include webnn-adv-index.html -%}
+
+    </div>
+  </main>
+
+  {%- include footer.html -%}
+
+</body>
+
+</html>

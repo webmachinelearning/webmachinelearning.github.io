@@ -1,0 +1,73 @@
+---
+layout: bloglist
+---
+
+<div class="bloglist">
+  {%- if page.title -%}
+  <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {%- if site.posts.size > 0 -%}
+  <div class="l1r4">
+    <div id="archives">
+      {% for category in site.categories %}
+      <div class="archive-group">
+        {% capture category_name %}{{ category | first }}{% endcapture %}
+        {% if category_name == "blog" %}
+        <h3 class="category-head">{{ category_name }}</h3>
+        <ul>
+          {% for post in site.categories[category_name] %}
+          <li><a class="archive-item" href="{{ post.url | relative_url }}">{{post.title}}</a></li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+
+      {% endfor %}
+    </div>
+    <div>
+      {%- for post in site.posts -%}
+
+      {% capture category_name %}{{ post.categories | first }}{% endcapture %}    
+
+      {% if category_name == "blog" %}
+
+      <div class="post">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <p class="posttitle"><a class="postlink" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></p>
+        <div class="blflex">
+          <span class="postimg">
+              <img alt="profile" src="{{ post.avatar }}">
+          </span>
+          <div class="postsub">
+              <p class="postauthor">{{ post.author | escape }}</p>
+              <p class="postdate">Last updated: {{ post.date | date: date_format }}</p>
+          </div>
+        </div>
+        <div>
+          {% if post.content contains "<!-- more -->" %}
+          {{ post.content | split:"<!-- more -->" | first }}
+
+          <div style="text-align:right;">
+            <a href="{{ post.url | relative_url }}"> Read More
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-4 h-4" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+          {% else %}
+          {{ post.content }}
+          {% endif %}
+        </div>
+      </div>
+
+      {% endif %}
+      {%- endfor -%}
+    </div>
+  </div>
+  {%- endif -%}
+
+</div>

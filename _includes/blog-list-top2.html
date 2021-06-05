@@ -1,0 +1,24 @@
+<div class="wrapper">
+    {%- if site.posts.size > 0 -%}
+    <div class="gr">
+        {%- for post in site.posts limit: 2 -%}
+        <div class="post">
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            <p class="posttitle"><a class="postlink" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></p>
+            <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 174 }}</p>
+            <div class="blflex">
+                <span class="postimg">
+                    <img alt="profile" src="{{ post.avatar }}">
+                </span>
+                <div class="postsub">
+                    <p class="postauthor">{{ post.author | escape }}</p>
+                    <p class="postdate">{{ post.date | date: date_format }}</p>
+                </div>
+            </div>
+        </div>
+
+        {%- endfor -%}
+    </div>
+    {%- endif -%}
+
+</div>

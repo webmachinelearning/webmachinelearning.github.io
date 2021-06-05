@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+{%- include head.html -%}
+
+<body>
+
+  {%- include header.html -%}
+
+  <main class="page-content wrapper" aria-label="Content">
+    {%- if site.posts.size > 0 -%}
+
+    <div class="mt0 mb3">
+      <div class="cap">
+        <p class="title">Here's How to Get Started</p>
+      </div>
+
+      <section class="gs5">
+        <a class="gscard" href="{{ 'webnn-samples' | relative_url }}">
+          <div class="gscard_background" id="gsbg1">
+
+            <div class="gscard_heading">
+              <p class="gscard_category">
+                <svg data-icon="photo-video"
+                  class="svg-inline--fa fa-photo-video fa-w-20"
+                  viewBox="0 0 640 512">
+                  <path fill="currentColor"
+                    d="M608 0H160a32 32 0 0 0-32 32v96h160V64h192v320h128a32 32 0 0 0 32-32V32a32 32 0 0 0-32-32zM232 103a9 9 0 0 1-9 9h-30a9 9 0 0 1-9-9V73a9 9 0 0 1 9-9h30a9 9 0 0 1 9 9zm352 208a9 9 0 0 1-9 9h-30a9 9 0 0 1-9-9v-30a9 9 0 0 1 9-9h30a9 9 0 0 1 9 9zm0-104a9 9 0 0 1-9 9h-30a9 9 0 0 1-9-9v-30a9 9 0 0 1 9-9h30a9 9 0 0 1 9 9zm0-104a9 9 0 0 1-9 9h-30a9 9 0 0 1-9-9V73a9 9 0 0 1 9-9h30a9 9 0 0 1 9 9zm-168 57H32a32 32 0 0 0-32 32v288a32 32 0 0 0 32 32h384a32 32 0 0 0 32-32V192a32 32 0 0 0-32-32zM96 224a32 32 0 1 1-32 32 32 32 0 0 1 32-32zm288 224H64v-32l64-64 32 32 128-128 96 96z">
+                  </path>
+                </svg>
+              </p>
+              Run the WebNN Samples that demonstrate the key use
+              cases</div>
+          </div>
+        </a>
+        <a class="gscard" href="https://webmachinelearning.github.io/webnn-samples/code/">
+          <div class="gscard_background" id="gsbg2">
+            <div class="gscard_heading">
+              <p class="gscard_category">
+                <svg data-icon="code"
+                  class="svg-inline--fa fa-code fa-w-20"
+                  viewBox="0 0 640 512">
+                  <path fill="currentColor"
+                    d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z">
+                  </path>
+                </svg>
+              </p>
+              Play with the code editor in
+              your browser to get a feel of the API shape</div>
+          </div>
+        </a>
+        <a class="gscard" href="https://github.com/webmachinelearning/webnn-polyfill">
+          <div class="gscard_background" id="gsbg3">
+            <div class="gscard_heading">
+              <p class="gscard_category">
+                <svg data-icon="terminal"
+                  class="svg-inline--fa fa-terminal fa-w-20"
+                  viewBox="0 0 640 512">
+                  <path fill="currentColor"
+                     d="M257.981 272.971L63.638 467.314c-9.373 9.373-24.569 9.373-33.941 0L7.029 444.647c-9.357-9.357-9.375-24.522-.04-33.901L161.011 256 6.99 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L257.981 239.03c9.373 9.372 9.373 24.568 0 33.941zM640 456v-32c0-13.255-10.745-24-24-24H312c-13.255 0-24 10.745-24 24v32c0 13.255 10.745 24 24 24h304c13.255 0 24-10.745 24-24z">
+                  </path>
+                </svg>
+              </p>
+              Clone the webnn-polyfill and build
+              your
+              first experiment</div>
+          </div>
+        </a>
+        <a class="gscard" href="https://github.com/webmachinelearning/webnn-native">
+          <div class="gscard_background" id="gsbg4">
+            <div class="gscard_heading">
+              <p class="gscard_category">
+                <svg data-icon="laptop-code"
+                  class="svg-inline--fa fa-laptop-code fa-w-20"
+                  viewBox="0 0 640 512">
+                  <path fill="currentColor"
+                    d="M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z">
+                  </path>
+                </svg>
+              </p>
+              Dive into the native implementation details with webnn-native</div>
+          </div>
+        </a>
+        <a class="gscard" href="{{ 'community' | relative_url }}">
+          <div class="gscard_background" id="gsbg5">
+            <div class="gscard_heading">
+              <p class="gscard_category">
+                <svg data-icon="comments"
+                  class="svg-inline--fa fa-comments fa-w-20"
+                  viewBox="0 0 576 512">
+                  <path fill="currentColor"
+                    d="M532 386.2c27.5-27.1 44-61.1 44-98.2 0-80-76.5-146.1-176.2-157.9C368.3 72.5 294.3 32 208 32 93.1 32 0 103.6 0 192c0 37 16.5 71 44 98.2-15.3 30.7-37.3 54.5-37.7 54.9-6.3 6.7-8.1 16.5-4.4 25 3.6 8.5 12 14 21.2 14 53.5 0 96.7-20.2 125.2-38.8 9.2 2.1 18.7 3.7 28.4 4.9C208.1 407.6 281.8 448 368 448c20.8 0 40.8-2.4 59.8-6.8C456.3 459.7 499.4 480 553 480c9.2 0 17.5-5.5 21.2-14 3.6-8.5 1.9-18.3-4.4-25-.4-.3-22.5-24.1-37.8-54.8zm-392.8-92.3L122.1 305c-14.1 9.1-28.5 16.3-43.1 21.4 2.7-4.7 5.4-9.7 8-14.8l15.5-31.1L77.7 256C64.2 242.6 48 220.7 48 192c0-60.7 73.3-112 160-112s160 51.3 160 112-73.3 112-160 112c-16.5 0-33-1.9-49-5.6l-19.8-4.5zM498.3 352l-24.7 24.4 15.5 31.1c2.6 5.1 5.3 10.1 8 14.8-14.6-5.1-29-12.3-43.1-21.4l-17.1-11.1-19.9 4.6c-16 3.7-32.5 5.6-49 5.6-54 0-102.2-20.1-131.3-49.7C338 339.5 416 272.9 416 192c0-3.4-.4-6.7-.7-10C479.7 196.5 528 238.8 528 288c0 28.7-16.2 50.6-29.7 64z">
+                  </path>
+                </svg>
+              </p>
+              Join the community to help shape the related
+              specifications</div>
+          </div>
+        </a>
+      </section>
+
+
+      <div class="l1r4">
+        <div id="archives">
+          {% for category in site.categories %}
+          <div class="archive-group">
+            {% capture category_name %}{{ category | first }}{% endcapture %}
+            {% if category_name == "get-started" %}
+            <div class="category-head">{{ category_name }}</div>
+            <ul>
+              {% for post in site.categories[category_name] reversed %}
+              <li><a class="archive-item" href="{{ post.url | relative_url }}">{{post.title}}</a></li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </div>
+
+          {% endfor %}
+        </div>
+        <div>
+
+          <div class="post">
+            {%- for post in site.posts reversed -%}
+            {% capture category_name %}{{ post.categories | first }}{% endcapture %}
+            {% if category_name == "get-started" %}
+            <div class="post">
+
+              {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+              <p class="posttitle"><a class="postlink"
+                  href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+              </p>
+              <div>
+                {% if post.content contains "<!-- more -->" %}
+                {{ post.content | split:"<!-- more -->" | first }}
+                <div style="text-align:right;">
+                  <a href="{{ post.url | relative_url }}"> Read More
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2" class="w-4 h-4" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+                {% else %}
+                {{ post.content }}
+                {% endif %}
+              </div>
+            </div>
+            {% endif %}
+            {%- endfor -%}
+          </div>
+        </div>
+        {%- endif -%}
+  </main>
+
+  {%- include footer.html -%}
+
+</body>
+
+</html>
