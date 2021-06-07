@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+{%- include head.html -%}
+
+<body>
+
+  {%- include header.html -%}
+
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      {{ content }}
+ 
+      <div class="more">
+        <div class="more__item">
+          <div class="img"><img class="more__image" src="https://avatars.githubusercontent.com/u/4018?v=4"
+              alt="Ping Yu" /></div>
+          <h5 class="more__headline_user">Ping Yu</h5>
+          <h5 class="more__headline">TLM for TensorFlow.js at Google</h5>
+          <hr />
+          <div class="more__subtext">
+            Having access to the native ML accelerators, machine learning frameworks such as
+            TensorFlow.js can greatly improve model execution efficiency and truly democratize ML for web developers.
+          </div>
+          <a class="" href="/">Learn More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="more__item">
+          <div class="img"><img class="more__image" src="https://avatars.githubusercontent.com/u/1005673?v=4"
+              alt="Ningxin Hu" /></div>
+          <h5 class="more__headline_user">Ningxin Hu</h5>
+          <h5 class="more__headline">Principal Engineer, WPE at Intel</h5>
+          <hr />
+          <div class="more__subtext">
+            The early empirical results from the Web Neural Network API implementations demonstrate tremendous power
+            &amp;
+            performance improvements of the Web AI workloads. Through access to the full native AI capabilities of the
+            modern heterogeneous hardware, the Web Neural Network API enables a whole new transformative class of
+            intelligent user experiences on the Open Web Platform across a variety of hardware, software, and device
+            types.
+          </div>
+          <a class="" href="/">Learn More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="more__item">
+          <div class="img"><img class="more__image" src="https://avatars.githubusercontent.com/u/5553135?v=4"
+              alt="Chai Chaoweeraprasit" /></div>
+          <h5 class="more__headline_user">Chai Chaoweeraprasit</h5>
+          <h5 class="more__headline">PE Lead, MLCP at Microsoft</h5>
+          <hr />
+          <div class="more__subtext">
+            The Web Neural Network API is a very important step toward the future of the Intelligent Web where AI is
+            infused into the user’s daily web experiences. With the current advances and the pace of innovations in the
+            AI hardware landscape, it’ll help connect those experiences from the clouds and make them personal to the
+            users through seamless native hardware performance on the edge devices across the entire web. That’s the
+            future worth dreaming about!
+          </div>
+          <a class="" href="/">Learn More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+
+  {%- include footer.html -%}
+
+</body>
+
+</html>

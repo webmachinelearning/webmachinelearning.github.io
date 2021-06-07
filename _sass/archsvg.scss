@@ -1,0 +1,120 @@
+
+  .arch svg {
+    max-height: 300px;
+  }
+
+  .arc-1 {
+    fill: $faq-color;
+  }
+  .arc-1:hover {
+    fill: darken($faq-color, 10%);
+  }
+  .arc-2,
+  .arc-5 {
+    font-size: 9px;
+  }
+  .arc-2 {
+    fill: #fff;
+  }
+  .arc-4 {
+    fill: #d0ebff;
+  }
+  .arc-5 {
+    fill: #474c58;
+  }
+  .arc-12 {
+    fill: $brand-color2;
+  }
+  .arc-12:hover {
+    fill: $brand-color;
+  }
+  .arc-13 {
+    fill: #90b665;
+  }
+  .arc-13:hover {
+    fill: #80a655;
+  }
+  .arc-18,
+  .arc-19,
+  .arc-20,
+  .arc-21,
+  .arc-22 {
+    fill: none;
+    stroke: #d0ebff;
+    stroke-width: 0.25px;
+  }
+  .arc-18,
+  .arc-20,
+  .arc-21,
+  .arc-22 {
+    stroke-linecap: round;
+  }
+  .arc-18,
+  .arc-20,
+  .arc-21 {
+    stroke-linejoin: round;
+  }
+  .arc-19,
+  .arc-22 {
+    stroke-miterlimit: 10;
+  }
+  .arc-20 {
+    stroke-dasharray: 1 4.99;
+  }
+
+  .arch text:hover {
+    font-weight: 500;
+  }
+  .arch text:hover:not(.webgpu, .webnn, .webassembly) {
+    fill: $brand-color;
+  }
+
+  .arch path:hover {
+    stroke: $brand-color;
+  }
+
+  .webgpu:hover ~ .gpuline,
+  .webgpu:hover ~ .gpupath {
+    stroke: darken($faq-color, 10%);
+    animation: 0.5s draw linear forwards;
+  }
+
+  .webgpu:hover ~ .gpu,
+  .webgpu:hover ~ .gputext {
+    fill: darken($faq-color, 10%);
+  }
+
+  .webassembly:hover ~ .wasmline,
+  .webassembly:hover ~ .wasmpath {
+    stroke: #80a655;
+    animation: 0.5s draw linear forwards;
+  }
+
+  .webassembly:hover ~ .wasm,
+  .webassembly:hover ~ .wasmtext {
+    fill: #80a655;
+  }
+
+  .webnn:hover ~ .nnline,
+  .webnn:hover ~ .nnpath {
+    stroke: $brand-color;
+    animation: 0.5s draw linear forwards;
+  }
+
+  .webnn:hover ~ .nn,
+  .webnn:hover ~ .nntext {
+    fill: $brand-color;
+  }
+
+  @keyframes draw {
+    0% {
+      stroke-dasharray: 140 540;
+      stroke-dashoffset: -474;
+      stroke-width: 0.5px;
+    }
+    100% {
+      stroke-dasharray: 760;
+      stroke-dashoffset: 0;
+      stroke-width: 0.5px;
+    }
+  }

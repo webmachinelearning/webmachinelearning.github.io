@@ -1,0 +1,12 @@
+- name: Home
+  link: /
+- name: WebNN
+  link: /webnn/
+- name: Model Loader
+  link: /modelloader/
+- name: Blog
+  link: /blog/
+- name: Community
+  link: /community/
+- name: FAQ
+  link: /faq/

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+{%- include head.html -%}
+
+<body>
+
+  {%- include header.html -%}
+
+  <main class="wrapper doc" aria-label="Content">
+    <div class="arch">
+      {% for category in site.categories %}
+      
+        {% capture category_name %}{{ category | first }}{% endcapture %}
+        {% if category_name != 'blog' %}
+        <div class="archive-group">
+          <h3 class="category-head">{{ category_name }}</h3>
+          <ul>
+            {% for post in site.categories[category_name] %}
+            <li><a class="archive-item" href="{{ post.url | relative_url }}">{{post.title}}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </main>
+
+  {%- include footer.html -%}
+
+</body>
+
+</html>

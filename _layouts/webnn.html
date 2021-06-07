@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+
+{%- include head.html -%}
+
+<body>
+
+  {%- include header.html -%}
+
+  <main>
+
+    <div class="wrapper">
+      {{ content }}
+
+      <div class="herobar">
+        <div class="hb-item">
+          <div class="titleeffect">
+            <div class="box">
+              <div class="title">
+                <span class="block"></span>
+                <h1 class="t">WebNN API<span></span></h1>
+              </div>
+              <div class="role">
+                <div class="block"></div>
+                <p class="t">Accelerating deep neural networks on the web</p>
+              </div>
+              <p class="des">A new web standard that allows web apps and frameworks to accelerate deep neural networks
+                with on-device hardware such as GPUs, CPUs, or purpose-built AI accelerators.</p>
+            </div>
+
+            <div class="buttons">
+              <a class="button button--atlas getstarted" href="{{ 'webnn-getstarted' | relative_url }}"><span>Get
+                  Started</span>
+                <div class="marquee" aria-hidden="true">
+                  <div class="marqueeinner"><span>Get Started</span><span>Get Started</span><span>Get
+                      Started</span><span>Get Started</span></div>
+                </div>
+              </a>
+              <a class="button buttonwhite" href="{{ 'webnn-samples' | relative_url }}">Samples</a>
+            </div>
+            <div class="hlink">
+              <a href="https://webmachinelearning.github.io/webnn/"><span>Specification</span></a>
+              <a href="https://github.com/webmachinelearning/webnn/blob/master/explainer.md">Explainer</a>
+            </div>
+
+          </div>
+        </div>
+        {%- include webnn-herosvg.html -%}
+      </div>
+    </div>
+
+    {%- include webnn-adv.html -%}
+
+    {%- include webnn-arch.html -%}
+
+    {%- include webnn-quotes.html -%}
+
+    </div>
+  </main>
+
+  {%- include footer.html -%}
+
+</body>
+
+</html>

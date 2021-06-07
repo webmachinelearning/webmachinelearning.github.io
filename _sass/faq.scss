@@ -1,0 +1,125 @@
+.faqs .box {
+  margin-top: 2rem;
+}
+
+.faq-webnn {
+  margin-right: 0.5rem;
+}
+
+.faq-modelloader {
+  margin-left: 0.5rem;
+}
+
+.faqs.mt {
+  margin-top: 2rem;
+}
+
+
+@media screen and (max-width: 640px) {
+  .faq-webnn {
+    margin-right: 0;
+  }
+  
+  .faq-modelloader {
+    margin-left: 0;
+  }
+}
+ 
+.accordion {
+  .accordion-item {
+    border-bottom: 1px dashed $grey-color-light;
+    button[aria-expanded='true'] {
+      border-bottom: 1px dashed  $brand-color;
+    }
+  }
+  button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    font-size: 0.9rem;
+    color: $grey-color;
+    border: none;
+    background: none;
+    outline: none;
+    &:hover, &:focus {
+      cursor: pointer;
+      color:  $brand-color;
+      &::after {
+        cursor: pointer;
+        color:  $brand-color;
+        border: 1px solid  $brand-color;
+      }
+    }
+    .accordion-title {
+      padding: 1em 1.5em 1em 0;
+    }
+    .icon {
+      display: inline-block;
+      position: absolute;
+      top: 18px;
+      right: 0;
+      width: 22px;
+      height: 22px;
+      &::before {
+        display: block;
+        position: absolute;
+        content: '';
+        top: 9px;
+        left: 5px;
+        width: 10px;
+        height: 2px;
+        background: $brand-color;
+      }
+      &::after {
+        display: block;
+        position: absolute;
+        content: '';
+        top: 5px;
+        left: 9px;
+        width: 2px;
+        height: 10px;
+        background: $brand-color;
+      }
+    }
+  }
+  button[aria-expanded='true'] {
+    color:  $brand-color;
+    .icon {
+      &::after {
+        width: 0;
+      }
+    }
+    + .accordion-content {
+      opacity: 1;
+      max-height: 200rem;
+      transition: all 200ms linear;
+      will-change: opacity, max-height;
+    }
+  }
+  .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+    p {
+      font-size: 0.9rem;
+      margin: 1rem 0;
+    }
+    p img {
+      display: block;
+      text-align: center;
+    }
+    h3 {
+      margin: 1rem 0;
+      font-weight: 600;
+    }
+    ul li {
+      list-style: disc outside none;
+      display: list-item;
+      margin-left: 2rem;
+    }
+  }
+}
