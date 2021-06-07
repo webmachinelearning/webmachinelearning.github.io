@@ -1,9 +1,9 @@
 - name: Home
   link: /
 - name: WebNN
-  link: /webnn/
+  link: /webnn-intro/
 - name: Model Loader
-  link: /modelloader/
+  link: /modelloader-intro/
 - name: Blog
   link: /blog/
 - name: Community

@@ -1,5 +1,5 @@
 ---
 layout: webnn
 title: WebNN
-permalink: /webnn/
+permalink: /webnn-intro/
 ---
