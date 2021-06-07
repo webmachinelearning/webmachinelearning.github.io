@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Model Loader
-permalink: /modelloader-intro/
+permalink: /model-loader-intro/
 ---
 
 Model Loader is a proposed web API to load a custom, pre-trained machine learning model in a standard format, compile it for the available hardware, and apply it to example data in JavaScript in order to perform inference, like classification, regression, or ranking. The idea is to make it as easy as possible for web developers to use a custom, pre-built machine learning model in their web app, across devices and browsers.
