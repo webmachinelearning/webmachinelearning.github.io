@@ -173,6 +173,20 @@
     overflow: hidden;
 }
 
+.join, .join a {
+    font-size: .9rem !important;
+}
+
+.join .fx svg {
+    overflow: visible;
+    margin-right: 1.0em;
+}
+
+.join img {
+    width: 100px;
+    float: right;
+}
+
 .fx {
     display: flex;
     align-items: center;
