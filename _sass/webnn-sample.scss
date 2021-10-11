@@ -144,6 +144,18 @@ $black: #000;
 	background: url("../images/webnnsamples/noise.png") center / cover no-repeat;
 }
 
+#bg_ns2 {
+	background: url("../images/webnnsamples/rnnoise.png") center / cover no-repeat;
+}
+
+#bg_od {
+	background: url("../images/webnnsamples/od.png") center / cover no-repeat;
+}
+
+#bg_ss {
+	background: url("../images/webnnsamples/ss.png") center / cover no-repeat;
+}
+
 .nn-table {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
