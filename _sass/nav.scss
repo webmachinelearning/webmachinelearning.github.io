@@ -70,6 +70,12 @@ nav a {
     transition-timing-function: cubic-bezier(0.2, 0, 0.3, 1);
 }
 
+.logo .link--dia:hover::before,
+.logo .link--dia:hover::after {
+    opacity: 0;
+    transform: none;
+}
+
 .link--dia::after {
     content: '';
     top: calc(100% + 4px);
@@ -267,7 +273,7 @@ nav a {
 .sub-menu:before {
     content: "";
     position: absolute;
-    left: 68px;
+    left: 54px;
     top: -8px;
     width: 0;
     height: 0;
@@ -303,10 +309,6 @@ nav a {
 .sub-menu .menu-item:hover {
     color: #fff;
     background: $brand-color;
-}
-
-.sub-menu .menu-item a {
-    padding: 0 0.75rem;
 }
 
 .sub-menu .menu-item:hover a,
