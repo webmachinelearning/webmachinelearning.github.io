@@ -70,6 +70,12 @@ nav a {
     transition-timing-function: cubic-bezier(0.2, 0, 0.3, 1);
 }
 
+.logo .link--dia:hover::before,
+.logo .link--dia:hover::after {
+    opacity: 0;
+    transform: none;
+}
+
 .link--dia::after {
     content: '';
     top: calc(100% + 4px);
