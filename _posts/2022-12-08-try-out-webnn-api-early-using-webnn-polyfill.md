@@ -3,7 +3,7 @@ layout: post
 title: 'Try out WebNN API early using WebNN Polyfill'
 date: 2022-12-08 10:42:03 +0800
 author: Wanming Lin, Bruce Dai
-avatar: https://avatars.githubusercontent.com/u/379216?s=200&v=4
+avatar: https://avatars.githubusercontent.com/u/42399997?s=200&v=4
 categories: blog
 ---
 
@@ -38,7 +38,7 @@ import '@webmachinelearning/webnn-polyfill';
 ```
 
 Before using WebNN API, you should set backend to enable TensorFlow.js as follows.
-Currently WebNN Polyfill supports 3 backends: `CPU`, `WebGL` and `WASM`, `CPU` backend
+Currently WebNN Polyfill supports 3 backends: `CPU`, `WebGL` and `WASM`. `CPU` backend
 has higher numerical precision, while `WebGL` backend provides better performance.
 A new backend `WebGPU` is work in progress.
 
@@ -52,16 +52,16 @@ A new backend `WebGPU` is work in progress.
 
 ## Samples
 
-Try out these live version of [WebNN samples][samples] which fall back to the
-WebNN Polyfill in the browser without native WebNN API support, where showcases
-various popular use cases for neural network powered by WebNN API. 
+Try out the live version of [WebNN samples][samples] which fall back to the
+WebNN Polyfill in the browser without native WebNN API support. These samples
+showcase various popular use cases for neural networks powered by WebNN API.
 
 ## Vision
 
-We will continously develop WebNN Polyfill to cover full WebNN API spec. At the
-same time, WebNN API has been shipping in [Chromium][webnn in chromium] in full
-swing, we hope it won't take too long to bring hardware acceleration access to
-Web developers through WebNN API.
+We will continously develop the WebNN Polyfill to keep it align with the WebNN API
+spec. At the same time, WebNN API development in [Chromium][webnn in chromium]
+is in full swing, we hope it won't take too long to bring hardware acceleration
+access to Web developers through WebNN API.
 
 
 [polyfill]: https://www.npmjs.com/package/@webmachinelearning/webnn-polyfill
