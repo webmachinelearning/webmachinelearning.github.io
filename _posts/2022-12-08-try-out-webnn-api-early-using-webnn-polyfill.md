@@ -58,7 +58,7 @@ showcase various popular use cases for neural networks powered by WebNN API.
 
 ## Vision
 
-We will continously develop the WebNN Polyfill to keep it align with the WebNN API
+We will continuously develop the WebNN Polyfill to keep it aligned with the WebNN API
 spec. At the same time, WebNN API development in [Chromium][webnn in chromium]
 is in full swing, we hope it won't take too long to bring hardware acceleration
 access to Web developers through WebNN API.
