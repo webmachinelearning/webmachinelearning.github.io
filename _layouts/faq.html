@@ -42,8 +42,8 @@
                 <li>Noise suppression</li>
               </ul>
 
-              <p>These use cases and more are elaborated in the <a
-                  href="https://webmachinelearning.github.io/webnn/#usecases">use cases section of the API
+              <p>These use cases and more are elaborated in the <a href="https://www.w3.org/TR/webnn/#usecases">use
+                  cases section of the API
                   specification</a>.</p>
 
               <p>While some of these use cases can be implemented in a constrained manner with existing Web APIs (e.g.
@@ -53,9 +53,9 @@
                 hardware accelerators constraints the scope of experiences and leads to inefficient implementations on
                 modern hardware. This disadvantages the web platform in comparison to native platforms.</p>
 
-              <p>The design process of the <a href="http://webmachinelearning.github.io/webnn/">Web Neural Network
-                  API</a> (WebNN API) started by identifying the <a
-                  href="https://webmachinelearning.github.io/webnn/#usecases">key use cases</a> working with the <a
+              <p>The design process of the <a href="https://www.w3.org/TR/webnn/">Web Neural Network
+                  API</a> (WebNN API) started by identifying the <a href="https://www.w3.org/TR/webnn/#usecases">key use
+                  cases</a> working with the <a
                   href="https://www.w3.org/community/webmachinelearning/participants">diverse participants</a> including
                 major browser vendors, key ML JS frameworks, interested hardware vendors, and web developers. After
                 identification of the key use cases, the group worked down the levels of abstraction and <a
@@ -147,7 +147,7 @@
 
             <p>Depending on the underlying hardware capabilities, these platform APIs may make use of CPU parallelism,
               general-purpose GPU, or dedicated hardware accelerators for machine learning. The WebNN API provides <a
-                href="https://webmachinelearning.github.io/webnn/#usecase-perf-adapt">performance adaptation</a> options
+                href="https://www.w3.org/TR/webnn/#usecase-perf-adapt">performance adaptation</a> options
               but remains hardware agnostic.</p>
           </div>
         </div>
@@ -267,7 +267,7 @@
               decomposed operations are also defined. This way, a newly-conceived function may be represented as a
               network of our decomposed operations, while a standard function can also be fully supported by the
               underlying platforms. An elaborate example of this principle is in the way we define the specification of
-              the <a href="https://webmachinelearning.github.io/webnn/#api-modelbuilder-grucell">gruCell</a> operation
+              the <a href="https://www.w3.org/TR/webnn/#api-modelbuilder-grucell">gruCell</a> operation
               as described in its notes.</p>
 
           </div>
@@ -306,8 +306,9 @@
         </div>
 
         <div class="accordion-item">
-          <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Why not define a model format that
-            covers both topology and weights?</span><span class="icon" aria-hidden="true"></span></button>
+          <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Why not define a model
+              format that
+              covers both topology and weights?</span><span class="icon" aria-hidden="true"></span></button>
           <div class="accordion-content">
             <p>Defining a model format should simplify model loading, but it was explicitly stated as a non-goal for
               WebNN API to directly support model format as we believe formats should be left with the framework or the
