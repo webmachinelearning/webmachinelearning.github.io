@@ -14,8 +14,14 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-toc
+  - jekyll-spaceship
 excerpt_separator: <!-- more -->
 
+jekyll-spaceship:
+  # default enabled processors
+  processors:
+    - table-processor
+    
 host: 0.0.0.0
 
 # Exclude from processing.

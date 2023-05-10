@@ -15,13 +15,21 @@
     animation: pulse 1s ease infinite;
     animation-delay: 3s;
     margin: 0 0.4rem;
-  }
-  
-  @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.2); }
-    100% { transform: scale(1); }
-  }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
 
 .herobar,
 .gr {
@@ -36,6 +44,7 @@
 .gs {
     margin-bottom: 1rem;
 }
+
 .modelloader {
     display: block !important;
     text-align: center;
@@ -79,7 +88,8 @@
     text-align: right;
 }
 
-.post svg, .community a svg {
+.post svg,
+.community a svg {
     width: 1rem;
     height: 1rem;
     margin-left: 2px;
@@ -116,7 +126,7 @@
 }
 
 .bgr {
-    background: linear-gradient(-45deg,$brand-color2, $brand-color0);
+    background: linear-gradient(-45deg, $brand-color2, $brand-color0);
     color: white;
 }
 
@@ -131,7 +141,7 @@
 }
 
 .community .moreitem h3 {
-    margin-top: -0.5rem;    
+    margin-top: -0.5rem;
 }
 
 .community .moreitem div {
@@ -173,7 +183,8 @@
     overflow: hidden;
 }
 
-.join, .join a {
+.join,
+.join a {
     font-size: .9rem !important;
 }
 
@@ -210,6 +221,7 @@
 .post table {
     margin: 1rem 0;
     color: $grey-color;
+    font-size: 0.8rem;
 }
 
 .post table th {
@@ -697,7 +709,8 @@ table th {
         margin-left: 0rem;
     }
 
-    pre, code {
+    pre,
+    code {
         overflow: hidden;
         max-width: 99.5vw;
     }
@@ -814,7 +827,8 @@ ul.c4 li {
         margin: 0.5rem 0 !important;
     }
 
-    .more, .g3 {
+    .more,
+    .g3 {
         display: block !important;
         grid-template-columns: 1fr !important;
         grid-template-rows: 1fr 1fr 1fr !important;
@@ -876,6 +890,7 @@ ul.c4 li {
     .faqs.gr {
         display: block !important;
     }
+
     .typing {
         width: 344px;
         text-align: center;
@@ -915,11 +930,13 @@ ul.c4 li {
     background-color: rgba(255, 255, 255, 1);
 }
 
-.mt, .mt2 {
+.mt,
+.mt2 {
     margin-top: 2rem;
 }
 
-.mb, .mb2 {
+.mb,
+.mb2 {
     margin-bottom: 2rem;
 }
 
@@ -1027,7 +1044,8 @@ ul.c4 li {
     margin-bottom: 1rem;
 }
 
-.more, .g3 {
+.more,
+.g3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -1143,7 +1161,9 @@ ul.c4 li {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px),
 (min-device-width: 768px) and (max-device-width: 1366px) {
-    pre, code {
+
+    pre,
+    code {
         overflow: hidden;
     }
 
@@ -1161,7 +1181,9 @@ ul.c4 li {
         grid-template-areas: ". .";
         align-items: flex-start;
     }
-    .more, .g3 {
+
+    .more,
+    .g3 {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         gap: 1rem 0px;
