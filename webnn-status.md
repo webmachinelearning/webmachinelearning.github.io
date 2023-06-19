@@ -6,9 +6,8 @@ permalink: /webnn-status/
 
 <style>
 .post img {
- width: 24px;
  height: 24px;
- margin: 0px 4px;
+ margin: 4px 0;
  transform: none;
  display: inline-block;
 }
@@ -22,7 +21,7 @@ permalink: /webnn-status/
 }
 
 .post-content tbody td {
- padding: 4px 24px;
+ padding: 4px 48px;
  vertical-align: middle;
 }
 
@@ -55,19 +54,17 @@ permalink: /webnn-status/
 }
 </style>
 
-| <br><span class="title">![W3C](https://www.w3.org/StyleSheets/TR/2021/logos/W3C)<br>[WebNN Spec](https://www.w3.org/TR/webnn/)</span> | <br><span class="title">Web Platform<br>Tests</span> | <span class="title">XNNPack/CPU<br>backend</span> <sup>[1]</sup> | <span class="title">External Delegate</span> <sup>[2]</sup> | <span class="title">Execution Provider</span> <sup>[3]</sup> | 
-| ^^ | ^^ | ![Chrome Dev](https://raw.githubusercontent.com/alrra/browser-logos/main/src/chrome-dev/chrome-dev_24x24.png) ![Edge Canary](https://raw.githubusercontent.com/alrra/browser-logos/main/src/edge-canary/edge-canary_24x24.png) <sup>[4]</sup> | ![TensorFlow Lite](https://www.gstatic.com/devrel-devsite/prod/v8ec4d0a037302c47ae529ad4e3f06c9e782b3a31a381294b5a70403547dc6b12/tensorflow/images/lockup.svg) Lite {: class="tflite"}<br>for TensorFlow.js | ![ONNX Runtime Web](https://onnxruntime.ai/images/svg/ONNX-Runtime-logo.svg) {: class="onnxrt"} |
-| ^^ | ^^ | ![Windows](https://wpt.fyi/static/win.svg) ![Linux](https://wpt.fyi/static/linux.svg) | ^^ | ^^ |
+| <br><span class="title">![W3C](https://www.w3.org/StyleSheets/TR/2021/logos/W3C)<br>[WebNN Spec](https://www.w3.org/TR/webnn/)</span> | <br><span class="title">Web Platform<br>Tests</span> | <span class="title">XNNPack/CPU backend</span> <sup>[1]</sup><br/>![Chrome Dev](https://raw.githubusercontent.com/alrra/browser-logos/main/src/chrome-dev/chrome-dev_24x24.png) ![Edge Canary](https://raw.githubusercontent.com/alrra/browser-logos/main/src/edge-canary/edge-canary_24x24.png) <sup>[4]</sup><br/> ![Windows](https://wpt.fyi/static/win.svg) ![Linux](https://wpt.fyi/static/linux.svg) | ![TensorFlow Lite](https://www.gstatic.com/devrel-devsite/prod/v8ec4d0a037302c47ae529ad4e3f06c9e782b3a31a381294b5a70403547dc6b12/tensorflow/images/lockup.svg) Lite  <span class="tflite"></span><br>for TensorFlow.js<br/><span class="title">External Delegate</span> <sup>[2]</sup> | ![ONNX Runtime Web](https://onnxruntime.ai/images/svg/ONNX-Runtime-logo.svg) <span class="onnxrt"></span><br/><span class="title">Execution Provider</span> <sup>[3]</sup> | 
 | -- | -- | -- | -- | -- |
 | <span class="spec">[clamp](https://www.w3.org/TR/webnn/#api-mlgraphbuilder-clamp)</span> | [📈](https://wpt.fyi/results/webnn/clamp.https.any.html?label=master&label=experimental) [<span class="wpt_s">🧪</span>](https://github.com/web-platform-tests/wpt/blob/master/webnn/clamp.https.any.js) | <span class="x_s">✅</span> clamp | <span class="ed_s">✅</span> ReluN1To1 | <span class="ep_s">✅</span> Clip |
-| ^^ | ^^ | <span class="ed_s">✅</span> Relu6 | ^^ | ^^ |
+|  |  | <span class="ed_s">✅</span> Relu6 |  |  |
 | <br><span class="spec">[concat](https://www.w3.org/TR/webnn/#api-mlgraphbuilder-concat)</span> | [📈](https://wpt.fyi/results/webnn/concat.https.any.html?label=master&label=experimental) [<span class="wpt_s">🧪</span>](https://github.com/web-platform-tests/wpt/blob/master/webnn/concat.https.any.js) | <span class="x_s">✅</span> concatenate2 | <br><span class="ed_s">✅</span> Concatenation | <br><span class="ep_s">✅</span> Concat |
-| ^^ | ^^ | <span class="x_s">✅</span> concatenate3 | ^^ | ^^ |
-| ^^ | ^^ | <span class="x_s">✅</span> concatenate4 | ^^ | ^^ |
+|  |  | <span class="x_s">✅</span> concatenate3 |  |  |
+|  |  | <span class="x_s">✅</span> concatenate4 |  |  |
 | <span class="spec">[conv2d](https://www.w3.org/TR/webnn/#api-mlgraphbuilder-conv2d)</span> | [📈](https://wpt.fyi/results/webnn/conv2d.https.any.html?label=master&label=experimental) [<span class="wpt_s">🧪</span>](https://github.com/web-platform-tests/wpt/blob/master/webnn/conv2d.https.any.js) | <span class="x_s">✅</span> convolution_2d | <span class="ed_s">✅</span> Conv2d | <span class="ep_s">✅</span> Conv |
-| ^^ | ^^ | ^^ | <span class="ed_s">✅</span> DepthwiseConv2d | ^^ |
+|  |  |  | <span class="ed_s">✅</span> DepthwiseConv2d |  |
 | <span class="spec">[convTranspose2d](https://www.w3.org/TR/webnn/#api-mlgraphbuilder-convtranspose2d)</span> | [📈](https://wpt.fyi/results/webnn/conv_transpose2d.https.any.html?label=master&label=experimental) [<span class="wpt_s">🧪</span>](https://github.com/web-platform-tests/wpt/blob/master/webnn/conv_transpose2d.https.any.js) | <span class="x_s">✅</span> deconvolution_2d | <span class="ed_s">✅</span> TransposeConv | <span class="ep_s">✅</span> ConvTranspose |
-| ^^ | ^^ | ^^ | <span class="ed_s">✅</span> Convolution2DTransposeBias | ^^ |
+|  |  |  | <span class="ed_s">✅</span> Convolution2DTransposeBias |  |
 | <span class="spec">[add <sup>element-wise binary</sup>](https://www.w3.org/TR/webnn/#api-mlgraphbuilder-binary)</span> | [📈](https://wpt.fyi/results/webnn/elementwise_binary.https.any.html?label=master&label=experimental) [<span class="wpt_s">🧪</span>](https://github.com/web-platform-tests/wpt/blob/master/webnn/elementwise_binary.https.any.js) | <span class="x_s">✅</span> add2 | <span class="ed_s">✅</span> Add | <span class="ep_s">✅</span> Add |
 | <span class="spec">[sub <sup>element-wise binary</sup>](https://www.w3.org/TR/webnn/#api-mlgraphbuilder-binary)</span> | [📈](https://wpt.fyi/results/webnn/elementwise_binary.https.any.html?label=master&label=experimental) [<span class="wpt_s">🧪</span>](https://github.com/web-platform-tests/wpt/blob/master/webnn/elementwise_binary.https.any.js) | <span class="x_s">✅</span> subtract | <span class="ed_s">✅</span> Sub | <span class="ep_s">✅</span> Sub |
 | <span class="spec">[mul <sup>element-wise binary</sup>](https://www.w3.org/TR/webnn/#api-mlgraphbuilder-binary)</span> | [📈](https://wpt.fyi/results/webnn/elementwise_binary.https.any.html?label=master&label=experimental) [<span class="wpt_s">🧪</span>](https://github.com/web-platform-tests/wpt/blob/master/webnn/elementwise_binary.https.any.js) | <span class="x_s">✅</span> multiply2 | <span class="ed_s">✅</span> Mul | <span class="ep_s">✅</span> Mul |
@@ -84,23 +81,23 @@ permalink: /webnn-status/
 | <span class="spec">[leakyRelu](https://www.w3.org/TR/webnn/#api-mlgraphbuilder-leakyrelu)</span> | [📈](https://wpt.fyi/results/webnn/leaky_relu.https.any.html?label=master&label=experimental) [<span class="wpt_s">🧪</span>](https://github.com/web-platform-tests/wpt/blob/master/webnn/leaky_relu.https.any.js) | <span class="x_s">✅</span> leaky_relu | <span class="ed_s">✅</span> LeakyRelu | <span class="ep_s">✅</span> LeakyRelu |
 | <span class="spec">[pad](https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pad)</span> | [📈](https://wpt.fyi/results/webnn/pad.https.any.html?label=master&label=experimental) [<span class="wpt_s">🧪</span>](https://github.com/web-platform-tests/wpt/blob/master/webnn/pad.https.any.js) | <span class="x_s">✅</span> static_constant_pad | <span class="ed_s">✅</span> Pad | <span class="ep_wip">🚀</span> Pad |
 | <span class="spec">[averagePool2d <sup>pooling</sup>](https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pool2d)</span> | [📈](https://wpt.fyi/results/webnn/pooling.https.any.html?label=master&label=experimental) [<span class="wpt_s">🧪</span>](https://github.com/web-platform-tests/wpt/blob/master/webnn/pooling.https.any.js) | <span class="x_s">✅</span> average_pooling_2d | <span class="ed_s">✅</span> AveragePool2d | <span class="ep_s">✅</span> GlobalAveragePool |
-| ^^ | ^^ | ^^ | <span class="ed_s">✅</span> Mean | <span class="ep_s">✅</span> AveragePool |
+|  |  |  | <span class="ed_s">✅</span> Mean | <span class="ep_s">✅</span> AveragePool |
 | <span class="spec">[maxPool2d <sup>pooling</sup>](https://www.w3.org/TR/webnn/#api-mlgraphbuilder-pool2d)</span> | [📈](https://wpt.fyi/results/webnn/pooling.https.any.html?label=master&label=experimental) [<span class="wpt_s">🧪</span>](https://github.com/web-platform-tests/wpt/blob/master/webnn/pooling.https.any.js) | <span class="x_s">✅</span> max_pooling_2d | <span class="ed_s">✅</span> MaxPool2d | <span class="ep_s">✅</span> GlobalMaxPool |
-| ^^ | ^^ | ^^ | ^^ | <span class="ep_s">✅</span> MaxPool |
+|  |  |  |  | <span class="ep_s">✅</span> MaxPool |
 | <span class="spec">[prelu](https://www.w3.org/TR/webnn/#api-mlgraphbuilder-prelu)</span> | [📈](https://wpt.fyi/results/webnn/prelu.https.any.html?label=master&label=experimental) [<span class="wpt_s">🧪</span>](https://github.com/web-platform-tests/wpt/blob/master/webnn/prelu.https.any.js) | <span class="x_s">✅</span> prelu | <span class="ed_s">✅</span> Prelu | <span class="ep_wip">🚀</span> Prelu |
 | <span class="spec">[relu](https://www.w3.org/TR/webnn/#api-mlgraphbuilder-relu)</span> | [📈](https://wpt.fyi/results/webnn/relu.https.any.html?label=master&label=experimental) [<span class="wpt_s">🧪</span>](https://github.com/web-platform-tests/wpt/blob/master/webnn/relu.https.any.js) | <span class="x_s">✅</span> clamp | <span class="ed_s">✅</span> Relu | <span class="ep_s">✅</span> Relu |
 | <span class="spec">[resample2d](https://www.w3.org/TR/webnn/#api-mlgraphbuilder-resample2d)</span> | <span class="wpt_wip">🚀🚀</span> | <span class="x_s">✅</span> static_resize_bilinear_2d | <span class="ed_s">✅</span> ResizeBilinear | <span class="ep_s">✅</span> Resize |
 | <span class="spec">[reshape](https://www.w3.org/TR/webnn/#api-mlgraphbuilder-reshape)</span> | [📈](https://wpt.fyi/results/webnn/reshape.https.any.html?label=master&label=experimental) [<span class="wpt_s">🧪</span>](https://github.com/web-platform-tests/wpt/blob/master/webnn/reshape.https.any.js) | <span class="x_s">✅</span> static_reshape | <span class="ed_s">✅</span> Reshape | <span class="ep_s">✅</span> Reshape |
 | <span class="spec">[sigmoid](https://www.w3.org/TR/webnn/#api-mlgraphbuilder-sigmoid)</span> | [📈](https://wpt.fyi/results/webnn/sigmoid.https.any.html?label=master&label=experimental) [<span class="wpt_s">🧪</span>](https://github.com/web-platform-tests/wpt/blob/master/webnn/sigmoid.https.any.js) | <span class="x_s">✅</span> sigmoid | <span class="ed_s">✅</span> Logistic | <span class="ep_s">✅</span> Sigmoid |
 | <br><br><span class="spec">[split](https://www.w3.org/TR/webnn/#api-mlgraphbuilder-split)</span> | [📈](https://wpt.fyi/results/webnn/split.https.any.html?label=master&label=experimental) [<span class="wpt_s">🧪</span>](https://github.com/web-platform-tests/wpt/blob/master/webnn/split.https.any.js) | <span class="x_s">✅</span> even_split2 | <br><br><span class="ed_s">✅</span> Split | <br><br><span class="ep_s">✅</span> Split |
-| ^^ | ^^ | <span class="x_s">✅</span> even_split3 | ^^ | ^^ |
-| ^^ | ^^ | <span class="x_s">✅</span> even_split4 | ^^ | ^^ |
-| ^^ | ^^ | <span class="x_s">✅</span> static_slice (uneven split) | ^^ | ^^ |
+|  |  | <span class="x_s">✅</span> even_split3 |  |  |
+|  |  | <span class="x_s">✅</span> even_split4 |  |  |
+|  |  | <span class="x_s">✅</span> static_slice (uneven split) |  |  |
 | <span class="spec">[slice](https://www.w3.org/TR/webnn/#api-mlgraphbuilder-slice)</span> | [📈](https://wpt.fyi/results/webnn/slice.https.any.html?label=master&label=experimental) [<span class="wpt_s">🧪</span>](https://github.com/web-platform-tests/wpt/blob/master/webnn/slice.https.any.js) | <span class="x_s">✅</span> static_slice | <span class="ed_s">✅</span> Slice | <span class="ep_s">✅</span> Slice |
-| ^^ | ^^ | ^^ | <span class="ed_s">✅</span> StridedSlice | ^^ |
+|  |  |  | <span class="ed_s">✅</span> StridedSlice |  |
 | <span class="spec">[softmax](https://www.w3.org/TR/webnn/#api-mlgraphbuilder-softmax)</span> | [📈](https://wpt.fyi/results/webnn/softmax.https.any.html?label=master&label=experimental) [<span class="wpt_s">🧪</span>](https://github.com/web-platform-tests/wpt/blob/master/webnn/softmax.https.any.js) | <span class="x_s">✅</span> softmax | <span class="ed_s">✅</span> Softmax | <span class="ep_s">✅</span> Softmax | 
 | <span class="spec">[transpose](https://www.w3.org/TR/webnn/#api-mlgraphbuilder-transpose)</span> | [📈](https://wpt.fyi/results/webnn/transpose.https.any.html?label=master&label=experimental) [<span class="wpt_s">🧪</span>](https://github.com/web-platform-tests/wpt/blob/master/webnn/transpose.https.any.js) | <span class="x_s">✅</span> static_transpose | <span class="ed_s">✅</span> Transpose | <span class="ep_s">✅</span> Transpose |
-| {: #spec_total } {: class="title"} | {: #wpt_total } {: class="title"} | {: #x_total } {: class="title"} | {: #ed_total } {: class="title"} | {: #ep_total } {: class="title"} |
+| <span id="spec_total" class="title"></span> | <span id="wpt_total" class="title"></span> | <span id="x_total" class="title"></span> | <span id="ed_total" class="title"></span> | <span id="ep_total" class="title"></span> |
 
 <div class="impl_status">
     <div class="title">XNNPack/CPU backend</div>
