@@ -107,19 +107,19 @@ permalink: /webnn-status/
         <div>✅ Supported (<span id="supported"></span>)</div>
         <div>⏳ Partly Implemented (<span id="partlyimplemented"></span>)</div>
         <div>🚀 Work in Progress (<span id="workinprogress"></span>)</div>
-        <div>❌ Not Support</div>
+        <div>❌ Not Supported</div>
     </div>
         <div>
         <div>✅ Supported (<span id="ed_supported"></span>)</div>
         <div>⏳ Partly Implemented (<span id="ed_partlyimplemented"></span>)</div>
         <div>🚀 Work in Progress (<span id="ed_workinprogress"></span>)</div>
-        <div>❌ Not Support</div>
+        <div>❌ Not Supported</div>
     </div>
     <div>
         <div>✅ Supported (<span id="ep_supported"></span>)</div>
         <div>⏳ Partly Implemented (<span id="ep_partlyimplemented"></span>)</div>
         <div>🚀 Work in Progress (<span id="ep_workinprogress"></span>)</div>
-        <div>❌ Not Support</div>
+        <div>❌ Not Supported</div>
     </div>
 </div> 
 
