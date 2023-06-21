@@ -123,7 +123,7 @@ permalink: /webnn-status/
     </div>
 </div> 
 
-The total number of WebNN v1 ops is 60.
+The total number of WebNN v1 ops is 60. This table currently lists ops that are implemented or WIP by multiple backends.
 
 <sup>[1]</sup> XNNPack node definition in [`xnn_define_*`](https://github.com/google/XNNPACK/blob/master/include/xnnpack.h)<br>
 <sup>[2]</sup> TensorFlow Lite built-in operators [`kTfLiteBuiltin*`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/delegates/xnnpack/xnnpack_delegate.cc)<br>
