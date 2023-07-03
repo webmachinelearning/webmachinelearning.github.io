@@ -1,0 +1,1701 @@
+{
+  "impl_status": [
+    {
+      "op": "batchNormalization",
+      "op_id": "batchnorm",
+      "version": "v1",
+      "wpt": "batch_normalization",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_progress": 2,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": [
+        "BATCH_NORMALIZATION"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_progress": 2,
+      "tflite_version_added": "",
+      "ort_op": [
+        ""
+      ],
+      "ort_progress": 2,
+      "ort_version_added": "",
+      "notes": ""
+    },
+    {
+      "op": "clamp",
+      "op_id": "clamp",
+      "version": "v1",
+      "wpt": "clamp",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        "clamp"
+      ],
+      "xnnpack_progress": 4,
+      "xnnpack_chromium_version_added": "M112",
+      "dml_op": [
+        "ELEMENT_WISE_CLIP"
+      ],
+      "dml_progress": 2,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "ReluN1To1"
+      ],
+      "tflite_progress": 3,
+      "tflite_version_added": "TensorFlow fork",
+      "ort_op": [
+        "Clip"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "concat",
+      "op_id": "concat",
+      "version": "v1",
+      "wpt": "concat",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        "concatenate2",
+        "concatenate3",
+        "concatenate4"
+      ],
+      "xnnpack_progress": 4,
+      "xnnpack_chromium_version_added": "M113",
+      "dml_op": [
+        "JOIN"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        "Concatenation"
+      ],
+      "tflite_progress": 3,
+      "tflite_version_added": "TensorFlow fork",
+      "ort_op": [
+        "Concat"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "conv2d",
+      "op_id": "conv2d",
+      "version": "v1",
+      "wpt": "conv2d",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        "convolution_2d",
+        "depthwise_convolution_2d"
+      ],
+      "xnnpack_progress": 4,
+      "xnnpack_chromium_version_added": "M112",
+      "dml_op": [
+        "CONVOLUTION"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        "Conv2d",
+        "DepthwiseConv2d"
+      ],
+      "tflite_progress": 3,
+      "tflite_version_added": "TensorFlow fork",
+      "ort_op": [
+        "Conv"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "convTranspose2d",
+      "op_id": "convtranspose2d",
+      "version": "v1",
+      "wpt": "conv_transpose2d",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        "deconvolution_2d"
+      ],
+      "xnnpack_progress": 4,
+      "xnnpack_chromium_version_added": "M113",
+      "dml_op": [
+        "CONVOLUTION"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        "TransposeConv",
+        "Convolution2DTransposeBias"
+      ],
+      "tflite_progress": 3,
+      "tflite_version_added": "TensorFlow fork",
+      "ort_op": [
+        "ConvTranspose"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "element-wise binary / add",
+      "op_id": "binary",
+      "version": "v1",
+      "wpt": "elementwise_binary",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        "add2"
+      ],
+      "xnnpack_progress": 4,
+      "xnnpack_chromium_version_added": "M112",
+      "dml_op": [
+        "ELEMENT_WISE_ADD"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        "Add"
+      ],
+      "tflite_progress": 3,
+      "tflite_version_added": "TensorFlow fork",
+      "ort_op": [
+        "Add"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "element-wise binary / sub",
+      "op_id": "binary",
+      "version": "v1",
+      "wpt": "elementwise_binary",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        "subtract"
+      ],
+      "xnnpack_progress": 4,
+      "xnnpack_chromium_version_added": "M112",
+      "dml_op": [
+        "ELEMENT_WISE_SUBTRACT"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        "Sub"
+      ],
+      "tflite_progress": 3,
+      "tflite_version_added": "TensorFlow fork",
+      "ort_op": [
+        "Sub"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "element-wise binary / mul",
+      "op_id": "binary",
+      "version": "v1",
+      "wpt": "elementwise_binary",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        "multiply2"
+      ],
+      "xnnpack_progress": 4,
+      "xnnpack_chromium_version_added": "M112",
+      "dml_op": [
+        "ELEMENT_WISE_MULTIPLY"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        "Mul"
+      ],
+      "tflite_progress": 3,
+      "tflite_version_added": "TensorFlow fork",
+      "ort_op": [
+        "Mul"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "element-wise binary / div",
+      "op_id": "binary",
+      "version": "v1",
+      "wpt": "elementwise_binary",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        "divide"
+      ],
+      "xnnpack_progress": 4,
+      "xnnpack_chromium_version_added": "M112",
+      "dml_op": [
+        "ELEMENT_WISE_DIVIDE"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        "Div"
+      ],
+      "tflite_progress": 3,
+      "tflite_version_added": "TensorFlow fork",
+      "ort_op": [
+        "Div"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "element-wise binary / max",
+      "op_id": "binary",
+      "version": "v1",
+      "wpt": "elementwise_binary",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        "maximum2"
+      ],
+      "xnnpack_progress": 4,
+      "xnnpack_chromium_version_added": "M112",
+      "dml_op": [
+        "ELEMENT_WISE_MAX"
+      ],
+      "dml_progress": 2,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "Maximum"
+      ],
+      "tflite_progress": 3,
+      "tflite_version_added": "TensorFlow fork",
+      "ort_op": [
+        "Max"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "element-wise binary / min",
+      "op_id": "binary",
+      "version": "v1",
+      "wpt": "elementwise_binary",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        "minimum2"
+      ],
+      "xnnpack_progress": 4,
+      "xnnpack_chromium_version_added": "M112",
+      "dml_op": [
+        "ELEMENT_WISE_MIN"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        "Minimum"
+      ],
+      "tflite_progress": 3,
+      "tflite_version_added": "TensorFlow fork",
+      "ort_op": [
+        "Min"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "element-wise binary / pow",
+      "op_id": "binary",
+      "version": "v1",
+      "wpt": "elementwise_binary",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        "square",
+        "square_root"
+      ],
+      "xnnpack_progress": 4,
+      "xnnpack_chromium_version_added": "M116",
+      "dml_op": [
+        "ELEMENT_WISE_POW"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        "Sqrt",
+        "Square"
+      ],
+      "tflite_progress": 3,
+      "tflite_version_added": "TensorFlow fork",
+      "ort_op": [
+        "Pow"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "element-wise unary / abs",
+      "op_id": "unary",
+      "version": "v1",
+      "wpt": "elementwise_unary",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        "abs"
+      ],
+      "xnnpack_progress": 4,
+      "xnnpack_chromium_version_added": "M116",
+      "dml_op": [
+        "ELEMENT_WISE_ABS"
+      ],
+      "dml_progress": 2,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "Abs"
+      ],
+      "tflite_progress": 3,
+      "tflite_version_added": "TensorFlow fork",
+      "ort_op": [
+        "Abs"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "element-wise unary / ceil",
+      "op_id": "unary",
+      "version": "v1",
+      "wpt": "elementwise_unary",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        "ceiling"
+      ],
+      "xnnpack_progress": 4,
+      "xnnpack_chromium_version_added": "M116",
+      "dml_op": [
+        "ELEMENT_WISE_CEIL"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        "Ceil"
+      ],
+      "tflite_progress": 3,
+      "tflite_version_added": "TensorFlow fork",
+      "ort_op": [
+        "Ceil"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "element-wise unary / cos",
+      "op_id": "unary",
+      "version": "v1",
+      "wpt": "elementwise_unary",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_progress": 2,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": [
+        "ELEMENT_WISE_COS"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_progress": 2,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Cos"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "element-wise unary / exp",
+      "op_id": "unary",
+      "version": "v1",
+      "wpt": "elementwise_unary",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_progress": 2,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": [
+        "ELEMENT_WISE_EXP"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_progress": 2,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Exp"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "element-wise unary / floor",
+      "op_id": "unary",
+      "version": "v1",
+      "wpt": "elementwise_unary",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        "floor"
+      ],
+      "xnnpack_progress": 4,
+      "xnnpack_chromium_version_added": "M116",
+      "dml_op": [
+        "ELEMENT_WISE_FLOOR"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        "Floor"
+      ],
+      "tflite_progress": 3,
+      "tflite_version_added": "TensorFlow fork",
+      "ort_op": [
+        "Floor"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "element-wise unary / log",
+      "op_id": "unary",
+      "version": "v1",
+      "wpt": "elementwise_unary",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_progress": 2,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": [
+        "ELEMENT_WISE_LOG"
+      ],
+      "dml_progress": 2,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_progress": 2,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Log"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "",
+      "notes": ""
+    },
+    {
+      "op": "element-wise unary / neg",
+      "op_id": "unary",
+      "version": "v1",
+      "wpt": "elementwise_unary",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        "negate"
+      ],
+      "xnnpack_progress": 4,
+      "xnnpack_chromium_version_added": "M116",
+      "dml_op": [
+        "ELEMENT_WISE_NEGATE"
+      ],
+      "dml_progress": 2,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "Neg"
+      ],
+      "tflite_progress": 3,
+      "tflite_version_added": "TensorFlow fork",
+      "ort_op": [
+        "Neg"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "element-wise unary / sin",
+      "op_id": "unary",
+      "version": "v1",
+      "wpt": "elementwise_unary",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_progress": 2,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": [
+        "ELEMENT_WISE_SIN"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_progress": 2,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Sin"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "element-wise unary / tan",
+      "op_id": "unary",
+      "version": "v1",
+      "wpt": "elementwise_unary",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_progress": 2,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": [
+        "ELEMENT_WISE_TAN"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_progress": 2,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Tan"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "elu",
+      "op_id": "elu",
+      "version": "v1",
+      "wpt": "elu",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        "elu"
+      ],
+      "xnnpack_progress": 4,
+      "xnnpack_chromium_version_added": "M115",
+      "dml_op": [
+        "ACTIVATION_ELU"
+      ],
+      "dml_progress": 2,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "Elu"
+      ],
+      "tflite_progress": 3,
+      "tflite_version_added": "TensorFlow fork",
+      "ort_op": [
+        "Elu"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "gemm",
+      "op_id": "gemm",
+      "version": "v1",
+      "wpt": "gemm",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        "fully_connected"
+      ],
+      "xnnpack_progress": 4,
+      "xnnpack_chromium_version_added": "M112",
+      "dml_op": [
+        "GEMM"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        "FullyConnected"
+      ],
+      "tflite_progress": 3,
+      "tflite_version_added": "TensorFlow fork",
+      "ort_op": [
+        "Gemm"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "gru",
+      "op_id": "gru",
+      "version": "v1",
+      "wpt": "",
+      "wpt_progress": 3,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_progress": 2,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": [
+        "GRU"
+      ],
+      "dml_progress": 2,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_progress": 2,
+      "tflite_version_added": "",
+      "ort_op": [
+        ""
+      ],
+      "ort_progress": 2,
+      "ort_version_added": "",
+      "notes": ""
+    },
+    {
+      "op": "gruCell",
+      "op_id": "grucell",
+      "version": "v1",
+      "wpt": "",
+      "wpt_progress": 3,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_progress": 2,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": [
+        "GRU"
+      ],
+      "dml_progress": 2,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_progress": 2,
+      "tflite_version_added": "",
+      "ort_op": [
+        ""
+      ],
+      "ort_progress": 2,
+      "ort_version_added": "",
+      "notes": ""
+    },
+    {
+      "op": "hardSigmoid",
+      "op_id": "hard-sigmoid",
+      "version": "v1",
+      "wpt": "hard_sigmoid",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_progress": 2,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": [
+        "ACTIVATION_HARD_SIGMOID"
+      ],
+      "dml_progress": 2,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_progress": 2,
+      "tflite_version_added": "",
+      "ort_op": [
+        "HardSigmoid"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "hardSwish",
+      "op_id": "hard-swish",
+      "version": "v1",
+      "wpt": "hard_swish",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        "hardswish"
+      ],
+      "xnnpack_progress": 4,
+      "xnnpack_chromium_version_added": "M112",
+      "dml_op": [
+        "Map to other op"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        "HardSwish"
+      ],
+      "tflite_progress": 3,
+      "tflite_version_added": "TensorFlow fork",
+      "ort_op": [
+        "HardSwish"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "instanceNormalization",
+      "op_id": "instancenorm",
+      "version": "v1",
+      "wpt": "",
+      "wpt_progress": 3,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_progress": 2,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": [
+        "MEAN_VARIANCE_NORMALIZATION1"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_progress": 2,
+      "tflite_version_added": "",
+      "ort_op": [
+        "InstanceNormalization"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "leakyRelu",
+      "op_id": "leakyrelu",
+      "version": "v1",
+      "wpt": "leaky_relu",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        "leaky_relu"
+      ],
+      "xnnpack_progress": 4,
+      "xnnpack_chromium_version_added": "M113",
+      "dml_op": [
+        "ACTIVATION_LEAKY_RELU"
+      ],
+      "dml_progress": 2,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "LeakyRelu"
+      ],
+      "tflite_progress": 3,
+      "tflite_version_added": "TensorFlow fork",
+      "ort_op": [
+        "LeakyRelu"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "linear",
+      "op_id": "linear",
+      "version": "v1",
+      "wpt": "linear",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_progress": 2,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": [
+        "ACTIVATION_LINEAR"
+      ],
+      "dml_progress": 2,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_progress": 2,
+      "tflite_version_added": "",
+      "ort_op": [
+        ""
+      ],
+      "ort_progress": 2,
+      "ort_version_added": "",
+      "notes": ""
+    },
+    {
+      "op": "lstm",
+      "op_id": "lstm",
+      "version": "v1",
+      "wpt": "",
+      "wpt_progress": 3,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_progress": 2,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": [
+        "LSTM"
+      ],
+      "dml_progress": 2,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_progress": 2,
+      "tflite_version_added": "",
+      "ort_op": [
+        ""
+      ],
+      "ort_progress": 2,
+      "ort_version_added": "",
+      "notes": ""
+    },
+    {
+      "op": "lstmCell",
+      "op_id": "lstmcell",
+      "version": "v1",
+      "wpt": "",
+      "wpt_progress": 3,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_progress": 2,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": [
+        "LSTM"
+      ],
+      "dml_progress": 2,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_progress": 2,
+      "tflite_version_added": "",
+      "ort_op": [
+        ""
+      ],
+      "ort_progress": 2,
+      "ort_version_added": "",
+      "notes": ""
+    },
+    {
+      "op": "matmul",
+      "op_id": "matmul",
+      "version": "v1",
+      "wpt": "matmul",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_progress": 2,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": [
+        "GEMM"
+      ],
+      "dml_progress": 2,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_progress": 2,
+      "tflite_version_added": "",
+      "ort_op": [
+        "MatMul"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "pad",
+      "op_id": "pad",
+      "version": "v1",
+      "wpt": "pad",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        "static_constant_pad"
+      ],
+      "xnnpack_progress": 4,
+      "xnnpack_chromium_version_added": "M114",
+      "dml_op": [
+        "FILL_VALUE_SEQUENCE"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        "Pad"
+      ],
+      "tflite_progress": 3,
+      "tflite_version_added": "TensorFlow fork",
+      "ort_op": [
+        "Pad"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "pooling / averagePool2d",
+      "op_id": "pool2d",
+      "version": "v1",
+      "wpt": "pooling",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        "average_pooling_2d",
+        "global_average_pooling_2d"
+      ],
+      "xnnpack_progress": 4,
+      "xnnpack_chromium_version_added": "M112",
+      "dml_op": [
+        "AVERAGE_POOLING"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        "AveragePool2d",
+        "Mean"
+      ],
+      "tflite_progress": 3,
+      "tflite_version_added": "TensorFlow fork",
+      "ort_op": [
+        "AveragePool",
+        "GlobalAveragePool"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "pooling / l2Pool2d",
+      "op_id": "pool2d",
+      "version": "v1",
+      "wpt": "pooling",
+      "wpt_progress": 3,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_progress": 2,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": [
+        "LP_POOLING"
+      ],
+      "dml_progress": 2,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_progress": 2,
+      "tflite_version_added": "",
+      "ort_op": [
+        "LpPool",
+        "GlobalLpPool"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "",
+      "notes": ""
+    },
+    {
+      "op": "pooling / maxPool2d",
+      "op_id": "pool2d",
+      "version": "v1",
+      "wpt": "pooling",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        "max_pooling_2d"
+      ],
+      "xnnpack_progress": 4,
+      "xnnpack_chromium_version_added": "M112",
+      "dml_op": [
+        "MAX_POOLING2"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        "MaxPool2d"
+      ],
+      "tflite_progress": 3,
+      "tflite_version_added": "TensorFlow fork",
+      "ort_op": [
+        "GlobalMaxPool",
+        "MaxPool"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "prelu",
+      "op_id": "prelu",
+      "version": "v1",
+      "wpt": "prelu",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        "prelu"
+      ],
+      "xnnpack_progress": 4,
+      "xnnpack_chromium_version_added": "M115",
+      "dml_op": [
+        "ACTIVATION_PARAMETERIZED_RELU"
+      ],
+      "dml_progress": 2,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        "Prelu"
+      ],
+      "tflite_progress": 3,
+      "tflite_version_added": "TensorFlow fork",
+      "ort_op": [
+        "PRelu"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "reduction / reduceL1",
+      "op_id": "reduce",
+      "version": "v1",
+      "wpt": "reduction",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_progress": 2,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": [
+        "REDUCE_FUNCTION_L1"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_progress": 2,
+      "tflite_version_added": "",
+      "ort_op": [
+        "ReduceL1"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "reduction / reduceL2",
+      "op_id": "reduce",
+      "version": "v1",
+      "wpt": "reduction",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_progress": 2,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": [
+        "REDUCE_FUNCTION_L2"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_progress": 2,
+      "tflite_version_added": "",
+      "ort_op": [
+        "ReduceL2"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "reduction / reduceLogSum",
+      "op_id": "reduce",
+      "version": "v1",
+      "wpt": "reduction",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_progress": 2,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": [
+        "REDUCE_FUNCTION_LOG_SUM"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_progress": 2,
+      "tflite_version_added": "",
+      "ort_op": [
+        "ReduceLogSum"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "reduction / reduceLogSumExp",
+      "op_id": "reduce",
+      "version": "v1",
+      "wpt": "reduction",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_progress": 2,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": [
+        "REDUCE_FUNCTION_LOG_SUM_EXP"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_progress": 2,
+      "tflite_version_added": "",
+      "ort_op": [
+        "ReduceLogSumExp"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "reduction / reduceMax",
+      "op_id": "reduce",
+      "version": "v1",
+      "wpt": "reduction",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_progress": 2,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": [
+        "REDUCE_FUNCTION_MAX"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_progress": 2,
+      "tflite_version_added": "",
+      "ort_op": [
+        "ReduceMax"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "reduction / reduceMean",
+      "op_id": "reduce",
+      "version": "v1",
+      "wpt": "reduction",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        "static_mean"
+      ],
+      "xnnpack_progress": 3,
+      "xnnpack_chromium_version_added": "M116",
+      "dml_op": [
+        "REDUCE_FUNCTION_AVERAGE"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_progress": 2,
+      "tflite_version_added": "",
+      "ort_op": [
+        "ReduceMean"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "reduction / reduceMin",
+      "op_id": "reduce",
+      "version": "v1",
+      "wpt": "reduction",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_progress": 2,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": [
+        "REDUCE_FUNCTION_MIN"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_progress": 2,
+      "tflite_version_added": "",
+      "ort_op": [
+        "ReduceMin"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "reduction / reduceProduct",
+      "op_id": "reduce",
+      "version": "v1",
+      "wpt": "reduction",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_progress": 2,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": [
+        "REDUCE_FUNCTION_MULTIPLY"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_progress": 2,
+      "tflite_version_added": "",
+      "ort_op": [
+        "ReduceProd"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "reduction / reduceSum",
+      "op_id": "reduce",
+      "version": "v1",
+      "wpt": "reduction",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        "global_sum_pooling_1d",
+        "global_sum_pooling_2d"
+      ],
+      "xnnpack_progress": 3,
+      "xnnpack_chromium_version_added": "M116",
+      "dml_op": [
+        "REDUCE_FUNCTION_SUM"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_progress": 2,
+      "tflite_version_added": "",
+      "ort_op": [
+        "ReduceSum"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "reduction / reduceSumSquare",
+      "op_id": "reduce",
+      "version": "v1",
+      "wpt": "reduction",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_progress": 2,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": [
+        "REDUCE_FUNCTION_SUM_SQUARE"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_progress": 2,
+      "tflite_version_added": "",
+      "ort_op": [
+        "ReduceSumSquare"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "relu",
+      "op_id": "relu",
+      "version": "v1",
+      "wpt": "relu",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        "clamp"
+      ],
+      "xnnpack_progress": 4,
+      "xnnpack_chromium_version_added": "M112",
+      "dml_op": [
+        "ACTIVATION_RELU"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        "Relu"
+      ],
+      "tflite_progress": 3,
+      "tflite_version_added": "TensorFlow fork",
+      "ort_op": [
+        "Relu"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "resample2d",
+      "op_id": "resample2d",
+      "version": "v1",
+      "wpt": "",
+      "wpt_progress": 3,
+      "xnnpack_op": [
+        "static_resize_bilinear_2d"
+      ],
+      "xnnpack_progress": 4,
+      "xnnpack_chromium_version_added": "M112",
+      "dml_op": [
+        "RESAMPLE"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        "ResizeBilinear"
+      ],
+      "tflite_progress": 3,
+      "tflite_version_added": "TensorFlow fork",
+      "ort_op": [
+        "Resize"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "reshape",
+      "op_id": "reshape",
+      "version": "v1",
+      "wpt": "reshape",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        "static_reshape"
+      ],
+      "xnnpack_progress": 4,
+      "xnnpack_chromium_version_added": "M112",
+      "dml_op": [
+        "Supported by tensor strides"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        "Reshape"
+      ],
+      "tflite_progress": 3,
+      "tflite_version_added": "TensorFlow fork",
+      "ort_op": [
+        "Reshape"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "sigmoid",
+      "op_id": "sigmoid",
+      "version": "v1",
+      "wpt": "sigmoid",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        "sigmoid"
+      ],
+      "xnnpack_progress": 4,
+      "xnnpack_chromium_version_added": "M112",
+      "dml_op": [
+        "ACTIVATION_SIGMOID"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        "Logistic"
+      ],
+      "tflite_progress": 3,
+      "tflite_version_added": "TensorFlow fork",
+      "ort_op": [
+        "Sigmoid"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "slice",
+      "op_id": "slice",
+      "version": "v1",
+      "wpt": "slice",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        "static_slice"
+      ],
+      "xnnpack_progress": 4,
+      "xnnpack_chromium_version_added": "M116",
+      "dml_op": [
+        "SLICE"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        "Slice",
+        "StridedSlice"
+      ],
+      "tflite_progress": 3,
+      "tflite_version_added": "TensorFlow fork",
+      "ort_op": [
+        "Slice"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "softmax",
+      "op_id": "softmax",
+      "version": "v1",
+      "wpt": "softmax",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        "softmax"
+      ],
+      "xnnpack_progress": 4,
+      "xnnpack_chromium_version_added": "M112",
+      "dml_op": [
+        "ACTIVATION_SOFTMAX"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        "Softmax"
+      ],
+      "tflite_progress": 3,
+      "tflite_version_added": "TensorFlow fork",
+      "ort_op": [
+        "Softmax"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "softplus",
+      "op_id": "softplus",
+      "version": "v1",
+      "wpt": "softplus",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_progress": 2,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": [
+        "ACTIVATION_SOFTPLUS"
+      ],
+      "dml_progress": 2,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_progress": 2,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Softplus"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "softsign",
+      "op_id": "softsign",
+      "version": "v1",
+      "wpt": "softsign",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_progress": 2,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": [
+        "ACTIVATION_SOFTSIGN"
+      ],
+      "dml_progress": 2,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_progress": 2,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Softsign"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "split",
+      "op_id": "split",
+      "version": "v1",
+      "wpt": "split",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        "even_split2",
+        "even_split3",
+        "even_split4",
+        "static_slice (uneven split)"
+      ],
+      "xnnpack_progress": 4,
+      "xnnpack_chromium_version_added": "M116",
+      "dml_op": [
+        "SPLIT"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        "Split"
+      ],
+      "tflite_progress": 3,
+      "tflite_version_added": "TensorFlow fork",
+      "ort_op": [
+        "Split"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "squeeze",
+      "op_id": "squeeze",
+      "version": "v1",
+      "wpt": "squeeze",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_progress": 2,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": [
+        "Supported by tensor strides"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_progress": 2,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Squeeze"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "tanh",
+      "op_id": "tanh",
+      "version": "v1",
+      "wpt": "tanh",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        "tanh"
+      ],
+      "xnnpack_progress": 4,
+      "xnnpack_chromium_version_added": "M116",
+      "dml_op": [
+        "ACTIVATION_TANH"
+      ],
+      "dml_progress": 2,
+      "dml_chromium_version_added": "",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_progress": 2,
+      "tflite_version_added": "",
+      "ort_op": [
+        "Tanh"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "transpose",
+      "op_id": "transpose",
+      "version": "v1",
+      "wpt": "transpose",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        "static_transpose"
+      ],
+      "xnnpack_progress": 4,
+      "xnnpack_chromium_version_added": "M113",
+      "dml_op": [
+        "Supported by tensor strides"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
+      "tflite_op": [
+        "Transpose"
+      ],
+      "tflite_progress": 3,
+      "tflite_version_added": "TensorFlow fork",
+      "ort_op": [
+        "Transpose"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    }
+  ]
+}
