@@ -39,12 +39,12 @@ permalink: /webnn-status/
 }
 
 .post table td {
-  padding: 4px 6px;
+  padding: 4px 4px;
   vertical-align: middle;
 }
 
 .post table th {
-  padding: 6px 6px;
+  padding: 4px 4px;
 }
 
 .impl_status {
@@ -200,7 +200,7 @@ sup {
     </div>
 </div> 
 
-The total number of WebNN v1 ops is 60. This table currently lists ops that are implemented or WIP by multiple backends.
+The total number of WebNN ops is 60. This table currently lists ops that are implemented or WIP by multiple backends.
 
 <sup>[1]</sup> XNNPack node definition in [`xnn_define_*`](https://github.com/google/XNNPACK/blob/master/include/xnnpack.h)<br/>
 <sup>[2]</sup> [DirectML](https://learn.microsoft.com/en-us/windows/win32/api/_directml/) API<br/>
@@ -453,21 +453,21 @@ The total number of WebNN v1 ops is 60. This table currently lists ops that are 
   }
 
   const count = () => {
-    let spec_v1_defined_total = 60; 
+    let spec_defined_total = 60; 
 
     let spec_s = qSA('.spec').length;
-    let spec_percentage = (spec_s / spec_v1_defined_total * 100).toFixed(1) ;
-    qS('#spec_total').innerHTML = `${spec_s} / ${spec_v1_defined_total}, ${spec_percentage}%`;
+    let spec_percentage = (spec_s / spec_defined_total * 100).toFixed(1) ;
+    qS('#spec_total').innerHTML = `${spec_s} / ${spec_defined_total}, ${spec_percentage}%`;
   
     let wpt_s = qSA('.wpt_s').length;
-    let wpt_percentage = (wpt_s / spec_v1_defined_total * 100).toFixed(1) ;
-    qS('#wpt_total').innerHTML = `${wpt_s} / ${spec_v1_defined_total}, ${wpt_percentage}%`;
+    let wpt_percentage = (wpt_s / spec_defined_total * 100).toFixed(1) ;
+    qS('#wpt_total').innerHTML = `${wpt_s} / ${spec_defined_total}, ${wpt_percentage}%`;
 
     let x_s = qSA('.x_s').length;
     let x_pi = qSA('.x_pi').length;
     let x_wip = qSA('.x_wip').length;
-    let x_percentage = (x_s / spec_v1_defined_total * 100).toFixed(1) ;
-    qS('#x_total').innerHTML = `${x_s} / ${spec_v1_defined_total}, ${x_percentage}%`;
+    let x_percentage = (x_s / spec_defined_total * 100).toFixed(1) ;
+    qS('#x_total').innerHTML = `${x_s} / ${spec_defined_total}, ${x_percentage}%`;
     qS('#x_supported').innerHTML = x_s;
     qS('#x_partlyimplemented').innerHTML = x_pi;
     qS('#x_workinprogress').innerHTML = x_wip;
@@ -475,8 +475,8 @@ The total number of WebNN v1 ops is 60. This table currently lists ops that are 
     let dml_s = qSA('.dml_s').length;
     let dml_pi = qSA('.dml_pi').length;
     let dml_wip = qSA('.dml_wip').length;
-    let dml_percentage = (dml_s / spec_v1_defined_total * 100).toFixed(1) ;
-    qS('#dml_total').innerHTML = `${dml_s} / ${spec_v1_defined_total}, ${dml_percentage}%`;
+    let dml_percentage = (dml_s / spec_defined_total * 100).toFixed(1) ;
+    qS('#dml_total').innerHTML = `${dml_s} / ${spec_defined_total}, ${dml_percentage}%`;
     qS('#dml_supported').innerHTML = dml_s;
     qS('#dml_partlyimplemented').innerHTML = dml_pi;
     qS('#dml_workinprogress').innerHTML = dml_wip;
@@ -484,8 +484,8 @@ The total number of WebNN v1 ops is 60. This table currently lists ops that are 
     let ed_s = qSA('.ed_s').length;
     let ed_pi = qSA('.ed_pi').length;
     let ed_wip = qSA('.ed_wip').length;
-    let ed_percentage = (ed_s / spec_v1_defined_total * 100).toFixed(1) ;
-    qS('#ed_total').innerHTML = `${ed_s} / ${spec_v1_defined_total}, ${ed_percentage}%`;
+    let ed_percentage = (ed_s / spec_defined_total * 100).toFixed(1) ;
+    qS('#ed_total').innerHTML = `${ed_s} / ${spec_defined_total}, ${ed_percentage}%`;
     qS('#ed_supported').innerHTML = ed_s;
     qS('#ed_partlyimplemented').innerHTML = ed_pi;
     qS('#ed_workinprogress').innerHTML = ed_wip;
@@ -493,8 +493,8 @@ The total number of WebNN v1 ops is 60. This table currently lists ops that are 
     let ep_s = qSA('.ep_s').length;
     let ep_pi = qSA('.ep_pi').length;
     let ep_wip = qSA('.ep_wip').length;
-    let ep_percentage = (ep_s / spec_v1_defined_total * 100).toFixed(1) ;
-    qS('#ep_total').innerHTML = `${ep_s} / ${spec_v1_defined_total}, ${ep_percentage}%`;
+    let ep_percentage = (ep_s / spec_defined_total * 100).toFixed(1) ;
+    qS('#ep_total').innerHTML = `${ep_s} / ${spec_defined_total}, ${ep_percentage}%`;
     qS('#ep_supported').innerHTML = ep_s;
     qS('#ep_partlyimplemented').innerHTML = ep_pi;
     qS('#ep_workinprogress').innerHTML = ep_wip;
