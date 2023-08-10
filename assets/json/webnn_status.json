@@ -3,7 +3,7 @@
     {
       "op": "batchNormalization",
       "op_id": "batchnorm",
-      "version": "v1",
+      "version": "",
       "wpt": "batch_normalization",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -31,7 +31,7 @@
     {
       "op": "clamp",
       "op_id": "clamp",
-      "version": "v1",
+      "version": "",
       "wpt": "clamp",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -42,8 +42,8 @@
       "dml_op": [
         "ELEMENT_WISE_CLIP"
       ],
-      "dml_progress": 2,
-      "dml_chromium_version_added": "",
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "ReluN1To1"
       ],
@@ -59,7 +59,7 @@
     {
       "op": "concat",
       "op_id": "concat",
-      "version": "v1",
+      "version": "",
       "wpt": "concat",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -89,7 +89,7 @@
     {
       "op": "conv2d",
       "op_id": "conv2d",
-      "version": "v1",
+      "version": "",
       "wpt": "conv2d",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -119,7 +119,7 @@
     {
       "op": "convTranspose2d",
       "op_id": "convtranspose2d",
-      "version": "v1",
+      "version": "",
       "wpt": "conv_transpose2d",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -148,7 +148,7 @@
     {
       "op": "element-wise binary / add",
       "op_id": "binary",
-      "version": "v1",
+      "version": "",
       "wpt": "elementwise_binary",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -176,7 +176,7 @@
     {
       "op": "element-wise binary / sub",
       "op_id": "binary",
-      "version": "v1",
+      "version": "",
       "wpt": "elementwise_binary",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -204,7 +204,7 @@
     {
       "op": "element-wise binary / mul",
       "op_id": "binary",
-      "version": "v1",
+      "version": "",
       "wpt": "elementwise_binary",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -232,7 +232,7 @@
     {
       "op": "element-wise binary / div",
       "op_id": "binary",
-      "version": "v1",
+      "version": "",
       "wpt": "elementwise_binary",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -260,7 +260,7 @@
     {
       "op": "element-wise binary / max",
       "op_id": "binary",
-      "version": "v1",
+      "version": "",
       "wpt": "elementwise_binary",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -271,8 +271,8 @@
       "dml_op": [
         "ELEMENT_WISE_MAX"
       ],
-      "dml_progress": 2,
-      "dml_chromium_version_added": "",
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "Maximum"
       ],
@@ -288,7 +288,7 @@
     {
       "op": "element-wise binary / min",
       "op_id": "binary",
-      "version": "v1",
+      "version": "",
       "wpt": "elementwise_binary",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -316,7 +316,7 @@
     {
       "op": "element-wise binary / pow",
       "op_id": "binary",
-      "version": "v1",
+      "version": "",
       "wpt": "elementwise_binary",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -346,7 +346,7 @@
     {
       "op": "element-wise unary / abs",
       "op_id": "unary",
-      "version": "v1",
+      "version": "",
       "wpt": "elementwise_unary",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -357,8 +357,8 @@
       "dml_op": [
         "ELEMENT_WISE_ABS"
       ],
-      "dml_progress": 2,
-      "dml_chromium_version_added": "",
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "Abs"
       ],
@@ -374,7 +374,7 @@
     {
       "op": "element-wise unary / ceil",
       "op_id": "unary",
-      "version": "v1",
+      "version": "",
       "wpt": "elementwise_unary",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -402,7 +402,7 @@
     {
       "op": "element-wise unary / cos",
       "op_id": "unary",
-      "version": "v1",
+      "version": "",
       "wpt": "elementwise_unary",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -430,7 +430,7 @@
     {
       "op": "element-wise unary / exp",
       "op_id": "unary",
-      "version": "v1",
+      "version": "",
       "wpt": "elementwise_unary",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -458,7 +458,7 @@
     {
       "op": "element-wise unary / floor",
       "op_id": "unary",
-      "version": "v1",
+      "version": "",
       "wpt": "elementwise_unary",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -486,7 +486,7 @@
     {
       "op": "element-wise unary / log",
       "op_id": "unary",
-      "version": "v1",
+      "version": "",
       "wpt": "elementwise_unary",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -497,8 +497,8 @@
       "dml_op": [
         "ELEMENT_WISE_LOG"
       ],
-      "dml_progress": 2,
-      "dml_chromium_version_added": "",
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         ""
       ],
@@ -508,13 +508,13 @@
         "Log"
       ],
       "ort_progress": 4,
-      "ort_version_added": "",
+      "ort_version_added": "main",
       "notes": ""
     },
     {
       "op": "element-wise unary / neg",
       "op_id": "unary",
-      "version": "v1",
+      "version": "",
       "wpt": "elementwise_unary",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -525,8 +525,8 @@
       "dml_op": [
         "ELEMENT_WISE_NEGATE"
       ],
-      "dml_progress": 2,
-      "dml_chromium_version_added": "",
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "Neg"
       ],
@@ -542,7 +542,7 @@
     {
       "op": "element-wise unary / sin",
       "op_id": "unary",
-      "version": "v1",
+      "version": "",
       "wpt": "elementwise_unary",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -570,7 +570,7 @@
     {
       "op": "element-wise unary / tan",
       "op_id": "unary",
-      "version": "v1",
+      "version": "",
       "wpt": "elementwise_unary",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -598,7 +598,7 @@
     {
       "op": "elu",
       "op_id": "elu",
-      "version": "v1",
+      "version": "",
       "wpt": "elu",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -609,8 +609,8 @@
       "dml_op": [
         "ACTIVATION_ELU"
       ],
-      "dml_progress": 2,
-      "dml_chromium_version_added": "",
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "Elu"
       ],
@@ -626,7 +626,7 @@
     {
       "op": "gemm",
       "op_id": "gemm",
-      "version": "v1",
+      "version": "",
       "wpt": "gemm",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -654,7 +654,7 @@
     {
       "op": "gru",
       "op_id": "gru",
-      "version": "v1",
+      "version": "",
       "wpt": "",
       "wpt_progress": 3,
       "xnnpack_op": [
@@ -682,7 +682,7 @@
     {
       "op": "gruCell",
       "op_id": "grucell",
-      "version": "v1",
+      "version": "",
       "wpt": "",
       "wpt_progress": 3,
       "xnnpack_op": [
@@ -710,7 +710,7 @@
     {
       "op": "hardSigmoid",
       "op_id": "hard-sigmoid",
-      "version": "v1",
+      "version": "",
       "wpt": "hard_sigmoid",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -721,8 +721,8 @@
       "dml_op": [
         "ACTIVATION_HARD_SIGMOID"
       ],
-      "dml_progress": 2,
-      "dml_chromium_version_added": "",
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         ""
       ],
@@ -738,7 +738,7 @@
     {
       "op": "hardSwish",
       "op_id": "hard-swish",
-      "version": "v1",
+      "version": "",
       "wpt": "hard_swish",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -749,8 +749,8 @@
       "dml_op": [
         "Map to other op"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "Chromium fork",
+      "dml_progress": 2,
+      "dml_chromium_version_added": "",
       "tflite_op": [
         "HardSwish"
       ],
@@ -766,7 +766,7 @@
     {
       "op": "instanceNormalization",
       "op_id": "instancenorm",
-      "version": "v1",
+      "version": "",
       "wpt": "",
       "wpt_progress": 3,
       "xnnpack_op": [
@@ -794,7 +794,7 @@
     {
       "op": "leakyRelu",
       "op_id": "leakyrelu",
-      "version": "v1",
+      "version": "",
       "wpt": "leaky_relu",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -805,8 +805,8 @@
       "dml_op": [
         "ACTIVATION_LEAKY_RELU"
       ],
-      "dml_progress": 2,
-      "dml_chromium_version_added": "",
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "LeakyRelu"
       ],
@@ -822,7 +822,7 @@
     {
       "op": "linear",
       "op_id": "linear",
-      "version": "v1",
+      "version": "",
       "wpt": "linear",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -833,8 +833,8 @@
       "dml_op": [
         "ACTIVATION_LINEAR"
       ],
-      "dml_progress": 2,
-      "dml_chromium_version_added": "",
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         ""
       ],
@@ -850,7 +850,7 @@
     {
       "op": "lstm",
       "op_id": "lstm",
-      "version": "v1",
+      "version": "",
       "wpt": "",
       "wpt_progress": 3,
       "xnnpack_op": [
@@ -878,7 +878,7 @@
     {
       "op": "lstmCell",
       "op_id": "lstmcell",
-      "version": "v1",
+      "version": "",
       "wpt": "",
       "wpt_progress": 3,
       "xnnpack_op": [
@@ -906,7 +906,7 @@
     {
       "op": "matmul",
       "op_id": "matmul",
-      "version": "v1",
+      "version": "",
       "wpt": "matmul",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -917,8 +917,8 @@
       "dml_op": [
         "GEMM"
       ],
-      "dml_progress": 2,
-      "dml_chromium_version_added": "",
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         ""
       ],
@@ -934,7 +934,7 @@
     {
       "op": "pad",
       "op_id": "pad",
-      "version": "v1",
+      "version": "",
       "wpt": "pad",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -962,7 +962,7 @@
     {
       "op": "pooling / averagePool2d",
       "op_id": "pool2d",
-      "version": "v1",
+      "version": "",
       "wpt": "pooling",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -993,7 +993,7 @@
     {
       "op": "pooling / l2Pool2d",
       "op_id": "pool2d",
-      "version": "v1",
+      "version": "",
       "wpt": "pooling",
       "wpt_progress": 3,
       "xnnpack_op": [
@@ -1004,8 +1004,8 @@
       "dml_op": [
         "LP_POOLING"
       ],
-      "dml_progress": 2,
-      "dml_chromium_version_added": "",
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         ""
       ],
@@ -1016,13 +1016,13 @@
         "GlobalLpPool"
       ],
       "ort_progress": 4,
-      "ort_version_added": "",
+      "ort_version_added": "main",
       "notes": ""
     },
     {
       "op": "pooling / maxPool2d",
       "op_id": "pool2d",
-      "version": "v1",
+      "version": "",
       "wpt": "pooling",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -1051,7 +1051,7 @@
     {
       "op": "prelu",
       "op_id": "prelu",
-      "version": "v1",
+      "version": "",
       "wpt": "prelu",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -1062,8 +1062,8 @@
       "dml_op": [
         "ACTIVATION_PARAMETERIZED_RELU"
       ],
-      "dml_progress": 2,
-      "dml_chromium_version_added": "",
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         "Prelu"
       ],
@@ -1079,7 +1079,7 @@
     {
       "op": "reduction / reduceL1",
       "op_id": "reduce",
-      "version": "v1",
+      "version": "",
       "wpt": "reduction",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -1107,7 +1107,7 @@
     {
       "op": "reduction / reduceL2",
       "op_id": "reduce",
-      "version": "v1",
+      "version": "",
       "wpt": "reduction",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -1135,7 +1135,7 @@
     {
       "op": "reduction / reduceLogSum",
       "op_id": "reduce",
-      "version": "v1",
+      "version": "",
       "wpt": "reduction",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -1163,7 +1163,7 @@
     {
       "op": "reduction / reduceLogSumExp",
       "op_id": "reduce",
-      "version": "v1",
+      "version": "",
       "wpt": "reduction",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -1191,7 +1191,7 @@
     {
       "op": "reduction / reduceMax",
       "op_id": "reduce",
-      "version": "v1",
+      "version": "",
       "wpt": "reduction",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -1219,7 +1219,7 @@
     {
       "op": "reduction / reduceMean",
       "op_id": "reduce",
-      "version": "v1",
+      "version": "",
       "wpt": "reduction",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -1247,7 +1247,7 @@
     {
       "op": "reduction / reduceMin",
       "op_id": "reduce",
-      "version": "v1",
+      "version": "",
       "wpt": "reduction",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -1275,7 +1275,7 @@
     {
       "op": "reduction / reduceProduct",
       "op_id": "reduce",
-      "version": "v1",
+      "version": "",
       "wpt": "reduction",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -1303,7 +1303,7 @@
     {
       "op": "reduction / reduceSum",
       "op_id": "reduce",
-      "version": "v1",
+      "version": "",
       "wpt": "reduction",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -1332,7 +1332,7 @@
     {
       "op": "reduction / reduceSumSquare",
       "op_id": "reduce",
-      "version": "v1",
+      "version": "",
       "wpt": "reduction",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -1360,7 +1360,7 @@
     {
       "op": "relu",
       "op_id": "relu",
-      "version": "v1",
+      "version": "",
       "wpt": "relu",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -1388,7 +1388,7 @@
     {
       "op": "resample2d",
       "op_id": "resample2d",
-      "version": "v1",
+      "version": "",
       "wpt": "",
       "wpt_progress": 3,
       "xnnpack_op": [
@@ -1416,7 +1416,7 @@
     {
       "op": "reshape",
       "op_id": "reshape",
-      "version": "v1",
+      "version": "",
       "wpt": "reshape",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -1444,7 +1444,7 @@
     {
       "op": "sigmoid",
       "op_id": "sigmoid",
-      "version": "v1",
+      "version": "",
       "wpt": "sigmoid",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -1472,7 +1472,7 @@
     {
       "op": "slice",
       "op_id": "slice",
-      "version": "v1",
+      "version": "",
       "wpt": "slice",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -1501,7 +1501,7 @@
     {
       "op": "softmax",
       "op_id": "softmax",
-      "version": "v1",
+      "version": "",
       "wpt": "softmax",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -1529,7 +1529,7 @@
     {
       "op": "softplus",
       "op_id": "softplus",
-      "version": "v1",
+      "version": "",
       "wpt": "softplus",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -1540,8 +1540,8 @@
       "dml_op": [
         "ACTIVATION_SOFTPLUS"
       ],
-      "dml_progress": 2,
-      "dml_chromium_version_added": "",
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         ""
       ],
@@ -1557,7 +1557,7 @@
     {
       "op": "softsign",
       "op_id": "softsign",
-      "version": "v1",
+      "version": "",
       "wpt": "softsign",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -1568,8 +1568,8 @@
       "dml_op": [
         "ACTIVATION_SOFTSIGN"
       ],
-      "dml_progress": 2,
-      "dml_chromium_version_added": "",
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         ""
       ],
@@ -1585,7 +1585,7 @@
     {
       "op": "split",
       "op_id": "split",
-      "version": "v1",
+      "version": "",
       "wpt": "split",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -1616,7 +1616,7 @@
     {
       "op": "squeeze",
       "op_id": "squeeze",
-      "version": "v1",
+      "version": "",
       "wpt": "squeeze",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -1644,7 +1644,7 @@
     {
       "op": "tanh",
       "op_id": "tanh",
-      "version": "v1",
+      "version": "",
       "wpt": "tanh",
       "wpt_progress": 4,
       "xnnpack_op": [
@@ -1655,8 +1655,8 @@
       "dml_op": [
         "ACTIVATION_TANH"
       ],
-      "dml_progress": 2,
-      "dml_chromium_version_added": "",
+      "dml_progress": 3,
+      "dml_chromium_version_added": "Chromium fork",
       "tflite_op": [
         ""
       ],
@@ -1672,7 +1672,7 @@
     {
       "op": "transpose",
       "op_id": "transpose",
-      "version": "v1",
+      "version": "",
       "wpt": "transpose",
       "wpt_progress": 4,
       "xnnpack_op": [
