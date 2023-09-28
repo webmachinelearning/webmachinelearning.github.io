@@ -100,4 +100,4 @@ console.log('Output value: ' + outputs.output.data);
 // Output value: 2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.25
 ```
 
-Try the live version of the [WebNN simple graphs example](hhttps://webmachinelearning.github.io/webnn-samples/code/).
+Try the live version of the [WebNN simple graphs example](https://webmachinelearning.github.io/webnn-samples/code/).
