@@ -154,7 +154,7 @@ sup {
       <th>
         <img src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/chrome-dev/chrome-dev_128x128.png" />
         <img
-          src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/edge-canary/edge-canary_128x128.png" /> <sup>5</sup>
+          src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/edge-canary/edge-canary_128x128.png" /> <sup>6</sup>
       </th>
       <th>Operations
       </th>
@@ -200,13 +200,16 @@ sup {
     </div>
 </div> 
 
-The total number of WebNN ops is 60. This table currently lists ops that are implemented or WIP by multiple backends.
+The total number of WebNN ops is 60. This table currently lists ops that are implemented or WIP by multiple backends
 
 <sup>[1]</sup> XNNPack node definition in [`xnn_define_*`](https://github.com/google/XNNPACK/blob/master/include/xnnpack.h)<br/>
 <sup>[2]</sup> [DirectML](https://learn.microsoft.com/en-us/windows/win32/api/_directml/) API<br/>
 <sup>[3]</sup> TensorFlow Lite built-in operators [`kTfLiteBuiltin*`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/delegates/xnnpack/xnnpack_delegate.cc)<br/>
 <sup>[4]</sup> ONNX [`Operator Schemas`](https://github.com/onnx/onnx/blob/main/docs/Operators.md) and [`WebNN EP Helper`](https://github.com/microsoft/onnxruntime/blob/main/onnxruntime/core/providers/webnn/builders/helper.h)<br/>
-<sup>[5]</sup> Currently enabled in [Google Chrome Dev](https://www.google.com/chrome/dev/) and [Microsoft Edge Canary](https://www.microsoftedgeinsider.com/en-us/download/canary) channels with #enable-experimental-web-platform-features flag.
+<sup>[5]</sup> Enabled in [Google Chrome](https://www.google.com/chrome/dev/) and [Microsoft Edge](https://www.microsoftedgeinsider.com/en-us/download/canary) with `#enable-experimental-web-platform-features` flag<br/>
+<sup>[6]</sup> Enabled in [Google Chrome](https://www.google.com/chrome/dev/) and [Microsoft Edge](https://www.microsoftedgeinsider.com/en-us/download/canary) in command line with flags on Windows 11 21H2 or higher: 
+`"%LOCALAPPDATA%\Google\Chrome SxS\Application\chrome.exe" --enable-features=MachineLearningNeuralNetworkService --enable-experimental-web-platform-features`
+
 
 <script>
   const qS = (selector) => {
