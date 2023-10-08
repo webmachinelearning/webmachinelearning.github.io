@@ -42,8 +42,8 @@
       "dml_op": [
         "ELEMENT_WISE_CLIP"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "Chromium fork",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M119",
       "tflite_op": [
         "ReluN1To1"
       ],
@@ -101,8 +101,8 @@
       "dml_op": [
         "CONVOLUTION"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "Chromium fork",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M119",
       "tflite_op": [
         "Conv2d",
         "DepthwiseConv2d"
@@ -159,8 +159,8 @@
       "dml_op": [
         "ELEMENT_WISE_ADD"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "Chromium fork",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M119",
       "tflite_op": [
         "Add"
       ],
@@ -187,8 +187,8 @@
       "dml_op": [
         "ELEMENT_WISE_SUBTRACT"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "Chromium fork",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M119",
       "tflite_op": [
         "Sub"
       ],
@@ -215,8 +215,8 @@
       "dml_op": [
         "ELEMENT_WISE_MULTIPLY"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "Chromium fork",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M119",
       "tflite_op": [
         "Mul"
       ],
@@ -243,8 +243,8 @@
       "dml_op": [
         "ELEMENT_WISE_DIVIDE"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "Chromium fork",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M119",
       "tflite_op": [
         "Div"
       ],
@@ -271,8 +271,8 @@
       "dml_op": [
         "ELEMENT_WISE_MAX"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "Chromium fork",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M119",
       "tflite_op": [
         "Maximum"
       ],
@@ -299,8 +299,8 @@
       "dml_op": [
         "ELEMENT_WISE_MIN"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "Chromium fork",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M119",
       "tflite_op": [
         "Minimum"
       ],
@@ -328,8 +328,8 @@
       "dml_op": [
         "ELEMENT_WISE_POW"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "Chromium fork",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M119",
       "tflite_op": [
         "Sqrt",
         "Square"
@@ -637,8 +637,8 @@
       "dml_op": [
         "GEMM"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "Chromium fork",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M119",
       "tflite_op": [
         "FullyConnected"
       ],
@@ -974,8 +974,8 @@
       "dml_op": [
         "AVERAGE_POOLING"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "Chromium fork",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M119",
       "tflite_op": [
         "AveragePool2d",
         "Mean"
@@ -1033,8 +1033,8 @@
       "dml_op": [
         "MAX_POOLING2"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "Chromium fork",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M119",
       "tflite_op": [
         "MaxPool2d"
       ],
@@ -1371,8 +1371,8 @@
       "dml_op": [
         "ACTIVATION_RELU"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "Chromium fork",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M119",
       "tflite_op": [
         "Relu"
       ],
@@ -1427,8 +1427,8 @@
       "dml_op": [
         "Supported by tensor strides"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "Chromium fork",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M119",
       "tflite_op": [
         "Reshape"
       ],
@@ -1512,8 +1512,8 @@
       "dml_op": [
         "ACTIVATION_SOFTMAX"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "Chromium fork",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M119",
       "tflite_op": [
         "Softmax"
       ],
