@@ -15,7 +15,7 @@ The group invites browser engine developers, hardware vendors, web application d
 
 <!-- more -->
 
-In order to [join the group](https://www.w3.org/community/webmachinelearning/join"), you will need a [W3C account](https://www.w3.org/accounts/request)). Please note, however, that [W3C Membership](https://www.w3.org/community/about/faq/#is-w3c-membership-required-to-participate-in-a-community-or-business-group) is not required to join a Community Group.
+In order to [join the group](https://www.w3.org/community/webmachinelearning/join), you will need a [W3C account](https://www.w3.org/accounts/request). Please note, however, that [W3C Membership](https://www.w3.org/community/about/faq/#is-w3c-membership-required-to-participate-in-a-community-or-business-group) is not required to join a Community Group.
 
 
 This is a community initiative. This group was originally proposed on 2018-10-03 by Anssi Kostiainen. The following people supported its creation: Anssi Kostiainen, Rijubrata Bhaumik, Zoltan Kis, Mike O&#039;Neill, Philip Laszkowicz, Tomoyuki Shimizu. W3C&#8217;s hosting of this group does not imply endorsement of the activities.

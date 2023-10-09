@@ -10,13 +10,13 @@ toc: true
 
 ## Introduction
 
-Machine Learning (ML) is a branch of Artificial Intelligence. A subfield of ML called Deep Learning with its various neural network architectures enables new compelling user experiences for web applications. [Use cases](https://www.w3.org/TR/webnn/#usecases) range from improved video conferencing to accessibility-improving features, with potential improved privacy over cloud-based solutions. Enabling these use cases and more is the focus of the newly launched [Web Machine Learning Working Group](https://www.w3.org/groups/wg/webmachinelearning").
+Machine Learning (ML) is a branch of Artificial Intelligence. A subfield of ML called Deep Learning with its various neural network architectures enables new compelling user experiences for web applications. [Use cases](https://www.w3.org/TR/webnn/#usecases) range from improved video conferencing to accessibility-improving features, with potential improved privacy over cloud-based solutions. Enabling these use cases and more is the focus of the newly launched [Web Machine Learning Working Group](https://www.w3.org/groups/wg/webmachinelearning).
 
 ![WebNN Logo]({{ '/assets/images/webml-logo-sm.png' | relative_url }})
 
 ## Progress
 
-While some of these use cases can be implemented in-device in a constrained manner with existing Web APIs (e.g. WebGL graphics API or in the future [WebGPU](https://gpuweb.github.io/gpuweb/), the lack of access to platform capabilities such as dedicated ML hardware accelerators and native instructions constraint the scope of experiences and leads to inefficient implementations on modern hardware.
+While some of these use cases can be implemented in-device in a constrained manner with existing Web APIs (e.g. WebGL graphics API or in the future [WebGPU](https://gpuweb.github.io/gpuweb/)), the lack of access to platform capabilities such as dedicated ML hardware accelerators and native instructions constraint the scope of experiences and leads to inefficient implementations on modern hardware.
 
 <!-- more -->
 
@@ -26,7 +26,7 @@ With these design goals in mind, a [W3C Community Group](https://www.w3.org/comm
 
 > “Having access to the native ML accelerators, machine learning frameworks such as TensorFlow.js can greatly improve model execution efficiency and truly democratize ML for web developers.”
 >
-> – Ping Yu, TLM for [TensorFlow.js](https://www.tensorflow.org/js") at Google
+> – Ping Yu, TLM for [TensorFlow.js](https://www.tensorflow.org/js) at Google
 
 > “The [early empirical results from the Web Neural Network API implementations](https://www.w3.org/2020/06/machine-learning-workshop/talks/access_purpose_built_ml_hardware_with_web_neural_network_api.html#slide-10) demonstrate tremendous power &amp; performance improvements of the Web AI workloads. Through access to the full native AI capabilities of the modern heterogeneous hardware, the Web Neural Network API enables a whole new transformative class of intelligent user experiences on the Open Web Platform across a variety of hardware, software, and device types.”
 >
