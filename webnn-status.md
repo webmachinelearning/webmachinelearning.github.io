@@ -200,7 +200,7 @@ sup {
     </div>
 </div> 
 
-The total number of WebNN ops is 60. This table currently lists ops that are implemented or WIP by multiple backends
+The total number of WebNN ops is 78. This table currently lists ops that are implemented or WIP by multiple backends
 
 <sup>[1]</sup> XNNPack node definition in [`xnn_define_*`](https://github.com/google/XNNPACK/blob/master/include/xnnpack.h)<br/>
 <sup>[2]</sup> [DirectML](https://learn.microsoft.com/en-us/windows/win32/api/_directml/) API<br/>
@@ -222,6 +222,7 @@ The total number of WebNN ops is 60. This table currently lists ops that are imp
   
   const init = () => {
     let ops = document.querySelector('#ops');
+    // fetch("https://webmachinelearning.github.io/assets/json/webnn_status.json")
     fetch("https://webmachinelearning.github.io/assets/json/webnn_status.json")
       .then(response => response.json())
       .then(data => {
@@ -456,7 +457,7 @@ The total number of WebNN ops is 60. This table currently lists ops that are imp
   }
 
   const count = () => {
-    let spec_defined_total = 60; 
+    let spec_defined_total = 78;
 
     let spec_s = qSA('.spec').length;
     let spec_percentage = (spec_s / spec_defined_total * 100).toFixed(1) ;
