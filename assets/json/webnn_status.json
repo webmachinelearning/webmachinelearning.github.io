@@ -2162,7 +2162,7 @@
       "xnnpack_progress": 2,
       "xnnpack_chromium_version_added": "",
       "dml_op": [
-        "DIAGONAL_MATRIX"
+        ""
       ],
       "dml_progress": 3,
       "dml_chromium_version_added": "",
