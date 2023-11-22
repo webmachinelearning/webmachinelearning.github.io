@@ -222,7 +222,6 @@ The total number of WebNN ops is 78. This table currently lists ops that are imp
   
   const init = () => {
     let ops = document.querySelector('#ops');
-    // fetch("https://webmachinelearning.github.io/assets/json/webnn_status.json")
     fetch("https://webmachinelearning.github.io/assets/json/webnn_status.json")
       .then(response => response.json())
       .then(data => {

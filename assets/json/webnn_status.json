@@ -22,9 +22,10 @@
       "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
-        ""
+        "BatchNormalization",
+        "meanVarianceNormalization"
       ],
-      "ort_progress": 2,
+      "ort_progress": 3,
       "ort_version_added": "",
       "notes": ""
     },
@@ -76,7 +77,7 @@
         "ReluN1To1"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "TF fork",
+      "tflite_version_added": "Fork",
       "ort_op": [
         "Clip"
       ],
@@ -106,7 +107,7 @@
         "Concatenation"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "TF fork",
+      "tflite_version_added": "Fork",
       "ort_op": [
         "Concat"
       ],
@@ -115,7 +116,7 @@
       "notes": ""
     },
     {
-      "op": "constant",
+      "op": "constant / fillSequence",
       "op_id": "constant",
       "version": "",
       "wpt": "constant",
@@ -136,11 +137,11 @@
         ""
       ],
       "tflite_progress": 2,
-      "tflite_version_added": "TF fork",
+      "tflite_version_added": "Fork",
       "ort_op": [
-        ""
+        "Range"
       ],
-      "ort_progress": 4,
+      "ort_progress": 3,
       "ort_version_added": "main",
       "notes": ""
     },
@@ -166,7 +167,7 @@
         "DepthwiseConv2d"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "TF fork",
+      "tflite_version_added": "Fork",
       "ort_op": [
         "Conv"
       ],
@@ -195,7 +196,7 @@
         "Convolution2DTransposeBias"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "TF fork",
+      "tflite_version_added": "Fork",
       "ort_op": [
         "ConvTranspose"
       ],
@@ -223,7 +224,7 @@
         "Add"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "TF fork",
+      "tflite_version_added": "Fork",
       "ort_op": [
         "Add"
       ],
@@ -251,7 +252,7 @@
         "Div"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "TF fork",
+      "tflite_version_added": "Fork",
       "ort_op": [
         "Div"
       ],
@@ -279,7 +280,7 @@
         "Maximum"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "TF fork",
+      "tflite_version_added": "Fork",
       "ort_op": [
         "Max"
       ],
@@ -307,7 +308,7 @@
         "Minimum"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "TF fork",
+      "tflite_version_added": "Fork",
       "ort_op": [
         "Min"
       ],
@@ -335,7 +336,7 @@
         "Mul"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "TF fork",
+      "tflite_version_added": "Fork",
       "ort_op": [
         "Mul"
       ],
@@ -365,7 +366,7 @@
         "Square"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "TF fork",
+      "tflite_version_added": "Fork",
       "ort_op": [
         "Pow"
       ],
@@ -393,7 +394,7 @@
         "Sub"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "TF fork",
+      "tflite_version_added": "Fork",
       "ort_op": [
         "Sub"
       ],
@@ -589,7 +590,7 @@
         "Abs"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "TF fork",
+      "tflite_version_added": "Fork",
       "ort_op": [
         "Abs"
       ],
@@ -617,7 +618,7 @@
         "Ceil"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "TF fork",
+      "tflite_version_added": "Fork",
       "ort_op": [
         "Ceil"
       ],
@@ -757,7 +758,7 @@
         "Floor"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "TF fork",
+      "tflite_version_added": "Fork",
       "ort_op": [
         "Floor"
       ],
@@ -813,7 +814,7 @@
         "Neg"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "TF fork",
+      "tflite_version_added": "Fork",
       "ort_op": [
         "Neg"
       ],
@@ -953,7 +954,7 @@
         "Elu"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "TF fork",
+      "tflite_version_added": "Fork",
       "ort_op": [
         "Elu"
       ],
@@ -1037,7 +1038,7 @@
         "FullyConnected"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "TF fork",
+      "tflite_version_added": "Fork",
       "ort_op": [
         "Gemm"
       ],
@@ -1067,9 +1068,9 @@
       "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
-        ""
+        "GRU"
       ],
-      "ort_progress": 2,
+      "ort_progress": 3,
       "ort_version_added": "",
       "notes": ""
     },
@@ -1095,9 +1096,9 @@
       "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
-        ""
+        "GRU"
       ],
-      "ort_progress": 2,
+      "ort_progress": 3,
       "ort_version_added": "",
       "notes": ""
     },
@@ -1149,7 +1150,7 @@
         "HardSwish"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "TF fork",
+      "tflite_version_added": "Fork",
       "ort_op": [
         "HardSwish"
       ],
@@ -1179,7 +1180,8 @@
       "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
-        "InstanceNormalization"
+        "InstanceNormalization",
+        "meanVarianceNormalization"
       ],
       "ort_progress": 4,
       "ort_version_added": "main",
@@ -1197,7 +1199,7 @@
       "xnnpack_progress": 2,
       "xnnpack_chromium_version_added": "",
       "dml_op": [
-        ""
+        "MEAN_VARIANCE_NORMALIZATION1"
       ],
       "dml_progress": 3,
       "dml_chromium_version_added": "",
@@ -1207,7 +1209,8 @@
       "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
-        "LayerNormalization"
+        "LayerNormalization",
+        "meanVarianceNormalization"
       ],
       "ort_progress": 4,
       "ort_version_added": "main",
@@ -1233,7 +1236,7 @@
         "LeakyRelu"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "TF fork",
+      "tflite_version_added": "Fork",
       "ort_op": [
         "LeakyRelu"
       ],
@@ -1291,9 +1294,9 @@
       "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
-        ""
+        "LSTM"
       ],
-      "ort_progress": 2,
+      "ort_progress": 3,
       "ort_version_added": "",
       "notes": ""
     },
@@ -1319,9 +1322,9 @@
       "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
-        ""
+        "LSTM"
       ],
-      "ort_progress": 2,
+      "ort_progress": 3,
       "ort_version_added": "",
       "notes": ""
     },
@@ -1373,7 +1376,7 @@
         "Pad"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "TF fork",
+      "tflite_version_added": "Fork",
       "ort_op": [
         "Pad"
       ],
@@ -1403,7 +1406,7 @@
         "Mean"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "TF fork",
+      "tflite_version_added": "Fork",
       "ort_op": [
         "AveragePool",
         "GlobalAveragePool"
@@ -1461,7 +1464,7 @@
         "MaxPool2d"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "TF fork",
+      "tflite_version_added": "Fork",
       "ort_op": [
         "GlobalMaxPool",
         "MaxPool"
@@ -1490,7 +1493,7 @@
         "Prelu"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "TF fork",
+      "tflite_version_added": "Fork",
       "ort_op": [
         "PRelu"
       ],
@@ -1855,7 +1858,7 @@
         "Relu"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "TF fork",
+      "tflite_version_added": "Fork",
       "ort_op": [
         "Relu"
       ],
@@ -1883,7 +1886,7 @@
         "ResizeBilinear"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "TF fork",
+      "tflite_version_added": "Fork",
       "ort_op": [
         "Resize"
       ],
@@ -1911,7 +1914,7 @@
         "Reshape"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "TF fork",
+      "tflite_version_added": "Fork",
       "ort_op": [
         "Reshape"
       ],
@@ -1939,7 +1942,7 @@
         "Logistic"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "TF fork",
+      "tflite_version_added": "Fork",
       "ort_op": [
         "Sigmoid"
       ],
@@ -1968,7 +1971,7 @@
         "StridedSlice"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "TF fork",
+      "tflite_version_added": "Fork",
       "ort_op": [
         "Slice"
       ],
@@ -1996,7 +1999,7 @@
         "Softmax"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "TF fork",
+      "tflite_version_added": "Fork",
       "ort_op": [
         "Softmax"
       ],
@@ -2083,7 +2086,7 @@
         "Split"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "TF fork",
+      "tflite_version_added": "Fork",
       "ort_op": [
         "Split"
       ],
@@ -2139,7 +2142,7 @@
         "Transpose"
       ],
       "tflite_progress": 3,
-      "tflite_version_added": "TF fork",
+      "tflite_version_added": "Fork",
       "ort_op": [
         "Transpose"
       ],
@@ -2159,7 +2162,7 @@
       "xnnpack_progress": 2,
       "xnnpack_chromium_version_added": "",
       "dml_op": [
-        ""
+        "DIAGONAL_MATRIX"
       ],
       "dml_progress": 3,
       "dml_chromium_version_added": "",
@@ -2169,7 +2172,7 @@
       "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
-        ""
+        "Trilu"
       ],
       "ort_progress": 3,
       "ort_version_added": "",
@@ -2187,7 +2190,7 @@
       "xnnpack_progress": 2,
       "xnnpack_chromium_version_added": "",
       "dml_op": [
-        ""
+        "ELEMENT_WISE_IF"
       ],
       "dml_progress": 3,
       "dml_chromium_version_added": "",
@@ -2200,8 +2203,8 @@
         "Where",
         "elementwiseIf"
       ],
-      "ort_progress": 3,
-      "ort_version_added": "",
+      "ort_progress": 4,
+      "ort_version_added": "main",
       "notes": ""
     }
   ]
