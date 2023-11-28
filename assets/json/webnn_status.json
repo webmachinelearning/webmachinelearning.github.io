@@ -584,8 +584,8 @@
       "dml_op": [
         "ELEMENT_WISE_ABS"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M121",
       "tflite_op": [
         "Abs"
       ],
@@ -612,8 +612,8 @@
       "dml_op": [
         "ELEMENT_WISE_CEIL"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M121",
       "tflite_op": [
         "Ceil"
       ],
@@ -668,8 +668,8 @@
       "dml_op": [
         "ELEMENT_WISE_COS"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M121",
       "tflite_op": [
         ""
       ],
@@ -724,8 +724,8 @@
       "dml_op": [
         "ELEMENT_WISE_EXP"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M121",
       "tflite_op": [
         ""
       ],
@@ -752,8 +752,8 @@
       "dml_op": [
         "ELEMENT_WISE_FLOOR"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M121",
       "tflite_op": [
         "Floor"
       ],
@@ -780,8 +780,8 @@
       "dml_op": [
         "ELEMENT_WISE_LOG"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M121",
       "tflite_op": [
         ""
       ],
@@ -808,8 +808,8 @@
       "dml_op": [
         "ELEMENT_WISE_NEGATE"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M121",
       "tflite_op": [
         "Neg"
       ],
@@ -864,8 +864,8 @@
       "dml_op": [
         "ELEMENT_WISE_SIN"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M121",
       "tflite_op": [
         ""
       ],
@@ -920,8 +920,8 @@
       "dml_op": [
         "ELEMENT_WISE_TAN"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M121",
       "tflite_op": [
         ""
       ],
@@ -948,7 +948,7 @@
       "dml_op": [
         "ACTIVATION_ELU"
       ],
-      "dml_progress": 3,
+      "dml_progress": 4,
       "dml_chromium_version_added": "M121",
       "tflite_op": [
         "Elu"
