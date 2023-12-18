@@ -1,6 +1,62 @@
 {
   "impl_status": [
     {
+      "op": "argMax",
+      "op_id": "argminmax",
+      "version": "",
+      "wpt": "arg_min_max",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_progress": 2,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": [
+        "REDUCE_FUNCTION_ARGMAX"
+      ],
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M122",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_progress": 2,
+      "tflite_version_added": "",
+      "ort_op": [
+        "ArgMax"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
+      "op": "argMin",
+      "op_id": "argminmax",
+      "version": "",
+      "wpt": "arg_min_max",
+      "wpt_progress": 4,
+      "xnnpack_op": [
+        ""
+      ],
+      "xnnpack_progress": 2,
+      "xnnpack_chromium_version_added": "",
+      "dml_op": [
+        "REDUCE_FUNCTION_ARGMIN"
+      ],
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M122",
+      "tflite_op": [
+        ""
+      ],
+      "tflite_progress": 2,
+      "tflite_version_added": "",
+      "ort_op": [
+        "ArgMin"
+      ],
+      "ort_progress": 4,
+      "ort_version_added": "main",
+      "notes": ""
+    },
+    {
       "op": "batchNormalization",
       "op_id": "batchnorm",
       "version": "",
@@ -14,8 +70,8 @@
       "dml_op": [
         "BATCH_NORMALIZATION"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M122",
       "tflite_op": [
         ""
       ],
@@ -25,8 +81,8 @@
         "BatchNormalization",
         "meanVarianceNormalization"
       ],
-      "ort_progress": 3,
-      "ort_version_added": "",
+      "ort_progress": 4,
+      "ort_version_added": "main",
       "notes": ""
     },
     {
@@ -43,8 +99,8 @@
       "dml_op": [
         "CAST"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M122",
       "tflite_op": [
         ""
       ],
@@ -351,11 +407,11 @@
       "wpt": "elementwise_binary",
       "wpt_progress": 4,
       "xnnpack_op": [
-        "square",
-        "square_root"
+        "",
+        ""
       ],
-      "xnnpack_progress": 4,
-      "xnnpack_chromium_version_added": "M120",
+      "xnnpack_progress": 1,
+      "xnnpack_chromium_version_added": "",
       "dml_op": [
         "ELEMENT_WISE_POW"
       ],
@@ -365,14 +421,14 @@
         "Sqrt",
         "Square"
       ],
-      "tflite_progress": 3,
-      "tflite_version_added": "Fork",
+      "tflite_progress": 1,
+      "tflite_version_added": "",
       "ort_op": [
         "Pow"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
-      "notes": ""
+      "ort_progress": 1,
+      "ort_version_added": "",
+      "notes": "XNNPACK: Pow will be replaced by Sqrt. square/square_root"
     },
     {
       "op": "element-wise binary / sub",
@@ -407,7 +463,7 @@
       "op_id": "logical",
       "version": "",
       "wpt": "elementwise_logical",
-      "wpt_progress": 3,
+      "wpt_progress": 4,
       "xnnpack_op": [
         ""
       ],
@@ -416,8 +472,8 @@
       "dml_op": [
         "ELEMENT_WISE_LOGICAL_EQUALS"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M122",
       "tflite_op": [
         ""
       ],
@@ -435,7 +491,7 @@
       "op_id": "logical",
       "version": "",
       "wpt": "elementwise_logical",
-      "wpt_progress": 3,
+      "wpt_progress": 4,
       "xnnpack_op": [
         ""
       ],
@@ -444,8 +500,8 @@
       "dml_op": [
         "ELEMENT_WISE_LOGICAL_GREATER_THAN"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M122",
       "tflite_op": [
         ""
       ],
@@ -463,7 +519,7 @@
       "op_id": "logical",
       "version": "",
       "wpt": "elementwise_logical",
-      "wpt_progress": 3,
+      "wpt_progress": 4,
       "xnnpack_op": [
         ""
       ],
@@ -472,8 +528,8 @@
       "dml_op": [
         "ELEMENT_WISE_LOGICAL_GREATER_THAN_OR_EQUAL"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M122",
       "tflite_op": [
         ""
       ],
@@ -491,7 +547,7 @@
       "op_id": "logical",
       "version": "",
       "wpt": "elementwise_logical",
-      "wpt_progress": 3,
+      "wpt_progress": 4,
       "xnnpack_op": [
         ""
       ],
@@ -500,8 +556,8 @@
       "dml_op": [
         "ELEMENT_WISE_LOGICAL_LESS_THAN"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M122",
       "tflite_op": [
         ""
       ],
@@ -519,7 +575,7 @@
       "op_id": "logical",
       "version": "",
       "wpt": "elementwise_logical",
-      "wpt_progress": 3,
+      "wpt_progress": 4,
       "xnnpack_op": [
         ""
       ],
@@ -528,8 +584,8 @@
       "dml_op": [
         "ELEMENT_WISE_LOGICAL_LESS_THAN_OR_EQUAL"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M122",
       "tflite_op": [
         ""
       ],
@@ -547,7 +603,7 @@
       "op_id": "logical",
       "version": "",
       "wpt": "elementwise_logical",
-      "wpt_progress": 3,
+      "wpt_progress": 4,
       "xnnpack_op": [
         ""
       ],
@@ -885,7 +941,8 @@
       "wpt": "elementwise_unary",
       "wpt_progress": 4,
       "xnnpack_op": [
-        ""
+        "square",
+        "square_root"
       ],
       "xnnpack_progress": 2,
       "xnnpack_chromium_version_added": "",
@@ -967,7 +1024,7 @@
       "op_id": "expand",
       "version": "",
       "wpt": "expand",
-      "wpt_progress": 3,
+      "wpt_progress": 4,
       "xnnpack_op": [
         ""
       ],
@@ -1004,8 +1061,8 @@
       "dml_op": [
         "GATHER"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M122",
       "tflite_op": [
         ""
       ],
@@ -1162,7 +1219,7 @@
       "op": "instanceNormalization",
       "op_id": "instancenorm",
       "version": "",
-      "wpt": "",
+      "wpt": "instance_normalization",
       "wpt_progress": 3,
       "xnnpack_op": [
         ""
@@ -1172,8 +1229,8 @@
       "dml_op": [
         "MEAN_VARIANCE_NORMALIZATION1"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M122",
       "tflite_op": [
         ""
       ],
@@ -1191,8 +1248,8 @@
       "op": "layerNormalization",
       "op_id": "layernorm",
       "version": "",
-      "wpt": "",
-      "wpt_progress": 3,
+      "wpt": "layer_normalization",
+      "wpt_progress": 4,
       "xnnpack_op": [
         ""
       ],
@@ -1201,8 +1258,8 @@
       "dml_op": [
         "MEAN_VARIANCE_NORMALIZATION1"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M122",
       "tflite_op": [
         ""
       ],
@@ -1496,62 +1553,6 @@
       "tflite_version_added": "Fork",
       "ort_op": [
         "PRelu"
-      ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
-      "notes": ""
-    },
-    {
-      "op": "reduction / reduceArgMax",
-      "op_id": "reduce",
-      "version": "",
-      "wpt": "reduction",
-      "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
-      ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
-      "dml_op": [
-        "REDUCE_FUNCTION_ARGMAX"
-      ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
-        "ArgMax"
-      ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
-      "notes": ""
-    },
-    {
-      "op": "reduction / reduceArgMin",
-      "op_id": "reduce",
-      "version": "",
-      "wpt": "reduction",
-      "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
-      ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
-      "dml_op": [
-        "REDUCE_FUNCTION_ARGMIN"
-      ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
-        "ArgMin"
       ],
       "ort_progress": 4,
       "ort_version_added": "main",
@@ -2183,7 +2184,7 @@
       "op_id": "where",
       "version": "",
       "wpt": "where",
-      "wpt_progress": 3,
+      "wpt_progress": 4,
       "xnnpack_op": [
         ""
       ],
@@ -2192,8 +2193,8 @@
       "dml_op": [
         "ELEMENT_WISE_IF"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M122",
       "tflite_op": [
         ""
       ],
