@@ -474,7 +474,13 @@ sup {
   const init = () => {
     let ops = document.querySelector('#ops');
     let opsFramework = document.querySelector('#ops_framework');
-    fetch("https://webmachinelearning.github.io/assets/json/webnn_status.json")
+
+    let jsonPath = "../assets/json/webnn_status.json";
+    if(location.hostname.toLowerCase('webmachinelearning.github.io') >-1) 
+    {
+      jsonPath = "https://webmachinelearning.github.io/assets/json/webnn_status.json";
+    }
+    fetch(jsonPath)
       .then(response => response.json())
       .then(data => {
         let impl_status = data.impl_status;
@@ -757,7 +763,7 @@ sup {
 
          oplistFramework = oplistFramework + `
           <tr>
-            <th id="spec_total"></th>
+            <th id="spec2_total"></th>
             <th id="ed_total" colspan="2"></th>
             <th id="ep_total" colspan="2"></th>
           </tr>
@@ -772,9 +778,9 @@ sup {
   const count = () => {
     let spec_defined_total = 78;
 
-    let spec_s = qSA('.spec').length;
-    let spec_percentage = (spec_s / spec_defined_total * 100).toFixed(1) ;
-    qS('#spec_total').innerHTML = `${spec_s} / ${spec_defined_total}, ${spec_percentage}%`;
+    let spec_s = qSA('.spec').length / 2;
+    qS('#spec_total').innerHTML = `${spec_s}`;
+    qS('#spec2_total').innerHTML = `${spec_s}`;
   
     let wpt_s = qSA('.wpt_s').length;
     let wpt_percentage = (wpt_s / spec_defined_total * 100).toFixed(1) ;
