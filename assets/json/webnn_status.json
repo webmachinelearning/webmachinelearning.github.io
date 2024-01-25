@@ -16,6 +16,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M122",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -44,6 +49,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M122",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -72,14 +82,18 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M122",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
       "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
-        "BatchNormalization",
-        "meanVarianceNormalization"
+        "BatchNormalization"
       ],
       "ort_progress": 4,
       "ort_version_added": "main",
@@ -90,7 +104,7 @@
       "op_id": "cast",
       "version": "",
       "wpt": "cast",
-      "wpt_progress": 3,
+      "wpt_progress": 4,
       "xnnpack_op": [
         ""
       ],
@@ -101,6 +115,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M122",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -129,6 +148,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M119",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         "ReluN1To1"
       ],
@@ -159,6 +183,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M120",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         "Concatenation"
       ],
@@ -189,6 +218,11 @@
       ],
       "dml_progress": 3,
       "dml_chromium_version_added": "",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -197,7 +231,7 @@
       "ort_op": [
         "Range"
       ],
-      "ort_progress": 3,
+      "ort_progress": 4,
       "ort_version_added": "main",
       "notes": ""
     },
@@ -218,6 +252,12 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M119",
+      "mlservice_op": [
+        "CONV_2D",
+        "DEPTHWISE_CONV_2D"
+      ],
+      "mlservice_progress": 4,
+      "mlservice_chromium_version_added": "M122",
       "tflite_op": [
         "Conv2d",
         "DepthwiseConv2d"
@@ -247,6 +287,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         "TransposeConv",
         "Convolution2DTransposeBias"
@@ -276,6 +321,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M119",
+      "mlservice_op": [
+        "ADD"
+      ],
+      "mlservice_progress": 4,
+      "mlservice_chromium_version_added": "M122",
       "tflite_op": [
         "Add"
       ],
@@ -304,6 +354,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M119",
+      "mlservice_op": [
+        "DIV"
+      ],
+      "mlservice_progress": 4,
+      "mlservice_chromium_version_added": "M122",
       "tflite_op": [
         "Div"
       ],
@@ -332,6 +387,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M119",
+      "mlservice_op": [
+        "MAXIMUM"
+      ],
+      "mlservice_progress": 4,
+      "mlservice_chromium_version_added": "M122",
       "tflite_op": [
         "Maximum"
       ],
@@ -360,6 +420,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M119",
+      "mlservice_op": [
+        "MINIMUM"
+      ],
+      "mlservice_progress": 4,
+      "mlservice_chromium_version_added": "M122",
       "tflite_op": [
         "Minimum"
       ],
@@ -388,6 +453,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M119",
+      "mlservice_op": [
+        "MUL"
+      ],
+      "mlservice_progress": 4,
+      "mlservice_chromium_version_added": "M122",
       "tflite_op": [
         "Mul"
       ],
@@ -417,6 +487,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M119",
+      "mlservice_op": [
+        "POW"
+      ],
+      "mlservice_progress": 4,
+      "mlservice_chromium_version_added": "M122",
       "tflite_op": [
         "Sqrt",
         "Square"
@@ -426,8 +501,8 @@
       "ort_op": [
         "Pow"
       ],
-      "ort_progress": 1,
-      "ort_version_added": "",
+      "ort_progress": 4,
+      "ort_version_added": "main",
       "notes": "XNNPACK: Pow will be replaced by Sqrt. square/square_root"
     },
     {
@@ -446,6 +521,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M119",
+      "mlservice_op": [
+        "SUB"
+      ],
+      "mlservice_progress": 4,
+      "mlservice_chromium_version_added": "M122",
       "tflite_op": [
         "Sub"
       ],
@@ -474,6 +554,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M122",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -502,6 +587,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M122",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -530,6 +620,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M122",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -558,6 +653,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M122",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -586,6 +686,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M122",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -614,6 +719,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -642,6 +752,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         "Abs"
       ],
@@ -670,6 +785,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         "Ceil"
       ],
@@ -683,7 +803,7 @@
       "notes": ""
     },
     {
-      "op": "element-wise unary / copy",
+      "op": "element-wise unary / identity",
       "op_id": "unary",
       "version": "",
       "wpt": "elementwise_unary",
@@ -698,6 +818,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -726,6 +851,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -754,6 +884,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -782,6 +917,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -810,6 +950,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         "Floor"
       ],
@@ -838,6 +983,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -866,6 +1016,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         "Neg"
       ],
@@ -894,6 +1049,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -922,6 +1082,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -944,13 +1109,18 @@
         "square",
         "square_root"
       ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "xnnpack_progress": 4,
+      "xnnpack_chromium_version_added": "M122",
       "dml_op": [
         "ELEMENT_WISE_SQRT"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -979,6 +1149,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -1007,6 +1182,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         "Elu"
       ],
@@ -1035,6 +1215,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -1052,7 +1237,7 @@
       "op_id": "gather",
       "version": "",
       "wpt": "gather",
-      "wpt_progress": 3,
+      "wpt_progress": 4,
       "xnnpack_op": [
         ""
       ],
@@ -1063,6 +1248,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M122",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -1091,6 +1281,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M119",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         "FullyConnected"
       ],
@@ -1119,13 +1314,18 @@
       ],
       "dml_progress": 2,
       "dml_chromium_version_added": "",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
       "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
-        "GRU"
+        "Gru"
       ],
       "ort_progress": 3,
       "ort_version_added": "",
@@ -1147,13 +1347,18 @@
       ],
       "dml_progress": 2,
       "dml_chromium_version_added": "",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
       "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
-        "GRU"
+        "GruCell"
       ],
       "ort_progress": 3,
       "ort_version_added": "",
@@ -1173,8 +1378,13 @@
       "dml_op": [
         "ACTIVATION_HARD_SIGMOID"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M123",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -1203,6 +1413,11 @@
       ],
       "dml_progress": 2,
       "dml_chromium_version_added": "",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         "HardSwish"
       ],
@@ -1220,7 +1435,7 @@
       "op_id": "instancenorm",
       "version": "",
       "wpt": "instance_normalization",
-      "wpt_progress": 3,
+      "wpt_progress": 4,
       "xnnpack_op": [
         ""
       ],
@@ -1231,14 +1446,18 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M122",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
       "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
-        "InstanceNormalization",
-        "meanVarianceNormalization"
+        "InstanceNormalization"
       ],
       "ort_progress": 4,
       "ort_version_added": "main",
@@ -1260,14 +1479,18 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M122",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
       "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
-        "LayerNormalization",
-        "meanVarianceNormalization"
+        "LayerNormalization"
       ],
       "ort_progress": 4,
       "ort_version_added": "main",
@@ -1289,6 +1512,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         "LeakyRelu"
       ],
@@ -1315,18 +1543,23 @@
       "dml_op": [
         "ACTIVATION_LINEAR"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M122",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
       "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
-        ""
+        "N/A"
       ],
-      "ort_progress": 2,
-      "ort_version_added": "",
+      "ort_progress": 4,
+      "ort_version_added": "main",
       "notes": ""
     },
     {
@@ -1345,6 +1578,11 @@
       ],
       "dml_progress": 2,
       "dml_chromium_version_added": "",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -1373,13 +1611,18 @@
       ],
       "dml_progress": 2,
       "dml_chromium_version_added": "",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
       "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
-        "LSTM"
+        "LSTMCell"
       ],
       "ort_progress": 3,
       "ort_version_added": "",
@@ -1401,6 +1644,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -1429,6 +1677,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M120",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         "Pad"
       ],
@@ -1458,6 +1711,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M119",
+      "mlservice_op": [
+        "AVERAGE_POOL_2D"
+      ],
+      "mlservice_progress": 4,
+      "mlservice_chromium_version_added": "M122",
       "tflite_op": [
         "AveragePool2d",
         "Mean"
@@ -1488,6 +1746,11 @@
       ],
       "dml_progress": 3,
       "dml_chromium_version_added": "",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -1517,6 +1780,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M119",
+      "mlservice_op": [
+        "MAX_POOL_2D"
+      ],
+      "mlservice_progress": 4,
+      "mlservice_chromium_version_added": "M122",
       "tflite_op": [
         "MaxPool2d"
       ],
@@ -1546,6 +1814,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M120",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         "Prelu"
       ],
@@ -1574,6 +1847,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -1602,6 +1880,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -1630,6 +1913,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -1658,6 +1946,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -1686,6 +1979,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -1714,6 +2012,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -1742,6 +2045,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -1770,6 +2078,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -1799,6 +2112,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -1827,6 +2145,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -1855,6 +2178,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M119",
+      "mlservice_op": [
+        "RELU"
+      ],
+      "mlservice_progress": 4,
+      "mlservice_chromium_version_added": "M122",
       "tflite_op": [
         "Relu"
       ],
@@ -1883,6 +2211,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         "ResizeBilinear"
       ],
@@ -1911,13 +2244,21 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M119",
+      "mlservice_op": [
+        "RESHAPE"
+      ],
+      "mlservice_progress": 4,
+      "mlservice_chromium_version_added": "M122",
       "tflite_op": [
         "Reshape"
       ],
       "tflite_progress": 3,
       "tflite_version_added": "Fork",
       "ort_op": [
-        "Reshape"
+        "Unsqueeze",
+        "Squeeze",
+        "Reshape",
+        "Flatten"
       ],
       "ort_progress": 4,
       "ort_version_added": "main",
@@ -1939,6 +2280,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         "Logistic"
       ],
@@ -1967,6 +2313,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M120",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         "Slice",
         "StridedSlice"
@@ -1974,7 +2325,8 @@
       "tflite_progress": 3,
       "tflite_version_added": "Fork",
       "ort_op": [
-        "Slice"
+        "Slice",
+        "Shape"
       ],
       "ort_progress": 4,
       "ort_version_added": "main",
@@ -1996,6 +2348,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M119",
+      "mlservice_op": [
+        "SOFTMAX"
+      ],
+      "mlservice_progress": 4,
+      "mlservice_chromium_version_added": "M122",
       "tflite_op": [
         "Softmax"
       ],
@@ -2022,8 +2379,13 @@
       "dml_op": [
         "ACTIVATION_SOFTPLUS"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M122",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -2050,8 +2412,13 @@
       "dml_op": [
         "ACTIVATION_SOFTSIGN"
       ],
-      "dml_progress": 3,
-      "dml_chromium_version_added": "",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M123",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -2083,6 +2450,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M120",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         "Split"
       ],
@@ -2111,6 +2483,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -2139,6 +2516,11 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M120",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         "Transpose"
       ],
@@ -2167,6 +2549,11 @@
       ],
       "dml_progress": 3,
       "dml_chromium_version_added": "",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
@@ -2195,14 +2582,18 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M122",
+      "mlservice_op": [
+        ""
+      ],
+      "mlservice_progress": 2,
+      "mlservice_chromium_version_added": "",
       "tflite_op": [
         ""
       ],
       "tflite_progress": 2,
       "tflite_version_added": "",
       "ort_op": [
-        "Where",
-        "elementwiseIf"
+        "Where"
       ],
       "ort_progress": 4,
       "ort_version_added": "main",
