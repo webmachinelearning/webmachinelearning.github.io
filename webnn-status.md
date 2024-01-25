@@ -476,7 +476,7 @@ sup {
     let opsFramework = document.querySelector('#ops_framework');
 
     let jsonPath = "../assets/json/webnn_status.json";
-    if(location.hostname.toLowerCase('webmachinelearning.github.io') >-1) 
+    if(location.hostname.toLowerCase().indexOf('webmachinelearning.github.io') >-1) 
     {
       jsonPath = "https://webmachinelearning.github.io/assets/json/webnn_status.json";
     }
