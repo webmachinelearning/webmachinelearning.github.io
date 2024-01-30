@@ -116,6 +116,10 @@ sup {
 .mt-2 {
   margin-top: 20px;
 }
+
+.tfop {
+  width: 200px;
+}
 </style>
 
 <table>
@@ -409,21 +413,25 @@ sup {
       <th colspan="4">JavaScript ML Frameworks Integration</th>
     </tr>
     <tr class="title">
-      <th colspan="2"><img
+      <th colspan="2">
+        <img src="https://onnxruntime.ai/images/svg/ONNX-Runtime-logo.svg" /><br />Execution Provider
+        <sup>7</sup>
+      </th>
+      <th colspan="2">
+          <img
           src="https://www.gstatic.com/devrel-devsite/prod/v8ec4d0a037302c47ae529ad4e3f06c9e782b3a31a381294b5a70403547dc6b12/tensorflow/images/lockup.svg">
-        Lite for TF.js<br />External Delegate <sup>7</sup></th>
-      <th colspan="2"><img src="https://onnxruntime.ai/images/svg/ONNX-Runtime-logo.svg" /><br />Execution Provider
+        Lite for TF.js<br />External Delegate
         <sup>8</sup>
       </th>
     </tr>
     <tr class="title">
       <th>Operations
       </th>
-      <th>Delegate Version
+      <th class="tfop">EP Version
       </th>
-      <th>Operations
+      <th class="tfop">Operations
       </th>
-      <th>EP Version
+      <th class="tfop">Delegate Version
       </th>
     </tr>
   </thead>
@@ -431,18 +439,18 @@ sup {
 </table>
 
 <div class="impl_status_framework">
-    <div class="title">TensorFlow.js/TFLite<br/>External Delegate</div>
     <div class="title">ONNX Runtime Web<br/>Execution Provider</div>
-    <div>
-        <div>✅ Supported (<span id="ed_supported"></span>)</div>
-        <div>⏳ Partly Implemented (<span id="ed_partlyimplemented"></span>)</div>
-        <div>🚀 Work in Progress (<span id="ed_workinprogress"></span>)</div>
-        <div>❌ Not Supported</div>
-    </div>
+    <div class="title">TensorFlow.js/TFLite<br/>External Delegate</div>
     <div>
         <div>✅ Supported (<span id="ep_supported"></span>)</div>
         <div>⏳ Partly Implemented (<span id="ep_partlyimplemented"></span>)</div>
         <div>🚀 Work in Progress (<span id="ep_workinprogress"></span>)</div>
+        <div>❌ Not Supported</div>
+    </div>
+    <div>
+        <div>✅ Supported (<span id="ed_supported"></span>)</div>
+        <div>⏳ Partly Implemented (<span id="ed_partlyimplemented"></span>)</div>
+        <div>🚀 Work in Progress (<span id="ed_workinprogress"></span>)</div>
         <div>❌ Not Supported</div>
     </div>
 </div> 
@@ -458,8 +466,9 @@ sup {
 <sup>[5]</sup> Enabled in [Google Chrome](https://www.google.com/chrome/canary/) and [Microsoft Edge](https://www.microsoftedgeinsider.com/en-us/download/canary) in command line with flags on Windows 11 21H2 or higher: 
 `"%LOCALAPPDATA%\Google\Chrome SxS\Application\chrome.exe" --enable-features=WebMachineLearningNeuralNetwork`<br/>
 <sup>[6]</sup> Enabled in [Google Chrome](https://www.google.com/chrome/dev/) with `#web-machine-learning-neural-network` flag<br/>
-<sup>[7]</sup> TensorFlow Lite built-in operators [`kTfLiteBuiltin*`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/delegates/xnnpack/xnnpack_delegate.cc)<br/>
-<sup>[8]</sup> ONNX [`Operator Schemas`](https://github.com/onnx/onnx/blob/main/docs/Operators.md) and [`WebNN EP Helper`](https://github.com/microsoft/onnxruntime/blob/main/onnxruntime/core/providers/webnn/builders/helper.h)
+<sup>[7]</sup> ONNX [`Operator Schemas`](https://github.com/onnx/onnx/blob/main/docs/Operators.md) and [`WebNN EP Helper`](https://github.com/microsoft/onnxruntime/blob/main/onnxruntime/core/providers/webnn/builders/helper.h)<br/>
+<sup>[8]</sup> TensorFlow Lite built-in operators [`kTfLiteBuiltin*`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/delegates/xnnpack/xnnpack_delegate.cc)
+
 
 
 <script>
@@ -745,8 +754,8 @@ sup {
           oplistFramework += `
               <tr>
                 ${spec}
-                ${tflite}
                 ${ort}
+                ${tflite}
               </tr>
           `;
         }
@@ -764,8 +773,8 @@ sup {
          oplistFramework = oplistFramework + `
           <tr>
             <th id="spec2_total"></th>
-            <th id="ed_total" colspan="2"></th>
             <th id="ep_total" colspan="2"></th>
+            <th id="ed_total" colspan="2"></th>
           </tr>
         `;
         ops.innerHTML = oplist;
