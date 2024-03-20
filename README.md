@@ -16,11 +16,10 @@ bundle exec jekyll serve
 Server address: http://127.0.0.1:4000/
 ```
 
-## Contributions
+## Contributing
 
 We welcome contributions! Please see the [contribution guidelines](CONTRIBUTING.md).
 
 ## License
 
 All documents in this repository are licensed by contributors under the [W3C Software and Document license](https://www.w3.org/Consortium/Legal/copyright-software).
-
