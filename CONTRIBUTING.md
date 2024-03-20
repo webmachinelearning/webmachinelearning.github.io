@@ -6,7 +6,13 @@ First of all, thank you very much for your interest in contributing to Web Machi
 
 This repository contains raw data from the [WebNN Implementation Status](https://webmachinelearning.github.io/webnn-status/) tables. If you are interested in updating or adding to the WebNN Implementation Status data on the site, please edit the [webnn_status.json](./assets/json/webnn_status.json) file.
 
-### WebNN Implementation Status data
+The WebNN API [browser compat data (BCD)](https://github.com/mdn/browser-compat-data/pull/22569) is the upstream and we will keep it up to date as a first priority. The [webnn_status.json](./assets/json/webnn_status.json) raw data is the enhancement of [WebNN API BCD](https://github.com/mdn/browser-compat-data/pull/22569).
+
+- WebNN BCD data is unable to support WebNN mapped ops of each native backends
+- WebNN BCD data doesn't include WPT tests and test results
+- WebNN BCD data is unable to cover JavaScript ML Frameworks integration status
+
+### WebNN Implementation Status Data
 
 The [webnn_status.json](./assets/json/webnn_status.json) includes every feature found for [WebNN Implementation Status](https://webmachinelearning.github.io/webnn-status/). Maintaining this file on GitHub allows anyone to update or contribute to the support data on the site.
 
