@@ -18,7 +18,7 @@ Server address: http://127.0.0.1:4000/
 
 ## Contributing
 
-We welcome contributions! Please see the [contribution guidelines](CONTRIBUTING.md).
+We welcome contributions! Please see the [contributing guidelines](CONTRIBUTING.md).
 
 ## License
 
