@@ -462,14 +462,13 @@ sup {
 <sup>[1]</sup> XNNPack node definition in [`xnn_define_*`](https://github.com/google/XNNPACK/blob/master/include/xnnpack.h)<br/>
 <sup>[2]</sup> [DirectML](https://learn.microsoft.com/en-us/windows/win32/api/_directml/) API<br/>
 <sup>[3]</sup> [MLService / TensorFlow Lite Builtin Options](https://source.chromium.org/chromium/chromium/src/+/main:third_party/tflite/src/tensorflow/lite/schema/schema_generated.h;l=1246?q=BuiltinOptions_SoftmaxOptions&ss=chromium%2Fchromium%2Fsrc)<br/>
-<sup>[4]</sup> Enabled in [Google Chrome](https://www.google.com/chrome/dev/) and [Microsoft Edge](https://www.microsoftedgeinsider.com/en-us/download/canary) with `#web-machine-learning-neural-network` flag<br/>
-<sup>[5]</sup> Enabled in [Google Chrome](https://www.google.com/chrome/canary/) and [Microsoft Edge](https://www.microsoftedgeinsider.com/en-us/download/canary) in command line with flags on Windows 11 21H2 or higher: 
-`"%LOCALAPPDATA%\Google\Chrome SxS\Application\chrome.exe" --enable-features=WebMachineLearningNeuralNetwork`<br/>
-<sup>[6]</sup> Enabled in [Google Chrome](https://www.google.com/chrome/dev/) with `#web-machine-learning-neural-network` flag<br/>
+<sup>[4]</sup> This feature is experimental. Can be enabled by setting `#web-machine-learning-neural-network` to `Enabled`. Supported on CPUs on Windows.<br/>
+<sup>[5]</sup> This feature is experimental. Can be enabled by setting `#web-machine-learning-neural-network` to `Enabled`. Supported on GPUs on Windows 11 21H2 or higher.<br/>
+<sup>[6]</sup> This feature is experimental. Can be enabled by setting `#web-machine-learning-neural-network` to `Enabled`. Supported on CPUs on ChromeOS.<br/>
 <sup>[7]</sup> ONNX [`Operator Schemas`](https://github.com/onnx/onnx/blob/main/docs/Operators.md) and [`WebNN EP Helper`](https://github.com/microsoft/onnxruntime/blob/main/onnxruntime/core/providers/webnn/builders/helper.h)<br/>
 <sup>[8]</sup> TensorFlow Lite built-in operators [`kTfLiteBuiltin*`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/delegates/xnnpack/xnnpack_delegate.cc)
 
-
+Interested in contributing to this implementation status page? See <a href="https://github.com/webmachinelearning/webmachinelearning.github.io/blob/main/CONTRIBUTING.md">contributing guidelines</a>.
 
 <script>
   const qS = (selector) => {
@@ -803,7 +802,7 @@ sup {
     qS('#x_supported').innerHTML = x_s;
     qS('#x_partlyimplemented').innerHTML = x_pi;
     qS('#x_workinprogress').innerHTML = x_wip;
-        
+
     let dml_s = qSA('.dml_s').length;
     let dml_pi = qSA('.dml_pi').length;
     let dml_wip = qSA('.dml_wip').length;

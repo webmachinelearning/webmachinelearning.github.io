@@ -1314,7 +1314,7 @@
       "dml_op": [
         "GRU"
       ],
-      "dml_progress": 2,
+      "dml_progress": 3,
       "dml_chromium_version_added": "",
       "mlservice_op": [
         ""
@@ -1347,7 +1347,7 @@
       "dml_op": [
         "GRU"
       ],
-      "dml_progress": 2,
+      "dml_progress": 3,
       "dml_chromium_version_added": "",
       "mlservice_op": [
         ""
@@ -1578,8 +1578,8 @@
       "dml_op": [
         "LSTM"
       ],
-      "dml_progress": 2,
-      "dml_chromium_version_added": "",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M125",
       "mlservice_op": [
         ""
       ],
@@ -1611,7 +1611,7 @@
       "dml_op": [
         "LSTM"
       ],
-      "dml_progress": 2,
+      "dml_progress": 3,
       "dml_chromium_version_added": "",
       "mlservice_op": [
         ""
@@ -2201,8 +2201,8 @@
       "op": "resample2d",
       "op_id": "resample2d",
       "version": "",
-      "wpt": "",
-      "wpt_progress": 3,
+      "wpt": "resample2d",
+      "wpt_progress": 4,
       "xnnpack_op": [
         "static_resize_bilinear_2d"
       ],
@@ -2548,7 +2548,7 @@
       "xnnpack_progress": 2,
       "xnnpack_chromium_version_added": "",
       "dml_op": [
-        ""
+        "Supported by combined operations"
       ],
       "dml_progress": 3,
       "dml_chromium_version_added": "",
