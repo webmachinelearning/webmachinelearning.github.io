@@ -63,8 +63,8 @@ Currently the following feature information can be modified for WebNN XNNPACK, D
 * **[*]_version_added** - The Chromium or the JavaScript ML framework version where support for the feature was added
 * **[*]_progress**
     * **1** - Not Implemented / Not Supported
-    * **2** - Work in Progress
-    * **3** - Partial Implementation
+    * **2** - In Planning
+    * **3** - Work in Progress
     * **4** - Implemented / Supported
 
 ## License
