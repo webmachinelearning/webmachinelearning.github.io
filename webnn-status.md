@@ -166,9 +166,9 @@ sup {
       <th colspan="2"><img src="https://wpt.fyi/static/win.svg"> <img
           src="https://wpt.fyi/static/linux.svg"><br />XNNPack · CPU
         backend
-        <sup>1</sup>
+        <sup><a href="#note-1">1</a></sup>
       </th>
-      <th colspan="2"><img src="https://wpt.fyi/static/win.svg"><br />DirectML · GPU backend <sup>2</sup>
+      <th colspan="2"><img src="https://wpt.fyi/static/win.svg"><br />DirectML · GPU backend <sup><a href="#note-2">2</a></sup>
       </th>
          <th colspan="2">
           <svg id="cros"
@@ -323,7 +323,7 @@ sup {
             </g>
           </svg>
 
-         <br />MLService · CPU backend <sup>3</sup>
+         <br />MLService · CPU backend <sup><a href="#note-3">3</a></sup>
       </th>
     </tr>
     <tr class="title">
@@ -332,17 +332,17 @@ sup {
       <th>
         <img src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/chrome-canary/chrome-canary_128x128.png" />
         <img
-          src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/edge-canary/edge-canary_128x128.png" /> <sup>4</sup>
+          src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/edge-canary/edge-canary_128x128.png" /> <sup><a href="#note-4">4</a></sup>
       </th>
       <th>Operations</th>
       <th>
         <img src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/chrome-canary/chrome-canary_128x128.png" />
         <img
-          src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/edge-canary/edge-canary_128x128.png" /> <sup>5</sup>
+          src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/edge-canary/edge-canary_128x128.png" /> <sup><a href="#note-5">5</a></sup>
       </th>
        <th>Operations</th>
       <th>
-        <img src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/chrome-canary/chrome-canary_128x128.png" /> <sup>6</sup>
+        <img src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/chrome-canary/chrome-canary_128x128.png" /> <sup><a href="#note-6">6</a></sup>
       </th>
     </tr>
   </thead>
@@ -415,13 +415,13 @@ sup {
     <tr class="title">
       <th colspan="2">
         <img src="https://onnxruntime.ai/images/svg/ONNX-Runtime-logo.svg" /><br />Execution Provider
-        <sup>7</sup>
+        <sup><a href="#note-7">7</a></sup>
       </th>
       <th colspan="2">
           <img
           src="https://www.gstatic.com/devrel-devsite/prod/v8ec4d0a037302c47ae529ad4e3f06c9e782b3a31a381294b5a70403547dc6b12/tensorflow/images/lockup.svg">
         Lite for TF.js<br />External Delegate
-        <sup>8</sup>
+        <sup><a href="#note-8">8</a></sup>
       </th>
     </tr>
     <tr class="title">
@@ -459,14 +459,14 @@ sup {
   The total number of WebNN ops is 78. These tables currently lists ops that are implemented or work in progress by multiple backends and JavaScript machine learning frameworks.
 </div>
 
-<sup>[1]</sup> XNNPack node definition in [`xnn_define_*`](https://github.com/google/XNNPACK/blob/master/include/xnnpack.h)<br/>
-<sup>[2]</sup> [DirectML](https://learn.microsoft.com/en-us/windows/win32/api/_directml/) API<br/>
-<sup>[3]</sup> [MLService / TensorFlow Lite Builtin Options](https://source.chromium.org/chromium/chromium/src/+/main:third_party/tflite/src/tensorflow/lite/schema/schema_generated.h;l=1246?q=BuiltinOptions_SoftmaxOptions&ss=chromium%2Fchromium%2Fsrc)<br/>
-<sup>[4]</sup> This feature is experimental. Can be enabled by setting `#web-machine-learning-neural-network` to `Enabled`. Supported on CPUs on Windows.<br/>
-<sup>[5]</sup> This feature is experimental. Can be enabled by setting `#web-machine-learning-neural-network` to `Enabled`. Supported on GPUs on Windows 11 21H2 or higher.<br/>
-<sup>[6]</sup> This feature is experimental. Can be enabled by setting `#web-machine-learning-neural-network` to `Enabled`. Supported on CPUs on ChromeOS.<br/>
-<sup>[7]</sup> ONNX [`Operator Schemas`](https://github.com/onnx/onnx/blob/main/docs/Operators.md) and [`WebNN EP Helper`](https://github.com/microsoft/onnxruntime/blob/main/onnxruntime/core/providers/webnn/builders/helper.h)<br/>
-<sup>[8]</sup> TensorFlow Lite built-in operators [`kTfLiteBuiltin*`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/delegates/xnnpack/xnnpack_delegate.cc)
+<sup id="note-1">[1]</sup> XNNPack node definition in [`xnn_define_*`](https://github.com/google/XNNPACK/blob/master/include/xnnpack.h)<br/>
+<sup id="note-2">[2]</sup> [DirectML](https://learn.microsoft.com/en-us/windows/win32/api/_directml/) API<br/>
+<sup id="note-3">[3]</sup> [MLService / TensorFlow Lite Builtin Options](https://source.chromium.org/chromium/chromium/src/+/main:third_party/tflite/src/tensorflow/lite/schema/schema_generated.h;l=1246?q=BuiltinOptions_SoftmaxOptions&ss=chromium%2Fchromium%2Fsrc)<br/>
+<sup id="note-4">[4]</sup> This feature is experimental. Can be enabled by setting `#web-machine-learning-neural-network` flag to `Enabled`. Supported on CPUs on Windows.<br/>
+<sup id="note-5">[5]</sup> This feature is experimental. Can be enabled by setting `#web-machine-learning-neural-network` flag to `Enabled`. Supported on GPUs on Windows 11 21H2 or higher.<br/>
+<sup id="note-6">[6]</sup> This feature is experimental. Can be enabled by setting `#web-machine-learning-neural-network` flag to `Enabled`. Supported on CPUs on ChromeOS.<br/>
+<sup id="note-7">[7]</sup> ONNX [`Operator Schemas`](https://github.com/onnx/onnx/blob/main/docs/Operators.md) and [`WebNN EP Helper`](https://github.com/microsoft/onnxruntime/blob/main/onnxruntime/core/providers/webnn/builders/helper.h)<br/>
+<sup id="note-8">[8]</sup> TensorFlow Lite built-in operators [`kTfLiteBuiltin*`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/delegates/xnnpack/xnnpack_delegate.cc)
 
 Interested in contributing to this implementation status page? See <a href="https://github.com/webmachinelearning/webmachinelearning.github.io/blob/main/CONTRIBUTING.md">contributing guidelines</a>.
 
@@ -820,7 +820,7 @@ Interested in contributing to this implementation status page? See <a href="http
     qS('#mlservice_supported').innerHTML = mlservice_s;
     qS('#mlservice_partlyimplemented').innerHTML = mlservice_pi;
     qS('#mlservice_workinprogress').innerHTML = mlservice_wip;
- 
+
     let ed_s = qSA('.ed_s').length;
     let ed_pi = qSA('.ed_pi').length;
     let ed_wip = qSA('.ed_wip').length;
