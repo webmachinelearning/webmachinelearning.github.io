@@ -503,7 +503,7 @@ Interested in contributing to this implementation status page? See <a href="http
           let wpt = '';
           if (s.wpt_progress === 4) {
             wpt = `<td class="wpt_s">
-                      <a href="https://wpt.fyi/results/webnn/conformance_tests/${s.wpt}.https.any.html?label=master&amp;label=experimental">📈</a> 
+                      <a href="https://wpt.fyi/results/webnn/conformance_tests/${s.wpt}.https.any.html%3Fcpu?label=experimental&label=master&aligned" title="WPT conformance test result on CPU">📈</a>
                       <a href="https://github.com/web-platform-tests/wpt/blob/master/webnn/conformance_tests/${s.wpt}.https.any.js">🧪</a></td>`
           } 
           if (s.wpt_progress === 3) {
