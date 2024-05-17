@@ -7,13 +7,13 @@ avatar: https://avatars.githubusercontent.com/u/722868?s=200&v=4
 categories: get-started
 ---
 
-## Introduction to Web Neural Network API (WebNN)
-
 The Web Neural Network API (WebNN) brings accelerated machine learning capabilities directly to web applications. With WebNN, developers can harness the power of neural networks within the browser environment, enabling a wide range of AI-driven use cases without relying on external servers or plugins.
 
 ### What is WebNN?
 
 WebNN is a JavaScript API that provides a high-level interface for executing neural network inference tasks efficiently on various hardware accelerators, such as CPUs, GPUs, and dedicated AI chips (sometimes called NPUs or TPUs). By utilizing hardware acceleration, WebNN enables faster and more power-efficient execution of machine learning models, making it ideal for real-time applications and scenarios where latency is critical.
+
+<!-- more -->
 
 ### Programming Model
 
