@@ -1,5 +1,26 @@
 .arch svg {
-  max-height: 340px;
+  max-height: 300px;
+}
+
+@media only screen and (max-width: 415px) {
+  .arch svg {
+    max-height: auto;
+    max-width: 90vw;
+  }
+}
+
+@media only screen and (min-width: 416px) and (max-width: 800px) {
+  .arch svg {
+    max-height: auto;
+    max-width: 60vw;
+  }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1024px) {
+  .arch svg {
+    max-height: auto;
+    max-width: 60vw;
+  }
 }
 
 #webnn:hover {
@@ -8,31 +29,82 @@
   cursor: pointer;
 }
 
+#wasm:hover {
+  fill: #F9B508;
+  stroke: #F9B508;
+  cursor: pointer;
+}
+
+#wasm:hover ~ #text-wasm {
+  fill: #fff;
+}
+
+#wasm:hover ~ .arrow.wasm {
+  fill: #F9B508;
+  stroke: #F9B508;
+  animation: 0.5s draw-wasm linear forwards;
+}
+
+#webgpu:hover {
+  fill: #b508e0;
+  stroke: #b508e0;
+  cursor: pointer;
+}
+
+#webgpu:hover ~ #text-webgpu {
+  fill: #fff;
+}
+
+#webgpu:hover ~ .arrow.webgpu {
+  fill: #b508e0;
+  stroke: #b508e0;
+  animation: 0.5s draw-webgpu linear forwards;
+}
+
 /* #26CC0B */
 .arch text:hover:not(.webgpu, .webnn, .webassembly) {
   fill: $brand-color;
 }
 
-.webnn:hover ~ .nnline,
-.webnn:hover ~ .nnpath {
+#webnn:hover ~ .arrow.webnn {
   fill: #00C7FD;
   stroke: #00C7FD;
   animation: 0.5s draw linear forwards;
 }
 
-.webnn:hover ~ #directml {
+#webnn:hover ~ #dml {
   fill: #FD0D8E;
   stroke: #FD0D8E;
 }
 
-.webnn:hover ~ #tflite {
+#webnn:hover ~ #tflite {
   fill: #F9B508;
   stroke: #F9B508;
 }
 
-.webnn:hover ~ #coreml {
+#webnn:hover ~ #coreml {
   fill: #26cc0b;
   stroke: #26cc0b;
+}
+
+.wasm:hover ~ #cpu {
+  fill: #0068B5;
+  stroke: #0068B5;
+}
+
+.webgpu:hover ~ #gpu {
+  fill: #FF2052;
+  stroke: #FF2052;
+}
+
+.wasm:hover ~ #text-cpu
+{
+  fill: #fff;
+}
+
+.webgpu:hover ~ #text-gpu
+{
+  fill: #fff;
 }
 
 .webnn:hover ~ #cpu {
@@ -51,7 +123,7 @@
 }
 
 .webnn:hover ~ #text-tflite,
-.webnn:hover ~ #text-directml,
+.webnn:hover ~ #text-dml,
 .webnn:hover ~ #text-coreml,
 .webnn:hover ~ #text-cpu,
 .webnn:hover ~ #text-gpu,
@@ -72,5 +144,35 @@
     stroke-width: 1px;
     fill: #00C7FD;
     stroke: #00C7FD;
+  }
+}
+
+@keyframes draw-wasm {
+  0% {
+    stroke-dasharray: 600 100;
+    stroke-dashoffset: 600;
+    stroke-width: 1px;
+  }
+  100% {
+    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
+    stroke-width: 1px;
+    fill: #F9B508;
+    stroke: #F9B508;
+  }
+}
+
+@keyframes draw-webgpu {
+  0% {
+    stroke-dasharray: 600 100;
+    stroke-dashoffset: 600;
+    stroke-width: 1px;
+  }
+  100% {
+    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
+    stroke-width: 1px;
+    fill: #b508e0;
+    stroke: #b508e0;
   }
 }
