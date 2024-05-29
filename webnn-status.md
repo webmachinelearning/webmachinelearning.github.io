@@ -352,7 +352,7 @@ sup {
 <div class="impl_status">
     <div class="title">XNNPack/CPU backend</div>
     <div class="title">DirectML/GPU backend</div>
-    <div class="title">MLServie/CPU backend</div>
+    <div class="title">MLService/CPU backend</div>
     <div>
         <div>✅ Supported (<span id="x_supported"></span>)</div>
         <div>⏳ Partly Implemented (<span id="x_partlyimplemented"></span>)</div>
