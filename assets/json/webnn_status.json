@@ -6,31 +6,27 @@
       "version": "",
       "wpt": "arg_min_max",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
+      "tflite_op": [
+        "ARG_MAX"
       ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M126",
       "dml_op": [
         "REDUCE_FUNCTION_ARGMAX"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M122",
-      "mlservice_op": [
-        "ARG_MAX"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M126",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "ArgMax"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -39,31 +35,27 @@
       "version": "",
       "wpt": "arg_min_max",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
+      "tflite_op": [
+        "ARG_MIN"
       ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M126",
       "dml_op": [
         "REDUCE_FUNCTION_ARGMIN"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M122",
-      "mlservice_op": [
-        "ARG_MIN"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M126",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "ArgMin"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -72,31 +64,25 @@
       "version": "",
       "wpt": "batch_normalization",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
-      ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_op": ["Emulated with Scale * ((Input - Mean) / sqrt(Variance + Epsilon)) + Bias"],
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M127",
       "dml_op": [
         "BATCH_NORMALIZATION"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M122",
-      "mlservice_op": [
-        ""
-      ],
-      "mlservice_progress": 2,
-      "mlservice_chromium_version_added": "",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "BatchNormalization"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -105,31 +91,27 @@
       "version": "",
       "wpt": "cast",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
+      "tflite_op": [
+        "CAST"
       ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M126",
       "dml_op": [
         "CAST"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M122",
-      "mlservice_op": [
-        "CAST"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M126",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "Cast"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -138,33 +120,31 @@
       "version": "",
       "wpt": "clamp",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        "clamp"
+      "tflite_op": [
+        "RELU_N1_TO_1",
+        "RELU6",
+        "RELU"
       ],
-      "xnnpack_progress": 4,
-      "xnnpack_chromium_version_added": "M112",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M112",
       "dml_op": [
         "ELEMENT_WISE_CLIP"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M119",
-      "mlservice_op": [
-        "RELU_N1_TO_1",
-        "RELU6",
-        "RELU"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M124",
-      "tflite_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [
         "ReluN1To1"
       ],
-      "tflite_progress": 3,
-      "tflite_version_added": "Fork",
-      "ort_op": [
+      "fw_tflite_progress": 3,
+      "fw_tflite_version_added": "Fork",
+      "fw_ort_op": [
         "Clip"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -173,33 +153,29 @@
       "version": "",
       "wpt": "concat",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        "concatenate2",
-        "concatenate3",
-        "concatenate4"
+      "tflite_op": [
+        "CONCATENATION"
       ],
-      "xnnpack_progress": 4,
-      "xnnpack_chromium_version_added": "M113",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M113",
       "dml_op": [
         "JOIN"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M120",
-      "mlservice_op": [
-        "CONCATENATION"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M123",
-      "tflite_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [
         "Concatenation"
       ],
-      "tflite_progress": 3,
-      "tflite_version_added": "Fork",
-      "ort_op": [
+      "fw_tflite_progress": 3,
+      "fw_tflite_version_added": "Fork",
+      "fw_ort_op": [
         "Concat"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -208,34 +184,31 @@
       "version": "",
       "wpt": "conv2d",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        "convolution_2d",
-        "depthwise_convolution_2d"
+      "tflite_op": [
+        "CONV_2D",
+        "DEPTHWISE_CONV_2D"
       ],
-      "xnnpack_progress": 4,
-      "xnnpack_chromium_version_added": "M112",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M112",
       "dml_op": [
         "CONVOLUTION"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M119",
-      "mlservice_op": [
-        "CONV_2D",
-        "DEPTHWISE_CONV_2D"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M122",
-      "tflite_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [
         "Conv2d",
         "DepthwiseConv2d"
       ],
-      "tflite_progress": 3,
-      "tflite_version_added": "Fork",
-      "ort_op": [
+      "fw_tflite_progress": 3,
+      "fw_tflite_version_added": "Fork",
+      "fw_ort_op": [
         "Conv"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -244,32 +217,28 @@
       "version": "",
       "wpt": "conv_transpose2d",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        "deconvolution_2d"
-      ],
-      "xnnpack_progress": 4,
-      "xnnpack_chromium_version_added": "M113",
+      "tflite_op": [""],
+      "tflite_progress": 2,
+      "tflite_chromium_version_added": "",
       "dml_op": [
         "CONVOLUTION"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
-      "mlservice_op": [
-        ""
-      ],
-      "mlservice_progress": 2,
-      "mlservice_chromium_version_added": "",
-      "tflite_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [
         "TransposeConv",
         "Convolution2DTransposeBias"
       ],
-      "tflite_progress": 3,
-      "tflite_version_added": "Fork",
-      "ort_op": [
+      "fw_tflite_progress": 3,
+      "fw_tflite_version_added": "Fork",
+      "fw_ort_op": [
         "ConvTranspose"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -278,31 +247,29 @@
       "version": "",
       "wpt": "elementwise_binary",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        "add2"
+      "tflite_op": [
+        "ADD"
       ],
-      "xnnpack_progress": 4,
-      "xnnpack_chromium_version_added": "M112",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M112",
       "dml_op": [
         "ELEMENT_WISE_ADD"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M119",
-      "mlservice_op": [
-        "ADD"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M122",
-      "tflite_op": [
+      "fw_tflite_op": [
         "Add"
       ],
-      "tflite_progress": 3,
-      "tflite_version_added": "Fork",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_progress": 3,
+      "fw_tflite_version_added": "Fork",
+      "fw_ort_op": [
         "Add"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -311,31 +278,29 @@
       "version": "",
       "wpt": "elementwise_binary",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        "divide"
+      "tflite_op": [
+        "DIV"
       ],
-      "xnnpack_progress": 4,
-      "xnnpack_chromium_version_added": "M112",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M112",
       "dml_op": [
         "ELEMENT_WISE_DIVIDE"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M119",
-      "mlservice_op": [
-        "DIV"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M122",
-      "tflite_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [
         "Div"
       ],
-      "tflite_progress": 3,
-      "tflite_version_added": "Fork",
-      "ort_op": [
+      "fw_tflite_progress": 3,
+      "fw_tflite_version_added": "Fork",
+      "fw_ort_op": [
         "Div"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -344,31 +309,29 @@
       "version": "",
       "wpt": "elementwise_binary",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        "maximum2"
+      "tflite_op": [
+        "MAXIMUM"
       ],
-      "xnnpack_progress": 4,
-      "xnnpack_chromium_version_added": "M112",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M112",
       "dml_op": [
         "ELEMENT_WISE_MAX"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M119",
-      "mlservice_op": [
-        "MAXIMUM"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M122",
-      "tflite_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [
         "Maximum"
       ],
-      "tflite_progress": 3,
-      "tflite_version_added": "Fork",
-      "ort_op": [
+      "fw_tflite_progress": 3,
+      "fw_tflite_version_added": "Fork",
+      "fw_ort_op": [
         "Max"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -377,31 +340,29 @@
       "version": "",
       "wpt": "elementwise_binary",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        "minimum2"
+      "tflite_op": [
+        "MINIMUM"
       ],
-      "xnnpack_progress": 4,
-      "xnnpack_chromium_version_added": "M112",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M112",
       "dml_op": [
         "ELEMENT_WISE_MIN"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M119",
-      "mlservice_op": [
-        "MINIMUM"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M122",
-      "tflite_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [
         "Minimum"
       ],
-      "tflite_progress": 3,
-      "tflite_version_added": "Fork",
-      "ort_op": [
+      "fw_tflite_progress": 3,
+      "fw_tflite_version_added": "Fork",
+      "fw_ort_op": [
         "Min"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -410,31 +371,29 @@
       "version": "",
       "wpt": "elementwise_binary",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        "multiply2"
+      "tflite_op": [
+        "MUL"
       ],
-      "xnnpack_progress": 4,
-      "xnnpack_chromium_version_added": "M112",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M112",
       "dml_op": [
         "ELEMENT_WISE_MULTIPLY"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M119",
-      "mlservice_op": [
-        "MUL"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M122",
-      "tflite_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [
         "Mul"
       ],
-      "tflite_progress": 3,
-      "tflite_version_added": "Fork",
-      "ort_op": [
+      "fw_tflite_progress": 3,
+      "fw_tflite_version_added": "Fork",
+      "fw_ort_op": [
         "Mul"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -443,33 +402,30 @@
       "version": "",
       "wpt": "elementwise_binary",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        "",
-        ""
+      "tflite_op": [
+        "POW"
       ],
-      "xnnpack_progress": 1,
-      "xnnpack_chromium_version_added": "",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M122",
       "dml_op": [
         "ELEMENT_WISE_POW"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M119",
-      "mlservice_op": [
-        "POW"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M122",
-      "tflite_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [
         "Sqrt",
         "Square"
       ],
-      "tflite_progress": 1,
-      "tflite_version_added": "",
-      "ort_op": [
+      "fw_tflite_progress": 1,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "Pow"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": "XNNPACK: Pow will be replaced by Sqrt. square/square_root"
     },
     {
@@ -478,31 +434,29 @@
       "version": "",
       "wpt": "elementwise_binary",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        "subtract"
+      "tflite_op": [
+        "SUB"
       ],
-      "xnnpack_progress": 4,
-      "xnnpack_chromium_version_added": "M112",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M112",
       "dml_op": [
         "ELEMENT_WISE_SUBTRACT"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M119",
-      "mlservice_op": [
-        "SUB"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M122",
-      "tflite_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [
         "Sub"
       ],
-      "tflite_progress": 3,
-      "tflite_version_added": "Fork",
-      "ort_op": [
+      "fw_tflite_progress": 3,
+      "fw_tflite_version_added": "Fork",
+      "fw_ort_op": [
         "Sub"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -511,31 +465,27 @@
       "version": "",
       "wpt": "elementwise_logical",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
+      "tflite_op": [
+        "EQUAL"
       ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M126",
       "dml_op": [
         "ELEMENT_WISE_LOGICAL_EQUALS"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M122",
-      "mlservice_op": [
-        "EQUAL"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M126",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "Equal"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -544,31 +494,27 @@
       "version": "",
       "wpt": "elementwise_logical",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
+      "tflite_op": [
+        "GREATER"
       ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M126",
       "dml_op": [
         "ELEMENT_WISE_LOGICAL_GREATER_THAN"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M122",
-      "mlservice_op": [
-        "GREATER"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M126",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "Greater"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -577,31 +523,27 @@
       "version": "",
       "wpt": "elementwise_logical",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
+      "tflite_op": [
+        "GREATER_EQUAL"
       ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M126",
       "dml_op": [
         "ELEMENT_WISE_LOGICAL_GREATER_THAN_OR_EQUAL"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M122",
-      "mlservice_op": [
-        "GREATER_EQUAL"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M126",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "GreaterOrEqual"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -610,31 +552,27 @@
       "version": "",
       "wpt": "elementwise_logical",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
+      "tflite_op": [
+        "LESS"
       ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M126",
       "dml_op": [
         "ELEMENT_WISE_LOGICAL_LESS_THAN"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M122",
-      "mlservice_op": [
-        "LESS"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M126",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "Less"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -643,31 +581,27 @@
       "version": "",
       "wpt": "elementwise_logical",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
+      "tflite_op": [
+        "LESS_EQUAL"
       ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M126",
       "dml_op": [
         "ELEMENT_WISE_LOGICAL_LESS_THAN_OR_EQUAL"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M122",
-      "mlservice_op": [
-        "LESS_EQUAL"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M126",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "LessOrEqual"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -676,31 +610,27 @@
       "version": "",
       "wpt": "elementwise_logical",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
+      "tflite_op": [
+        "LOGICAL_NOT"
       ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M126",
       "dml_op": [
         "ELEMENT_WISE_LOGICAL_NOT"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
-      "mlservice_op": [
-        "LOGICAL_NOT"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M126",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "Not"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -709,31 +639,29 @@
       "version": "",
       "wpt": "elementwise_unary",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        "abs"
+      "tflite_op": [
+        "ABS"
       ],
-      "xnnpack_progress": 4,
-      "xnnpack_chromium_version_added": "M116",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M116",
       "dml_op": [
         "ELEMENT_WISE_ABS"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
-      "mlservice_op": [
-        "ABS"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M123",
-      "tflite_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [
         "Abs"
       ],
-      "tflite_progress": 3,
-      "tflite_version_added": "Fork",
-      "ort_op": [
+      "fw_tflite_progress": 3,
+      "fw_tflite_version_added": "Fork",
+      "fw_ort_op": [
         "Abs"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -742,31 +670,29 @@
       "version": "",
       "wpt": "elementwise_unary",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        "ceiling"
+      "tflite_op": [
+        "CEIL"
       ],
-      "xnnpack_progress": 4,
-      "xnnpack_chromium_version_added": "M116",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M116",
       "dml_op": [
         "ELEMENT_WISE_CEIL"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
-      "mlservice_op": [
-        "CEIL"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M123",
-      "tflite_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [
         "Ceil"
       ],
-      "tflite_progress": 3,
-      "tflite_version_added": "Fork",
-      "ort_op": [
+      "fw_tflite_progress": 3,
+      "fw_tflite_version_added": "Fork",
+      "fw_ort_op": [
         "Ceil"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -775,31 +701,27 @@
       "version": "",
       "wpt": "elementwise_unary",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
+      "tflite_op": [
+        "RESHAPE"
       ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M126",
       "dml_op": [
         "ELEMENT_WISE_IDENTITY"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
-      "mlservice_op": [
-        "RESHAPE"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M126",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "Identity"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -808,31 +730,27 @@
       "version": "",
       "wpt": "elementwise_unary",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
+      "tflite_op": [
+        "COS"
       ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M123",
       "dml_op": [
         "ELEMENT_WISE_COS"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
-      "mlservice_op": [
-        "COS"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M123",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "Cos"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -841,31 +759,25 @@
       "version": "",
       "wpt": "elementwise_unary",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
-      ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_op": [""],
+      "tflite_progress": 2,
+      "tflite_chromium_version_added": "",
       "dml_op": [
         "ELEMENT_WISE_ERF"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
-      "mlservice_op": [
-        ""
-      ],
-      "mlservice_progress": 2,
-      "mlservice_chromium_version_added": "",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "Erf"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -874,31 +786,27 @@
       "version": "",
       "wpt": "elementwise_unary",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
+      "tflite_op": [
+        "EXP"
       ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M123",
       "dml_op": [
         "ELEMENT_WISE_EXP"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
-      "mlservice_op": [
-        "EXP"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M123",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "Exp"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -907,31 +815,29 @@
       "version": "",
       "wpt": "elementwise_unary",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        "floor"
+      "tflite_op": [
+        "FLOOR"
       ],
-      "xnnpack_progress": 4,
-      "xnnpack_chromium_version_added": "M116",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M116",
       "dml_op": [
         "ELEMENT_WISE_FLOOR"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
-      "mlservice_op": [
-        "FLOOR"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M123",
-      "tflite_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [
         "Floor"
       ],
-      "tflite_progress": 3,
-      "tflite_version_added": "Fork",
-      "ort_op": [
+      "fw_tflite_progress": 3,
+      "fw_tflite_version_added": "Fork",
+      "fw_ort_op": [
         "Floor"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -940,31 +846,27 @@
       "version": "",
       "wpt": "elementwise_unary",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
+      "tflite_op": [
+        "LOG"
       ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M123",
       "dml_op": [
         "ELEMENT_WISE_LOG"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
-      "mlservice_op": [
-        "LOG"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M123",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "Log"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -973,31 +875,29 @@
       "version": "",
       "wpt": "elementwise_unary",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        "negate"
+      "tflite_op": [
+        "NEG"
       ],
-      "xnnpack_progress": 4,
-      "xnnpack_chromium_version_added": "M116",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M116",
       "dml_op": [
         "ELEMENT_WISE_NEGATE"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
-      "mlservice_op": [
-        "NEG"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M123",
-      "tflite_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [
         "Neg"
       ],
-      "tflite_progress": 3,
-      "tflite_version_added": "Fork",
-      "ort_op": [
+      "fw_tflite_progress": 3,
+      "fw_tflite_version_added": "Fork",
+      "fw_ort_op": [
         "Neg"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -1006,31 +906,25 @@
       "version": "",
       "wpt": "elementwise_unary",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
-      ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_op": ["Emulated with 1/x"],
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M127",
       "dml_op": [
         "ELEMENT_WISE_RECIP"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
-      "mlservice_op": [
-        ""
-      ],
-      "mlservice_progress": 2,
-      "mlservice_chromium_version_added": "",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "Reciprocal"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -1039,31 +933,27 @@
       "version": "",
       "wpt": "elementwise_unary",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
+      "tflite_op": [
+        "SIN"
       ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M123",
       "dml_op": [
         "ELEMENT_WISE_SIN"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
-      "mlservice_op": [
-        "SIN"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M123",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "Sin"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -1072,32 +962,27 @@
       "version": "",
       "wpt": "elementwise_unary",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        "square",
-        "square_root"
+      "tflite_op": [
+        "SQRT"
       ],
-      "xnnpack_progress": 4,
-      "xnnpack_chromium_version_added": "M122",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M122",
       "dml_op": [
         "ELEMENT_WISE_SQRT"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
-      "mlservice_op": [
-        "SQRT"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M123",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "Sqrt"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -1106,31 +991,27 @@
       "version": "",
       "wpt": "elementwise_unary",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
+      "tflite_op": [
+        "Emulated with sin(x)/cos(x)"
       ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M126",
       "dml_op": [
         "ELEMENT_WISE_TAN"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
-      "mlservice_op": [
-        "Emulated with sin(x)/cos(x)"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M126",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "Tan"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -1139,31 +1020,29 @@
       "version": "",
       "wpt": "elu",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        "elu"
+      "tflite_op": [
+        "ELU"
       ],
-      "xnnpack_progress": 4,
-      "xnnpack_chromium_version_added": "M115",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M115",
       "dml_op": [
         "ACTIVATION_ELU"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
-      "mlservice_op": [
-        "ELU"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M123",
-      "tflite_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [
         "Elu"
       ],
-      "tflite_progress": 3,
-      "tflite_version_added": "Fork",
-      "ort_op": [
+      "fw_tflite_progress": 3,
+      "fw_tflite_version_added": "Fork",
+      "fw_ort_op": [
         "Elu"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -1172,31 +1051,25 @@
       "version": "",
       "wpt": "expand",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
-      ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_op": [""],
+      "tflite_progress": 2,
+      "tflite_chromium_version_added": "",
       "dml_op": [
         "ELEMENT_WISE_IDENTITY"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
-      "mlservice_op": [
-        ""
-      ],
-      "mlservice_progress": 2,
-      "mlservice_chromium_version_added": "",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "Expand"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": "Use identity to implement the expand operation with broadcasting strides"
     },
     {
@@ -1205,31 +1078,27 @@
       "version": "",
       "wpt": "gather",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
+      "tflite_op": [
+        "GATHER"
       ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M126",
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M122",
       "dml_op": [
         "GATHER"
       ],
-      "dml_progress": 4,
-      "dml_chromium_version_added": "M122",
-      "mlservice_op": [
-        "GATHER"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M126",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "Gather"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -1238,31 +1107,25 @@
       "version": "",
       "wpt": "gelu",
       "wpt_progress": 3,
-      "xnnpack_op": [
-        ""
-      ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_op": [""],
+      "tflite_progress": 2,
+      "tflite_chromium_version_added": "",
       "dml_op": [
         "ACTIVATION_GELU"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M126",
-      "mlservice_op": [
-        ""
-      ],
-      "mlservice_progress": 2,
-      "mlservice_chromium_version_added": "",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 3,
-      "tflite_version_added": "Fork",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 3,
+      "fw_tflite_version_added": "Fork",
+      "fw_ort_op": [
         "Gelu"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -1271,31 +1134,29 @@
       "version": "",
       "wpt": "gemm",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        "fully_connected"
+      "tflite_op": [
+        "FULLY_CONNECTED"
       ],
-      "xnnpack_progress": 4,
-      "xnnpack_chromium_version_added": "M112",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M112",
       "dml_op": [
         "GEMM"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M119",
-      "mlservice_op": [
-        "FULLY_CONNECTED"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M124",
-      "tflite_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [
         "FullyConnected"
       ],
-      "tflite_progress": 3,
-      "tflite_version_added": "Fork",
-      "ort_op": [
+      "fw_tflite_progress": 3,
+      "fw_tflite_version_added": "Fork",
+      "fw_ort_op": [
         "Gemm"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -1304,31 +1165,25 @@
       "version": "",
       "wpt": "",
       "wpt_progress": 3,
-      "xnnpack_op": [
-        ""
-      ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_op": [""],
+      "tflite_progress": 2,
+      "tflite_chromium_version_added": "",
       "dml_op": [
         "GRU"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M125",
-      "mlservice_op": [
-        ""
-      ],
-      "mlservice_progress": 2,
-      "mlservice_chromium_version_added": "",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "Gru"
       ],
-      "ort_progress": 3,
-      "ort_version_added": "",
+      "fw_ort_progress": 3,
+      "fw_ort_version_added": "",
       "notes": ""
     },
     {
@@ -1337,31 +1192,25 @@
       "version": "",
       "wpt": "",
       "wpt_progress": 3,
-      "xnnpack_op": [
-        ""
-      ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_op": [""],
+      "tflite_progress": 2,
+      "tflite_chromium_version_added": "",
       "dml_op": [
         "GRU"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M125",
-      "mlservice_op": [
-        ""
-      ],
-      "mlservice_progress": 2,
-      "mlservice_chromium_version_added": "",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "GruCell"
       ],
-      "ort_progress": 3,
-      "ort_version_added": "",
+      "fw_ort_progress": 3,
+      "fw_ort_version_added": "",
       "notes": ""
     },
     {
@@ -1370,31 +1219,27 @@
       "version": "",
       "wpt": "hard_sigmoid",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
+      "tflite_op": [
+        "Emulated with y = max(0, min(1, alpha * // x + beta))"
       ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M126",
       "dml_op": [
         "ACTIVATION_HARD_SIGMOID"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M123",
-      "mlservice_op": [
-        "Emulated with y = max(0, min(1, alpha * // x + beta))"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M126",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "HardSigmoid"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -1403,31 +1248,29 @@
       "version": "",
       "wpt": "hard_swish",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        "hardswish"
+      "tflite_op": [
+        "HARD_SWISH"
       ],
-      "xnnpack_progress": 4,
-      "xnnpack_chromium_version_added": "M112",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M112",
       "dml_op": [
         "Map to other op"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M123",
-      "mlservice_op": [
-        "HARD_SWISH"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M123",
-      "tflite_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [
         "HardSwish"
       ],
-      "tflite_progress": 3,
-      "tflite_version_added": "Fork",
-      "ort_op": [
+      "fw_tflite_progress": 3,
+      "fw_tflite_version_added": "Fork",
+      "fw_ort_op": [
         "HardSwish"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -1436,31 +1279,25 @@
       "version": "",
       "wpt": "instance_normalization",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
-      ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_op": ["Emulated with Scale * ((Input - Mean) / sqrt(Variance + Epsilon)) + Bias"],
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M127",
       "dml_op": [
         "MEAN_VARIANCE_NORMALIZATION1"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M122",
-      "mlservice_op": [
-        ""
-      ],
-      "mlservice_progress": 2,
-      "mlservice_chromium_version_added": "",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "InstanceNormalization"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -1469,31 +1306,25 @@
       "version": "",
       "wpt": "layer_normalization",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
-      ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_op": [""],
+      "tflite_progress": 2,
+      "tflite_chromium_version_added": "",
       "dml_op": [
         "MEAN_VARIANCE_NORMALIZATION1"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M122",
-      "mlservice_op": [
-        ""
-      ],
-      "mlservice_progress": 2,
-      "mlservice_chromium_version_added": "",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "LayerNormalization"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -1502,31 +1333,29 @@
       "version": "",
       "wpt": "leaky_relu",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        "leaky_relu"
+      "tflite_op": [
+        "LEAKY_RELU"
       ],
-      "xnnpack_progress": 4,
-      "xnnpack_chromium_version_added": "M113",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M113",
       "dml_op": [
         "ACTIVATION_LEAKY_RELU"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
-      "mlservice_op": [
-        "LEAKY_RELU"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M123",
-      "tflite_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [
         "LeakyRelu"
       ],
-      "tflite_progress": 3,
-      "tflite_version_added": "Fork",
-      "ort_op": [
+      "fw_tflite_progress": 3,
+      "fw_tflite_version_added": "Fork",
+      "fw_ort_op": [
         "LeakyRelu"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -1535,31 +1364,27 @@
       "version": "",
       "wpt": "linear",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
+      "tflite_op": [
+        "Emulated with alpha  * x + beta"
       ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M126",
       "dml_op": [
         "ACTIVATION_LINEAR"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M122",
-      "mlservice_op": [
-        "Emulated with alpha  * x + beta"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M126",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "N/A"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -1568,31 +1393,25 @@
       "version": "",
       "wpt": "lstm",
       "wpt_progress": 3,
-      "xnnpack_op": [
-        ""
-      ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_op": [""],
+      "tflite_progress": 2,
+      "tflite_chromium_version_added": "",
       "dml_op": [
         "LSTM"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M125",
-      "mlservice_op": [
-        ""
-      ],
-      "mlservice_progress": 2,
-      "mlservice_chromium_version_added": "",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "LSTM"
       ],
-      "ort_progress": 3,
-      "ort_version_added": "",
+      "fw_ort_progress": 3,
+      "fw_ort_version_added": "",
       "notes": ""
     },
     {
@@ -1601,31 +1420,25 @@
       "version": "",
       "wpt": "",
       "wpt_progress": 3,
-      "xnnpack_op": [
-        ""
-      ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_op": [""],
+      "tflite_progress": 2,
+      "tflite_chromium_version_added": "",
       "dml_op": [
         "LSTM"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M125",
-      "mlservice_op": [
-        ""
-      ],
-      "mlservice_progress": 2,
-      "mlservice_chromium_version_added": "",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "LSTMCell"
       ],
-      "ort_progress": 3,
-      "ort_version_added": "",
+      "fw_ort_progress": 3,
+      "fw_ort_version_added": "",
       "notes": ""
     },
     {
@@ -1634,31 +1447,27 @@
       "version": "",
       "wpt": "matmul",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
+      "tflite_op": [
+        "BATCH_MATMUL"
       ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M126",
       "dml_op": [
         "GEMM"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
-      "mlservice_op": [
-        "BATCH_MATMUL"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M126",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "MatMul"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -1667,31 +1476,29 @@
       "version": "",
       "wpt": "pad",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        "static_constant_pad"
+      "tflite_op": [
+        "PAD"
       ],
-      "xnnpack_progress": 4,
-      "xnnpack_chromium_version_added": "M114",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M114",
       "dml_op": [
         "PADDING"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M120",
-      "mlservice_op": [
-        "PAD"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M123",
-      "tflite_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [
         "Pad"
       ],
-      "tflite_progress": 3,
-      "tflite_version_added": "Fork",
-      "ort_op": [
+      "fw_tflite_progress": 3,
+      "fw_tflite_version_added": "Fork",
+      "fw_ort_op": [
         "Pad"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -1700,34 +1507,31 @@
       "version": "",
       "wpt": "pooling",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        "average_pooling_2d",
-        "global_average_pooling_2d"
+      "tflite_op": [
+        "AVERAGE_POOL_2D"
       ],
-      "xnnpack_progress": 4,
-      "xnnpack_chromium_version_added": "M112",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M112",
       "dml_op": [
         "AVERAGE_POOLING"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M119",
-      "mlservice_op": [
-        "AVERAGE_POOL_2D"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M122",
-      "tflite_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [
         "AveragePool2d",
         "Mean"
       ],
-      "tflite_progress": 3,
-      "tflite_version_added": "Fork",
-      "ort_op": [
+      "fw_tflite_progress": 3,
+      "fw_tflite_version_added": "Fork",
+      "fw_ort_op": [
         "AveragePool",
         "GlobalAveragePool"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -1736,32 +1540,26 @@
       "version": "",
       "wpt": "pooling",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
-      ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_op": [""],
+      "tflite_progress": 2,
+      "tflite_chromium_version_added": "",
       "dml_op": [
         "LP_POOLING"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M123",
-      "mlservice_op": [
-        ""
-      ],
-      "mlservice_progress": 2,
-      "mlservice_chromium_version_added": "",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "LpPool",
         "GlobalLpPool"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -1770,32 +1568,30 @@
       "version": "",
       "wpt": "pooling",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        "max_pooling_2d"
+      "tflite_op": [
+        "MAX_POOL_2D"
       ],
-      "xnnpack_progress": 4,
-      "xnnpack_chromium_version_added": "M112",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M112",
       "dml_op": [
         "MAX_POOLING2"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M119",
-      "mlservice_op": [
-        "MAX_POOL_2D"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M122",
-      "tflite_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [
         "MaxPool2d"
       ],
-      "tflite_progress": 3,
-      "tflite_version_added": "Fork",
-      "ort_op": [
+      "fw_tflite_progress": 3,
+      "fw_tflite_version_added": "Fork",
+      "fw_ort_op": [
         "GlobalMaxPool",
         "MaxPool"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -1804,31 +1600,29 @@
       "version": "",
       "wpt": "prelu",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        "prelu"
+      "tflite_op": [
+        "PRELU"
       ],
-      "xnnpack_progress": 4,
-      "xnnpack_chromium_version_added": "M115",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M115",
       "dml_op": [
         "ACTIVATION_PARAMETERIZED_RELU"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M120",
-      "mlservice_op": [
-        "PRELU"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M126",
-      "tflite_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [
         "Prelu"
       ],
-      "tflite_progress": 3,
-      "tflite_version_added": "Fork",
-      "ort_op": [
+      "fw_tflite_progress": 3,
+      "fw_tflite_version_added": "Fork",
+      "fw_ort_op": [
         "PRelu"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -1837,31 +1631,25 @@
       "version": "",
       "wpt": "reduction",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
-      ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_op": [""],
+      "tflite_progress": 2,
+      "tflite_chromium_version_added": "",
       "dml_op": [
         "REDUCE_FUNCTION_L1"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
-      "mlservice_op": [
-        ""
-      ],
-      "mlservice_progress": 2,
-      "mlservice_chromium_version_added": "",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "ReduceL1"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -1870,31 +1658,25 @@
       "version": "",
       "wpt": "reduction",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
-      ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_op": [""],
+      "tflite_progress": 2,
+      "tflite_chromium_version_added": "",
       "dml_op": [
         "REDUCE_FUNCTION_L2"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
-      "mlservice_op": [
-        ""
-      ],
-      "mlservice_progress": 2,
-      "mlservice_chromium_version_added": "",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "ReduceL2"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -1903,31 +1685,25 @@
       "version": "",
       "wpt": "reduction",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
-      ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_op": ["Emulated with log and reduceSum"],
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M127",
       "dml_op": [
         "REDUCE_FUNCTION_LOG_SUM"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
-      "mlservice_op": [
-        ""
-      ],
-      "mlservice_progress": 2,
-      "mlservice_chromium_version_added": "",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "ReduceLogSum"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -1936,31 +1712,25 @@
       "version": "",
       "wpt": "reduction",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
-      ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_op": ["Emulated with log, reduceSum and exp"],
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M127",
       "dml_op": [
         "REDUCE_FUNCTION_LOG_SUM_EXP"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
-      "mlservice_op": [
-        ""
-      ],
-      "mlservice_progress": 2,
-      "mlservice_chromium_version_added": "",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "ReduceLogSumExp"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -1969,31 +1739,27 @@
       "version": "",
       "wpt": "reduction",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
+      "tflite_op": [
+        "REDUCE_MAX"
       ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M126",
       "dml_op": [
         "REDUCE_FUNCTION_MAX"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
-      "mlservice_op": [
-        "REDUCE_MAX"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M126",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "ReduceMax"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -2002,31 +1768,27 @@
       "version": "",
       "wpt": "reduction",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        "static_mean"
+      "tflite_op": [
+        "MEAN"
       ],
-      "xnnpack_progress": 4,
-      "xnnpack_chromium_version_added": "M120",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M120",
       "dml_op": [
         "REDUCE_FUNCTION_AVERAGE"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
-      "mlservice_op": [
-        "MEAN"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M126",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "ReduceMean"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -2035,31 +1797,27 @@
       "version": "",
       "wpt": "reduction",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
+      "tflite_op": [
+        "REDUCE_MIN"
       ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M126",
       "dml_op": [
         "REDUCE_FUNCTION_MIN"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
-      "mlservice_op": [
-        "REDUCE_MIN"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M126",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "ReduceMin"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -2068,31 +1826,27 @@
       "version": "",
       "wpt": "reduction",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
+      "tflite_op": [
+        "REDUCE_PROD"
       ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M126",
       "dml_op": [
         "REDUCE_FUNCTION_MULTIPLY"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
-      "mlservice_op": [
-        "REDUCE_PROD"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M126",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "ReduceProd"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -2101,32 +1855,27 @@
       "version": "",
       "wpt": "reduction",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        "global_sum_pooling_1d",
-        "global_sum_pooling_2d"
+      "tflite_op": [
+        "SUM"
       ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M126",
       "dml_op": [
         "REDUCE_FUNCTION_SUM"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
-      "mlservice_op": [
-        "SUM"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M126",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "ReduceSum"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -2135,31 +1884,25 @@
       "version": "",
       "wpt": "reduction",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
-      ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_op": ["Emulated with reduceSum and square"],
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M127",
       "dml_op": [
         "REDUCE_FUNCTION_SUM_SQUARE"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
-      "mlservice_op": [
-        ""
-      ],
-      "mlservice_progress": 2,
-      "mlservice_chromium_version_added": "",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "ReduceSumSquare"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -2168,31 +1911,29 @@
       "version": "",
       "wpt": "relu",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        "clamp"
+      "tflite_op": [
+        "RELU"
       ],
-      "xnnpack_progress": 4,
-      "xnnpack_chromium_version_added": "M112",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M112",
       "dml_op": [
         "ACTIVATION_RELU"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M119",
-      "mlservice_op": [
-        "RELU"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M122",
-      "tflite_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [
         "Relu"
       ],
-      "tflite_progress": 3,
-      "tflite_version_added": "Fork",
-      "ort_op": [
+      "fw_tflite_progress": 3,
+      "fw_tflite_version_added": "Fork",
+      "fw_ort_op": [
         "Relu"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -2201,32 +1942,30 @@
       "version": "",
       "wpt": "resample2d",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        "static_resize_bilinear_2d"
+      "tflite_op": [
+        "RESIZE_BILINEAR",
+        "RESIZE_NEAREST_NEIGHBOR"
       ],
-      "xnnpack_progress": 4,
-      "xnnpack_chromium_version_added": "M112",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M112",
       "dml_op": [
         "RESAMPLE"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
-      "mlservice_op": [
-        "RESIZE_BILINEAR",
-        "RESIZE_NEAREST_NEIGHBOR"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M124",
-      "tflite_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [
         "ResizeBilinear"
       ],
-      "tflite_progress": 3,
-      "tflite_version_added": "Fork",
-      "ort_op": [
+      "fw_tflite_progress": 3,
+      "fw_tflite_version_added": "Fork",
+      "fw_ort_op": [
         "Resize"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -2235,34 +1974,32 @@
       "version": "",
       "wpt": "reshape",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        "static_reshape"
+      "tflite_op": [
+        "RESHAPE"
       ],
-      "xnnpack_progress": 4,
-      "xnnpack_chromium_version_added": "M112",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M112",
       "dml_op": [
         "Supported by tensor strides"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M119",
-      "mlservice_op": [
-        "RESHAPE"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M122",
-      "tflite_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [
         "Reshape"
       ],
-      "tflite_progress": 3,
-      "tflite_version_added": "Fork",
-      "ort_op": [
+      "fw_tflite_progress": 3,
+      "fw_tflite_version_added": "Fork",
+      "fw_ort_op": [
         "Unsqueeze",
         "Squeeze",
         "Reshape",
         "Flatten"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -2271,31 +2008,29 @@
       "version": "",
       "wpt": "sigmoid",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        "sigmoid"
+      "tflite_op": [
+        "LOGISTIC"
       ],
-      "xnnpack_progress": 4,
-      "xnnpack_chromium_version_added": "M112",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M112",
       "dml_op": [
         "ACTIVATION_SIGMOID"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
-      "mlservice_op": [
-        "LOGISTIC"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M123",
-      "tflite_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [
         "Logistic"
       ],
-      "tflite_progress": 3,
-      "tflite_version_added": "Fork",
-      "ort_op": [
+      "fw_tflite_progress": 3,
+      "fw_tflite_version_added": "Fork",
+      "fw_ort_op": [
         "Sigmoid"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -2304,33 +2039,31 @@
       "version": "",
       "wpt": "slice",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        "static_slice"
+      "tflite_op": [
+        "SLICE"
       ],
-      "xnnpack_progress": 4,
-      "xnnpack_chromium_version_added": "M116",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M116",
       "dml_op": [
         "SLICE"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M120",
-      "mlservice_op": [
-        "SLICE"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M126",
-      "tflite_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [
         "Slice",
         "StridedSlice"
       ],
-      "tflite_progress": 3,
-      "tflite_version_added": "Fork",
-      "ort_op": [
+      "fw_tflite_progress": 3,
+      "fw_tflite_version_added": "Fork",
+      "fw_ort_op": [
         "Slice",
         "Shape"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -2339,31 +2072,29 @@
       "version": "",
       "wpt": "softmax",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        "softmax"
+      "tflite_op": [
+        "SOFTMAX"
       ],
-      "xnnpack_progress": 4,
-      "xnnpack_chromium_version_added": "M112",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M112",
       "dml_op": [
         "ACTIVATION_SOFTMAX"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M119",
-      "mlservice_op": [
-        "SOFTMAX"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M122",
-      "tflite_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [
         "Softmax"
       ],
-      "tflite_progress": 3,
-      "tflite_version_added": "Fork",
-      "ort_op": [
+      "fw_tflite_progress": 3,
+      "fw_tflite_version_added": "Fork",
+      "fw_ort_op": [
         "Softmax"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -2372,31 +2103,27 @@
       "version": "",
       "wpt": "softplus",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
+      "tflite_op": [
+        "Emulated with ln(1 + exp(x))"
       ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M126",
       "dml_op": [
         "ACTIVATION_SOFTPLUS"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M122",
-      "mlservice_op": [
-        "Emulated with ln(1 + exp(x))"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M126",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "Softplus"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -2405,31 +2132,25 @@
       "version": "",
       "wpt": "softsign",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
-      ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_op": ["Emulated with x / (1 + |x|)"],
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M127",
       "dml_op": [
         "ACTIVATION_SOFTSIGN"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M123",
-      "mlservice_op": [
-        ""
-      ],
-      "mlservice_progress": 2,
-      "mlservice_chromium_version_added": "",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "Softsign"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -2438,34 +2159,29 @@
       "version": "",
       "wpt": "split",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        "even_split2",
-        "even_split3",
-        "even_split4",
-        "static_slice (uneven split)"
+      "tflite_op": [
+        "SPLIT_V"
       ],
-      "xnnpack_progress": 4,
-      "xnnpack_chromium_version_added": "M116",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M116",
       "dml_op": [
         "SPLIT"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M120",
-      "mlservice_op": [
-        "SPLIT_V"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M126",
-      "tflite_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [
         "Split"
       ],
-      "tflite_progress": 3,
-      "tflite_version_added": "Fork",
-      "ort_op": [
+      "fw_tflite_progress": 3,
+      "fw_tflite_version_added": "Fork",
+      "fw_ort_op": [
         "Split"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -2474,31 +2190,27 @@
       "version": "",
       "wpt": "tanh",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        "tanh"
+      "tflite_op": [
+        "TANH"
       ],
-      "xnnpack_progress": 4,
-      "xnnpack_chromium_version_added": "M116",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M116",
       "dml_op": [
         "ACTIVATION_TANH"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M121",
-      "mlservice_op": [
-        "TANH"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M126",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "Tanh"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     },
     {
@@ -2507,31 +2219,29 @@
       "version": "",
       "wpt": "transpose",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        "static_transpose"
+      "tflite_op": [
+        "TRANSPOSE"
       ],
-      "xnnpack_progress": 4,
-      "xnnpack_chromium_version_added": "M113",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M113",
       "dml_op": [
         "Supported by tensor strides"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M120",
-      "mlservice_op": [
-        "TRANSPOSE"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M123",
-      "tflite_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [
         "Transpose"
       ],
-      "tflite_progress": 3,
-      "tflite_version_added": "Fork",
-      "ort_op": [
+      "fw_tflite_progress": 3,
+      "fw_tflite_version_added": "Fork",
+      "fw_ort_op": [
         "Transpose"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": "Transpose is not a real DirectML operator. As for implementation, the input tensor is remapped for reading elements following the strides after the permutation, and an identity operator is appended to consume the remapped strides."
     },
     {
@@ -2540,31 +2250,25 @@
       "version": "",
       "wpt": "triangular",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
-      ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_op": [""],
+      "tflite_progress": 2,
+      "tflite_chromium_version_added": "",
       "dml_op": [
         "Supported by combined operations"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M126",
-      "mlservice_op": [
-        ""
-      ],
-      "mlservice_progress": 2,
-      "mlservice_chromium_version_added": "",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "Trilu"
       ],
-      "ort_progress": 3,
-      "ort_version_added": "",
+      "fw_ort_progress": 3,
+      "fw_ort_version_added": "",
       "notes": ""
     },
     {
@@ -2573,31 +2277,27 @@
       "version": "",
       "wpt": "where",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
+      "tflite_op": [
+        "SELECT_V2"
       ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M126",
       "dml_op": [
         "ELEMENT_WISE_IF"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M122",
-      "mlservice_op": [
-        "SELECT_V2"
-      ],
-      "mlservice_progress": 4,
-      "mlservice_chromium_version_added": "M126",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "Where"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
     }
   ]
