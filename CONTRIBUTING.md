@@ -23,34 +23,30 @@ The [webnn_status.json](./assets/json/webnn_status.json) is the data source for 
       "version": "",
       "wpt": "arg_min_max",
       "wpt_progress": 4,
-      "xnnpack_op": [
-        ""
+      "tflite_op": [
+        "ARG_MAX"
       ],
-      "xnnpack_progress": 2,
-      "xnnpack_chromium_version_added": "",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M126",
       "dml_op": [
         "REDUCE_FUNCTION_ARGMAX"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M122",
-      "mlservice_op": [
-        ""
-      ],
-      "mlservice_progress": 2,
-      "mlservice_chromium_version_added": "",
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_version_added": "",
-      "ort_op": [
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [""],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": [
         "ArgMax"
       ],
-      "ort_progress": 4,
-      "ort_version_added": "main",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.18.0",
       "notes": ""
-    }
-```    
+    },
+```
 
 ### Supported Changes
 
