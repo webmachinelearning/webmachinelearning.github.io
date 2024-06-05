@@ -29,21 +29,21 @@ permalink: /webnn-status/
   text-align: left;
 }
 
-.post table tr td:nth-child(1), 
+.post table tr td:nth-child(1),
 .post table tr td:nth-child(2),
-.post table tr td:nth-child(4), 
+.post table tr td:nth-child(4),
 .post table tr td:nth-child(6),
-.post table tr td:nth-child(8), 
+.post table tr td:nth-child(8),
 .post table tr td:nth-child(10) {
   text-align: center;
 }
 
-.post table.framework tr td:nth-child(2), 
+.post table.framework tr td:nth-child(2),
 .post table.framework tr td:nth-child(4) {
   text-align: left;
 }
 
-.post table.framework tr td:nth-child(3), 
+.post table.framework tr td:nth-child(3),
 .post table.framework tr td:nth-child(5) {
   text-align: center;
 }
@@ -120,12 +120,23 @@ sup {
 .tfop {
   width: 200px;
 }
+
+.tile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.tile div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 </style>
 
 <table>
   <thead>
     <tr class="title">
-      <th rowspan="3">
+      <th rowspan="4">
         <a href="https://www.w3.org/TR/webnn/">
           <svg id="w3" x="0px" y="0px" viewBox="0 0 357.5 287" style="enable-background:new 0 0 357.5 287;">
             <style type="text/css">
@@ -157,173 +168,61 @@ sup {
           <br />WebNN Spec
         </a>
       </th>
-      <th rowspan="3">Web Platform<br />Tests</th>
+      <th rowspan="4">Web Platform<br />Tests</th>
       <th colspan="6">
         Chromium Implementation
       </th>
     </tr>
-    <tr class="title">
-      <th colspan="2"><img src="https://wpt.fyi/static/win.svg"> <img
-          src="https://wpt.fyi/static/linux.svg"><br />XNNPack · CPU
-        backend
+        <tr class="title">
+      <th colspan="2">
+        TensorFlow Lite
         <sup><a href="#note-1">1</a></sup>
       </th>
-      <th colspan="2"><img src="https://wpt.fyi/static/win.svg"><br />DirectML · GPU backend <sup><a href="#note-2">2</a></sup>
+      <th colspan="2">
+        DirectML
+        <sup><a href="#note-2">2</a></sup>
       </th>
          <th colspan="2">
-          <svg id="cros"
-            width="67.775795mm"
-            height="14.390643mm"
-            viewBox="0 0 67.775795 14.390643"
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:svg="http://www.w3.org/2000/svg">
-            <sodipodi:namedview
-              id="namedview1"
-              pagecolor="#ffffff"
-              bordercolor="#000000"
-              borderopacity="0.25"
-              inkscape:showpageshadow="2"
-              inkscape:pageopacity="0.0"
-              inkscape:pagecheckerboard="0"
-              inkscape:deskcolor="#d1d1d1"
-              inkscape:document-units="mm" />
-            <defs
-              id="defs1">
-              <linearGradient
-                id="a"
-                x1="3.2172999"
-                y1="15"
-                x2="44.7812"
-                y2="15"
-                gradientUnits="userSpaceOnUse">
-                <stop
-                  offset="0"
-                  stop-color="#d93025"
-                  id="stop1" />
-                <stop
-                  offset="1"
-                  stop-color="#ea4335"
-                  id="stop2" />
-              </linearGradient>
-              <linearGradient
-                id="b"
-                x1="20.721901"
-                y1="47.6791"
-                x2="41.503899"
-                y2="11.6837"
-                gradientUnits="userSpaceOnUse">
-                <stop
-                  offset="0"
-                  stop-color="#fcc934"
-                  id="stop3" />
-                <stop
-                  offset="1"
-                  stop-color="#fbbc04"
-                  id="stop4" />
-              </linearGradient>
-              <linearGradient
-                id="c"
-                x1="26.598101"
-                y1="46.501499"
-                x2="5.8161001"
-                y2="10.506"
-                gradientUnits="userSpaceOnUse">
-                <stop
-                  offset="0"
-                  stop-color="#1e8e3e"
-                  id="stop5" />
-                <stop
-                  offset="1"
-                  stop-color="#34a853"
-                  id="stop6" />
-              </linearGradient>
-            </defs>
-            <g
-              inkscape:label="Livello 1"
-              inkscape:groupmode="layer"
-              id="layer1"
-              transform="translate(-127.52917,-127.79374)">
-              <path
-                fill="#5f6368"
-                d="m 189.71962,134.80547 a 4.0613541,4.0613541 0 0 1 -4.06136,4.06135 4.0613541,4.0613541 0 0 1 -4.06135,-4.06135 4.0613541,4.0613541 0 0 1 4.06135,-4.06136 4.0613541,4.0613541 0 0 1 4.06136,4.06136 z m -4.03408,3.12459 a 3.127375,3.0241875 89.5 0 0 2.99681,-3.15362 3.127375,3.0241875 89.5 0 0 -3.05136,-3.10086 3.127375,3.0241875 89.5 0 0 -2.99681,3.15362 3.127375,3.0241875 89.5 0 0 3.05136,3.10086 z"
-                id="path9"
-                inkscape:export-filename="path9.svg"
-                inkscape:export-xdpi="96"
-                inkscape:export-ydpi="96"
-                style="stroke-width:0.264583" />
-              <path
-                fill="#5f6368"
-                d="m 195.30497,136.34005 v 0.61648 q -0.82814,2.46062 -3.50573,1.76212 -1.30439,-0.34131 -1.86531,-1.88648 a 0.07408333,0.07408333 0 0 1 0.0423,-0.0952 l 0.7673,-0.30427 q 0.0714,-0.0291 0.10054,0.0423 0.66939,1.64041 2.22514,1.39964 c 0.85196,-0.12964 1.44727,-0.92339 1.07421,-1.75948 -0.39423,-0.88635 -1.93939,-1.12448 -2.74637,-1.52664 -1.77007,-0.88636 -1.4949,-3.11944 0.28046,-3.67771 q 2.16429,-0.67998 3.34168,1.29117 a 0.08995833,0.09260417 62.5 0 1 -0.0423,0.12964 l -0.73819,0.33073 a 0.08202083,0.08466667 63.5 0 1 -0.10848,-0.0344 q -0.72231,-1.24618 -2.05581,-0.84402 c -0.75671,0.23019 -1.20121,1.1483 -0.50535,1.72244 0.62177,0.51329 1.49489,0.64029 2.29129,1.00013 q 1.2065,0.54768 1.44462,1.83356 z"
-                id="path10"
-                style="stroke-width:0.264583" />
-              <path
-                fill="#5f6368"
-                d="m 152.04031,133.97732 q 1.1721,-1.21708 2.61408,-0.53975 0.98425,0.45773 1.016,1.7489 0.037,1.53458 0.008,3.43958 -0.003,0.0741 -0.0741,0.0741 l -0.83079,-0.003 q -0.0661,0 -0.0688,-0.0661 -0.045,-1.39965 0.005,-2.68287 c 0.0423,-1.06098 -0.2831,-2.032 -1.59014,-1.80975 -0.80434,0.13493 -1.16946,0.94456 -1.16417,1.70127 q 0.005,1.41287 0.005,2.74637 0,0.10848 -0.11112,0.11113 l -0.7329,0.005 q -0.14023,0 -0.14023,-0.14023 v -7.52475 q 0,-0.13229 0.12965,-0.12965 l 0.75671,0.0185 q 0.11112,0.003 0.11112,0.11377 l -0.0476,2.8919 q -0.003,0.16404 0.11377,0.045 z"
-                id="path11"
-                style="stroke-width:0.264583" />
-              <path
-                fill="#5f6368"
-                d="m 147.54768,137.94342 q 1.06627,0.0503 1.56898,-0.84931 0.0741,-0.13229 0.21167,-0.0714 l 0.60854,0.26723 q 0.14023,0.0609 0.0661,0.19315 -0.85989,1.55839 -2.7305,1.34144 c -1.90764,-0.21961 -2.82575,-2.28071 -2.12725,-3.9423 0.87313,-2.07697 3.73063,-2.31775 4.84188,-0.27516 q 0.0608,0.11112 -0.0556,0.15875 l -0.67204,0.29104 a 0.15875,0.15875 0 0 1 -0.20373,-0.0741 q -0.4154,-0.8308 -1.31763,-0.87313 c -2.29394,-0.11112 -2.43946,3.72533 -0.1905,3.83381 z"
-                id="path15"
-                style="stroke-width:0.264583" />
-              <path
-                fill="#5f6368"
-                d="m 162.97363,138.88254 a 2.8495625,2.7807708 89.4 0 1 -2.81046,-2.82028 2.8495625,2.7807708 89.4 0 1 2.75077,-2.87853 2.8495625,2.7807708 89.4 0 1 2.81046,2.82027 2.8495625,2.7807708 89.4 0 1 -2.75077,2.87854 z m -0.0238,-0.9206 a 1.9314583,1.7727083 89.9 0 0 1.76935,-1.93455 1.9314583,1.7727083 89.9 0 0 -1.77607,-1.92836 1.9314583,1.7727083 89.9 0 0 -1.76935,1.93455 1.9314583,1.7727083 89.9 0 0 1.77607,1.92836 z"
-                id="path16"
-                style="stroke-width:0.264583" />
-              <path
-                fill="#5f6368"
-                d="m 167.68512,133.97997 c 0.33867,-0.28575 0.64558,-0.57415 1.09008,-0.68792 q 1.17211,-0.29633 1.92881,0.48419 a 0.69585416,0.68262499 13.8 0 1 0.15875,0.25664 q 0.0159,0.0503 0.0609,0.0847 0.10054,0.0767 0.17198,-0.0265 0.57944,-0.82021 1.54252,-0.87048 1.93939,-0.0952 2.12989,1.87061 0.082,0.83608 0.0238,3.4925 -0.003,0.11641 -0.12171,0.11641 h -0.80433 q -0.11907,0 -0.11642,-0.11906 0.0106,-1.50813 -0.005,-3.19352 c -0.0159,-1.99496 -2.45004,-1.47902 -2.49238,0.12171 q -0.0503,1.87854 -0.0238,3.05329 0.003,0.13758 -0.13494,0.13758 l -0.78316,-0.003 q -0.1323,0 -0.12965,-0.1323 0.0265,-1.4896 -0.005,-3.15647 c -0.0397,-2.02142 -2.42623,-1.49755 -2.48709,0.0661 q -0.0688,1.67746 -0.0265,3.09298 0.003,0.13494 -0.12965,0.13229 h -0.80169 a 0.1031875,0.10054167 0 0 1 -0.10318,-0.10054 l -0.003,-5.06942 q 0,-0.17991 0.17992,-0.17991 l 0.64293,0.003 q 0.17198,0.003 0.15346,0.17463 l -0.037,0.38629 q -0.0212,0.18521 0.12171,0.0662 z"
-                id="path17"
-                style="stroke-width:0.264583" />
-              <path
-                fill="#5f6368"
-                d="m 176.65714,136.39297 q 0.16669,0.96572 0.84931,1.31762 1.40494,0.72231 2.35744,-0.59531 0.0397,-0.0529 0.0979,-0.0291 l 0.70643,0.30427 q 0.0662,0.0291 0.0344,0.0952 c -0.49742,1.00013 -1.47638,1.4605 -2.59027,1.35203 -2.70669,-0.26194 -3.39196,-4.0349 -1.05304,-5.32871 0.98689,-0.54504 2.44475,-0.35984 3.19352,0.54239 q 0.71437,0.86254 0.63235,2.02142 -0.0106,0.16933 -0.18256,0.16933 l -3.91319,-0.008 q -0.15875,0 -0.13229,0.15875 z m 0.16404,-0.99748 2.96863,-0.0106 a 0.03439583,0.03439583 0 0 0 0.0344,-0.0344 v -0.0238 a 1.2012083,1.4896041 89.8 0 0 -1.49489,-1.19591 h -0.0582 a 1.2012083,1.4896041 89.8 0 0 -1.48431,1.2065 v 0.0238 a 0.03439583,0.03439583 0 0 0 0.0344,0.0344 z"
-                id="path18"
-                style="stroke-width:0.264583" />
-              <path
-                fill="#5f6368"
-                d="m 158.0146,134.08051 q 0.66146,-1.06892 2.10344,-0.73554 a 0.079375,0.079375 0 0 1 0.0556,0.10847 l -0.29634,0.74348 a 0.1349375,0.1349375 0 0 1 -0.15345,0.082 c -1.15888,-0.254 -1.85473,0.57415 -1.81769,1.68805 q 0.0476,1.44462 0.003,2.63525 -0.005,0.10054 -0.10583,0.10054 l -0.79639,-0.005 a 0.1349375,0.13229166 0 0 1 -0.13494,-0.1323 v -5.08793 q 0,-0.127 0.12964,-0.127 l 0.73555,0.003 a 0.14022916,0.13758333 4.3 0 1 0.13758,0.15611 q -0.037,0.2831 0.0106,0.54768 0.0344,0.17728 0.12965,0.0238 z"
-                id="path19"
-                style="stroke-width:0.264583" />
-              <g
-                id="g19"
-                transform="matrix(0.30224767,0,0,0.29980472,127.52917,127.79376)"
-                style="display:inline">
-                <circle
-                  cx="24"
-                  cy="23.994699"
-                  r="12"
-                  style="fill:#ffffff"
-                  id="circle6" />
-                <path
-                  d="M 3.2154,36 A 24,24 0 1 0 12,3.2154 24,24 0 0 0 3.2154,36 Z M 34.3923,18 A 12,12 0 1 1 18,13.6077 12,12 0 0 1 34.3923,18 Z"
-                  style="fill:none"
-                  id="path6-1" />
-                <path
-                  d="M 24,12 H 44.7812 A 23.9939,23.9939 0 0 0 3.2173,12.0029 L 13.6079,30 13.6172,29.9976 A 11.9852,11.9852 0 0 1 24,12 Z"
-                  style="fill:url(#a)"
-                  id="path7-2" />
-                <circle
-                  cx="24"
-                  cy="24"
-                  r="9.5"
-                  style="fill:#1a73e8"
-                  id="circle7" />
-                <path
-                  d="M 34.3913,30.0029 24.0007,48 A 23.994,23.994 0 0 0 44.78,12.0031 H 23.9989 l -0.0025,0.0093 a 11.985,11.985 0 0 1 10.3949,17.9905 z"
-                  style="fill:url(#b)"
-                  id="path8-0" />
-                <path
-                  d="M 13.6086,30.0031 3.218,12.006 A 23.994,23.994 0 0 0 24.0025,48 L 34.3931,30.0029 34.3864,29.9961 a 11.9852,11.9852 0 0 1 -20.7778,0.007 z"
-                  style="fill:url(#c)"
-                  id="path9-4" />
-              </g>
-            </g>
-          </svg>
-
-         <br />MLService · CPU backend <sup><a href="#note-3">3</a></sup>
+          Core ML
+          <sup><a href="#note-3">3</a></sup>
+      </th>
+    </tr>
+    <tr class="title">
+      <th colspan="2">
+        <div class="tile">
+          <div>
+            <img src="../assets/images/implstatus/win.svg" alt="Windows" title="Windows">
+            Windows
+          </div>
+          <div>
+            <img src="../assets/images/implstatus/chromeos.svg" alt="ChromeOS" title="ChromeOS">
+            ChromeOS
+          </div>
+          <div>
+            <img src="../assets/images/implstatus/android_robot.svg" alt="Android" title="Android">
+            Android
+          </div>
+          <div>
+            <img src="../assets/images/implstatus/linux.svg" alt="Linux" title="Linux">
+            Linux
+          </div>
+        </div>
+      </th>
+      <th colspan="2">
+        <div class="tile">
+          <div>
+            <img src="../assets/images/implstatus/win.svg" alt="Windows" title="Windows">
+            Windows
+          </div>
+        </div>
+      </th>
+      <th colspan="2">
+        <div class="tile">
+          <div>
+          <img src="../assets/images/implstatus/mac.svg" alt="macOS" title="macOS">
+          macOS
+          </div>
+        </div>
       </th>
     </tr>
     <tr class="title">
@@ -350,13 +249,13 @@ sup {
 </table>
 
 <div class="impl_status">
-    <div class="title">XNNPack/CPU backend</div>
-    <div class="title">DirectML/GPU backend</div>
-    <div class="title">MLService/CPU backend</div>
+    <div class="title">TensorFlow Lite</div>
+    <div class="title">DirectML</div>
+    <div class="title">Core ML</div>
     <div>
-        <div>✅ Supported (<span id="x_supported"></span>)</div>
-        <div>⏳ Partly Implemented (<span id="x_partlyimplemented"></span>)</div>
-        <div>🚀 Work in Progress (<span id="x_workinprogress"></span>)</div>
+        <div>✅ Supported (<span id="tflite_supported"></span>)</div>
+        <div>⏳ Partly Implemented (<span id="tflite_partlyimplemented"></span>)</div>
+        <div>🚀 Work in Progress (<span id="tflite_workinprogress"></span>)</div>
         <div>❌ Not Supported</div>
     </div>
     <div>
@@ -366,9 +265,9 @@ sup {
         <div>❌ Not Supported</div>
     </div>
         <div>
-        <div>✅ Supported (<span id="mlservice_supported"></span>)</div>
-        <div>⏳ Partly Implemented (<span id="mlservice_partlyimplemented"></span>)</div>
-        <div>🚀 Work in Progress (<span id="mlservice_workinprogress"></span>)</div>
+        <div>✅ Supported (<span id="coreml_supported"></span>)</div>
+        <div>⏳ Partly Implemented (<span id="coreml_partlyimplemented"></span>)</div>
+        <div>🚀 Work in Progress (<span id="coreml_workinprogress"></span>)</div>
         <div>❌ Not Supported</div>
     </div>
 </div> 
@@ -378,7 +277,7 @@ sup {
 <table class="framework">
   <thead>
     <tr class="title">
-      <th rowspan="3">
+      <th rowspan="4">
         <a href="https://www.w3.org/TR/webnn/">
           <svg id="w3" x="0px" y="0px" viewBox="0 0 357.5 287" style="enable-background:new 0 0 357.5 287;">
             <style type="text/css">
@@ -419,7 +318,7 @@ sup {
       </th>
       <th colspan="2">
           <img
-          src="https://www.gstatic.com/devrel-devsite/prod/v8ec4d0a037302c47ae529ad4e3f06c9e782b3a31a381294b5a70403547dc6b12/tensorflow/images/lockup.svg">
+          src="https://www.gstatic.com/devrel-devsite/prod/v2ce49398fbedb6586ec054c8c0e071251fec28eb36277100a1795e671ae7c694/tensorflow/images/lockup.svg">
         Lite for TF.js<br />External Delegate
         <sup><a href="#note-8">8</a></sup>
       </th>
@@ -453,32 +352,32 @@ sup {
         <div>🚀 Work in Progress (<span id="ed_workinprogress"></span>)</div>
         <div>❌ Not Supported</div>
     </div>
-</div> 
+</div>
 
 <div class="mt-2">
   The total number of WebNN ops is 78. These tables currently lists ops that are implemented or work in progress by multiple backends and JavaScript machine learning frameworks.
 </div>
 
-<sup id="note-1">[1]</sup> XNNPack node definition in [`xnn_define_*`](https://github.com/google/XNNPACK/blob/master/include/xnnpack.h)<br/>
+<sup id="note-1">[1]</sup> [TensorFlow Lite Builtin Options](https://source.chromium.org/chromium/chromium/src/+/main:third_party/tflite/src/tensorflow/lite/schema/schema_generated.h;l=1246?q=BuiltinOptions_SoftmaxOptions&ss=chromium%2Fchromium%2Fsrc)<br/>
 <sup id="note-2">[2]</sup> [DirectML](https://learn.microsoft.com/en-us/windows/win32/api/_directml/) API<br/>
-<sup id="note-3">[3]</sup> [MLService / TensorFlow Lite Builtin Options](https://source.chromium.org/chromium/chromium/src/+/main:third_party/tflite/src/tensorflow/lite/schema/schema_generated.h;l=1246?q=BuiltinOptions_SoftmaxOptions&ss=chromium%2Fchromium%2Fsrc)<br/>
-<sup id="note-4">[4]</sup> This feature is experimental. Can be enabled by setting `#web-machine-learning-neural-network` flag to `Enabled`. Supported on CPUs on Windows.<br/>
+<sup id="note-3">[3]</sup> [Core ML](https://apple.github.io/coremltools/source/coremltools.converters.mil.mil.ops.defs.html) operators<br/>
+<sup id="note-4">[4]</sup> This feature is experimental. Can be enabled by setting `#web-machine-learning-neural-network` flag to `Enabled`.<br/>
 <sup id="note-5">[5]</sup> This feature is experimental. Can be enabled by setting `#web-machine-learning-neural-network` flag to `Enabled`. Supported on GPUs on Windows 11 21H2 or higher.<br/>
-<sup id="note-6">[6]</sup> This feature is experimental. Can be enabled by setting `#web-machine-learning-neural-network` flag to `Enabled`. Supported on CPUs on ChromeOS.<br/>
+<sup id="note-6">[6]</sup> This feature is experimental. Can be enabled by setting `#web-machine-learning-neural-network` flag to `Enabled`.<br/>
 <sup id="note-7">[7]</sup> ONNX [`Operator Schemas`](https://github.com/onnx/onnx/blob/main/docs/Operators.md) and [`WebNN EP Helper`](https://github.com/microsoft/onnxruntime/blob/main/onnxruntime/core/providers/webnn/builders/helper.h)<br/>
 <sup id="note-8">[8]</sup> TensorFlow Lite built-in operators [`kTfLiteBuiltin*`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/delegates/xnnpack/xnnpack_delegate.cc)
 
-Interested in contributing to this implementation status page? See <a href="https://github.com/webmachinelearning/webmachinelearning.github.io/blob/main/CONTRIBUTING.md">contributing guidelines</a>.
+🏅🏅🏅 Interested in contributing to this implementation status page? See <a href="https://github.com/webmachinelearning/webmachinelearning.github.io/blob/main/CONTRIBUTING.md">contributing guidelines</a>.
 
 <script>
   const qS = (selector) => {
     return document.querySelector(selector);
   }
-  
+
   const qSA = (selector) => {
     return document.querySelectorAll(selector);
   }
-  
+
   const init = () => {
     let ops = document.querySelector('#ops');
     let opsFramework = document.querySelector('#ops_framework');
@@ -510,50 +409,50 @@ Interested in contributing to this implementation status page? See <a href="http
             wpt = `<td class="wpt_wip">🚀🚀</td>`
           }
 
-          let xnnpack = '';
-          if (s.xnnpack_op.toString().trim() === "") {
-            xnnpack = `<td></td><td>${s.xnnpack_chromium_version_added}</td>`;
-          } else if (s.xnnpack_progress === 4) {
-            let xnnpack_ops = '';
-            if (s.xnnpack_op.length > 1) {
-              for (let o of s.xnnpack_op) {
-                xnnpack_ops = `✅ ${o} <br/>`;
-                xnnpack += xnnpack_ops;
+          let tflite = '';
+          if (s.tflite_op.toString().trim() === "") {
+            tflite = `<td></td><td>${s.tflite_chromium_version_added}</td>`;
+          } else if (s.tflite_progress === 4) {
+            let tflite_ops = '';
+            if (s.tflite_op.length > 1) {
+              for (let o of s.tflite_op) {
+                tflite_ops = `✅ ${o} <br/>`;
+                tflite += tflite_ops;
               }
-            } else if (s.xnnpack_op.length === 1) {
-              xnnpack = '✅ ' + s.xnnpack_op;
+            } else if (s.tflite_op.length === 1) {
+              tflite = '✅ ' + s.tflite_op;
             } else {
-              xnnpack = ``
+              tflite = ``
             }
-            xnnpack = `<td class="x_s">${xnnpack}</td><td>${s.xnnpack_chromium_version_added}</td>`;
-          } else if (s.xnnpack_progress === 3) {
-            let xnnpack_ops = '';
-            if (s.xnnpack_op.length > 1) {
-              for (let o of s.xnnpack_op) {
-                xnnpack_ops = `🚀 ${o} <br/>`;
-                xnnpack += xnnpack_ops;
+            tflite = `<td class="tflite_s">${tflite}</td><td>${s.tflite_chromium_version_added}</td>`;
+          } else if (s.tflite_progress === 3) {
+            let tflite_ops = '';
+            if (s.tflite_op.length > 1) {
+              for (let o of s.tflite_op) {
+                tflite_ops = `🚀 ${o} <br/>`;
+                tflite += tflite_ops;
               }
-            } else if (s.xnnpack_op.length === 1) {
-              xnnpack = '🚀 ' + s.xnnpack_op;
+            } else if (s.tflite_op.length === 1) {
+              tflite = '🚀 ' + s.tflite_op;
             } else {
-              xnnpack = ``
+              tflite = ``
             }
-            xnnpack = `<td class="x_wip">${xnnpack}</td><td>${s.xnnpack_chromium_version_added}</td>`;
-          } else if (s.xnnpack_progress === 2) {
-            let xnnpack_ops = '';
-            if (s.xnnpack_op.length > 1) {
-              for (let o of s.xnnpack_op) {
-                xnnpack_ops = `📅 ${o} <br/>`;
-                xnnpack += xnnpack_ops;
+            tflite = `<td class="tflite_wip">${tflite}</td><td>${s.tflite_chromium_version_added}</td>`;
+          } else if (s.tflite_progress === 2) {
+            let tflite_ops = '';
+            if (s.tflite_op.length > 1) {
+              for (let o of s.tflite_op) {
+                tflite_ops = `📅 ${o} <br/>`;
+                tflite += tflite_ops;
               }
-            } else if (s.xnnpack_op.length === 1) {
-              xnnpack = '📅 ' + s.xnnpack_op;
+            } else if (s.tflite_op.length === 1) {
+              tflite = '📅 ' + s.tflite_op;
             } else {
-              xnnpack = ``
+              tflite = ``
             }
-            xnnpack = `<td class="x_plan">${xnnpack}</td><td>${s.xnnpack_chromium_version_added}</td>`;
+            tflite = `<td class="tflite_plan">${tflite}</td><td>${s.tflite_chromium_version_added}</td>`;
           } else {
-            xnnpack = `<td></td><td>${s.xnnpack_chromium_version_added}</td>`;
+            tflite = `<td></td><td>${s.tflite_chromium_version_added}</td>`;
           }
 
           let dml = '';
@@ -602,159 +501,159 @@ Interested in contributing to this implementation status page? See <a href="http
             dml = `<td></td><td>${s.dml_chromium_version_added}</td>`;
           }
 
-          let mlservice = '';
-          if (s.mlservice_op.toString().trim() === "") {
-            mlservice = `<td></td><td>${s.mlservice_chromium_version_added}</td>`;
-          } else if (s.mlservice_progress === 4) {
-            let mlservice_ops = '';
-            if (s.mlservice_op.length > 1) {
-              for (let o of s.mlservice_op) {
-                mlservice_ops = `✅ ${o} <br/>`;
-                mlservice += mlservice_ops;
+          let coreml = '';
+          if (s.coreml_op.toString().trim() === "") {
+            coreml = `<td></td><td>${s.coreml_chromium_version_added}</td>`;
+          } else if (s.coreml_progress === 4) {
+            let coreml_ops = '';
+            if (s.coreml_op.length > 1) {
+              for (let o of s.coreml_op) {
+                coreml_ops = `✅ ${o} <br/>`;
+                coreml += coreml_ops;
               }
-            } else if (s.mlservice_op.length === 1) {
-              mlservice = '✅ ' + s.mlservice_op;
+            } else if (s.coreml_op.length === 1) {
+              coreml = '✅ ' + s.coreml_op;
             } else {
-              mlservice = ``
+              coreml = ``
             }
-            mlservice = `<td class="mlservice_s">${mlservice}</td><td>${s.mlservice_chromium_version_added}</td>`;
-          } else if (s.mlservice_progress === 3) {
-            let mlservice_ops = '';
-            if (s.mlservice_op.length > 1) {
-              for (let o of s.mlservice_op) {
-                mlservice_ops = `🚀 ${o} <br/>`;
-                mlservice += mlservice_ops;
+            coreml = `<td class="coreml_s">${coreml}</td><td>${s.coreml_chromium_version_added}</td>`;
+          } else if (s.coreml_progress === 3) {
+            let coreml_ops = '';
+            if (s.coreml_op.length > 1) {
+              for (let o of s.coreml_op) {
+                coreml_ops = `🚀 ${o} <br/>`;
+                coreml += coreml_ops;
               }
-            } else if (s.mlservice_op.length === 1) {
-              mlservice = '🚀 ' + s.mlservice_op;
+            } else if (s.coreml_op.length === 1) {
+              coreml = '🚀 ' + s.coreml_op;
             } else {
-              mlservice = ``
+              coreml = ``
             }
-            mlservice = `<td class="mlservice_wip">${mlservice}</td><td>${s.mlservice_chromium_version_added}</td>`;
-          } else if (s.mlservice_progress === 2) {
-            let mlservice_ops = '';
-            if (s.mlservice_op.length > 1) {
-              for (let o of s.mlservice_op) {
-                mlservice_ops = `📅 ${o} <br/>`;
-                mlservice += mlservice_ops;
+            coreml = `<td class="coreml_wip">${coreml}</td><td>${s.coreml_chromium_version_added}</td>`;
+          } else if (s.coreml_progress === 2) {
+            let coreml_ops = '';
+            if (s.coreml_op.length > 1) {
+              for (let o of s.coreml_op) {
+                coreml_ops = `📅 ${o} <br/>`;
+                coreml += coreml_ops;
               }
-            } else if (s.mlservice_op.length === 1) {
-              mlservice = '📅 ' + s.mlservice_op;
+            } else if (s.coreml_op.length === 1) {
+              coreml = '📅 ' + s.coreml_op;
             } else {
-              mlservice = ``
+              coreml = ``
             }
-            mlservice = `<td class="mlservice_plan">${mlservice}</td><td>${s.mlservice_chromium_version_added}</td>`;
+            coreml = `<td class="coreml_plan">${coreml}</td><td>${s.coreml_chromium_version_added}</td>`;
           } else {
-            mlservice = `<td></td><td>${s.mlservice_chromium_version_added}</td>`;
+            coreml = `<td></td><td>${s.coreml_chromium_version_added}</td>`;
           }
 
-          let tflite = '';
-          if (s.tflite_op.toString().trim() === "") {
-            tflite = `<td></td><td>${s.tflite_version_added}</td>`;
-          } else if (s.tflite_progress === 4) {
-            let tflite_ops = '';
-            if (s.tflite_op.length > 1) {
-              for (let o of s.tflite_op) {
-                tflite_ops = `✅ ${o} <br/>`;
-                tflite += tflite_ops;
+          let fw_tflite = '';
+          if (s.fw_tflite_op.toString().trim() === "") {
+            fw_tflite = `<td></td><td>${s.fw_tflite_version_added}</td>`;
+          } else if (s.fw_tflite_progress === 4) {
+            let fw_tflite_ops = '';
+            if (s.fw_tflite_op.length > 1) {
+              for (let o of s.fw_tflite_op) {
+                fw_tflite_ops = `✅ ${o} <br/>`;
+                fw_tflite += fw_tflite_ops;
               }
-            } else if (s.tflite_op.length === 1) {
-              tflite = '✅ ' + s.tflite_op;
+            } else if (s.fw_tflite_op.length === 1) {
+              fw_tflite = '✅ ' + s.fw_tflite_op;
             } else {
-              tflite = ``
+              fw_tflite = ``
             }
-            tflite = `<td class="ed_s">${tflite}</td><td>${s.tflite_version_added}</td>`;
-          } else if (s.tflite_progress === 3) {
-            let tflite_ops = '';
-            if (s.tflite_op.length > 1) {
-              for (let o of s.tflite_op) {
-                tflite_ops = `🚀 ${o} <br/>`;
-                tflite += tflite_ops;
+            fw_tflite = `<td class="ed_s">${fw_tflite}</td><td>${s.fw_tflite_version_added}</td>`;
+          } else if (s.fw_tflite_progress === 3) {
+            let fw_tflite_ops = '';
+            if (s.fw_tflite_op.length > 1) {
+              for (let o of s.fw_tflite_op) {
+                fw_tflite_ops = `🚀 ${o} <br/>`;
+                fw_tflite += fw_tflite_ops;
               }
-            } else if (s.tflite_op.length === 1) {
-              tflite = '🚀 ' + s.tflite_op;
+            } else if (s.fw_tflite_op.length === 1) {
+              fw_tflite = '🚀 ' + s.fw_tflite_op;
             } else {
-              tflite = ``
+              fw_tflite = ``
             }
-            tflite = `<td class="ed_wip">${tflite}</td><td>${s.tflite_version_added}</td>`;
-          } else if (s.tflite_progress === 2) {
-            let tflite_ops = '';
-            if (s.tflite_op.length > 1) {
-              for (let o of s.tflite_op) {
-                tflite_ops = `📅 ${o} <br/>`;
-                tflite += tflite_ops;
+            fw_tflite = `<td class="ed_wip">${fw_tflite}</td><td>${s.fw_tflite_version_added}</td>`;
+          } else if (s.fw_tflite_progress === 2) {
+            let fw_tflite_ops = '';
+            if (s.fw_tflite_op.length > 1) {
+              for (let o of s.fw_tflite_op) {
+                fw_tflite_ops = `📅 ${o} <br/>`;
+                fw_tflite += fw_tflite_ops;
               }
-            } else if (s.tflite_op.length === 1) {
-              tflite = '📅 ' + s.tflite_op;
+            } else if (s.fw_tflite_op.length === 1) {
+              fw_tflite = '📅 ' + s.fw_tflite_op;
             } else {
-              tflite = ``
+              fw_tflite = ``
             }
-            tflite = `<td class="ed_plan">${tflite}</td><td>${s.tflite_version_added}</td>`;
+            fw_tflite = `<td class="ed_plan">${fw_tflite}</td><td>${s.fw_tflite_version_added}</td>`;
           } else {
-            tflite = `<td></td><td>${s.tflite_version_added}</td>`;
+            fw_tflite = `<td></td><td>${s.fw_tflite_version_added}</td>`;
           }
 
-          let ort = '';
-          if (s.ort_op.toString().trim() === "") {
-            ort = `<td></td><td>${s.ort_version_added}</td>`;
-          } else if (s.ort_progress === 4) {
-            let ort_ops = '';
-            if (s.ort_op.length > 1) {
-              for (let o of s.ort_op) {
-                ort_ops = `✅ ${o} <br/>`;
-                ort += ort_ops;
+          let fw_ort = '';
+          if (s.fw_ort_op.toString().trim() === "") {
+            fw_ort = `<td></td><td>${s.fw_ort_version_added}</td>`;
+          } else if (s.fw_ort_progress === 4) {
+            let fw_ort_ops = '';
+            if (s.fw_ort_op.length > 1) {
+              for (let o of s.fw_ort_op) {
+                fw_ort_ops = `✅ ${o} <br/>`;
+                fw_ort += fw_ort_ops;
               }
-            } else if (s.ort_op.length === 1) {
-              ort = '✅ ' + s.ort_op;
+            } else if (s.fw_ort_op.length === 1) {
+              fw_ort = '✅ ' + s.fw_ort_op;
             } else {
-              ort = ``
+              fw_ort = ``
             }
-            ort = `<td class="ep_s">${ort}</td><td>${s.ort_version_added}</td>`;
-          } else if (s.ort_progress === 3) {
-            let ort_ops = '';
-            if (s.ort_op.length > 1) {
-              for (let o of s.ort_op) {
-                ort_ops = `🚀 ${o} <br/>`;
-                ort += ort_ops;
+            fw_ort = `<td class="ep_s">${fw_ort}</td><td>${s.fw_ort_version_added}</td>`;
+          } else if (s.fw_ort_progress === 3) {
+            let fw_ort_ops = '';
+            if (s.fw_ort_op.length > 1) {
+              for (let o of s.fw_ort_op) {
+                fw_ort_ops = `🚀 ${o} <br/>`;
+                fw_ort += fw_ort_ops;
               }
-            } else if (s.ort_op.length === 1) {
-              ort = '🚀 ' + s.ort_op;
+            } else if (s.fw_ort_op.length === 1) {
+              fw_ort = '🚀 ' + s.fw_ort_op;
             } else {
-              ort = ``
+              fw_ort = ``
             }
-            ort = `<td class="ep_wip">${ort}</td><td>${s.ort_version_added}</td>`;
-          } else if (s.ort_progress === 2) {
-            let ort_ops = '';
-            if (s.ort_op.length > 1) {
-              for (let o of s.ort_op) {
-                ort_ops = `📅 ${o} <br/>`;
-                ort += ort_ops;
+            fw_ort = `<td class="ep_wip">${fw_ort}</td><td>${s.fw_ort_version_added}</td>`;
+          } else if (s.fw_ort_progress === 2) {
+            let fw_ort_ops = '';
+            if (s.fw_ort_op.length > 1) {
+              for (let o of s.fw_ort_op) {
+                fw_ort_ops = `📅 ${o} <br/>`;
+                fw_ort += fw_ort_ops;
               }
-            } else if (s.ort_op.length === 1) {
-              ort = '📅 ' + s.ort_op;
+            } else if (s.fw_ort_op.length === 1) {
+              fw_ort = '📅 ' + s.fw_ort_op;
             } else {
-              ort = ``
+              fw_ort = ``
             }
-            ort = `<td class="ep_plan">${ort}</td><td>${s.ort_version_added}</td>`;
+            fw_ort = `<td class="ep_plan">${fw_ort}</td><td>${s.fw_ort_version_added}</td>`;
           } else {
-            ort = `<td></td><td>${s.ort_version_added}</td>`;
+            fw_ort = `<td></td><td>${s.fw_ort_version_added}</td>`;
           }
 
           oplist += `
               <tr>
                 ${spec}
                 ${wpt}
-                ${xnnpack}
+                ${tflite}
                 ${dml}
-                ${mlservice}
+                ${coreml}
               </tr>
           `;
 
           oplistFramework += `
               <tr>
                 ${spec}
-                ${ort}
-                ${tflite}
+                ${fw_ort}
+                ${fw_tflite}
               </tr>
           `;
         }
@@ -763,9 +662,9 @@ Interested in contributing to this implementation status page? See <a href="http
           <tr>
             <th id="spec_total"></th>
             <th id="wpt_total"></th>
-            <th id="x_total" colspan="2"></th>
+            <th id="tflite_total" colspan="2"></th>
             <th id="dml_total" colspan="2"></th>
-            <th id="mlservice_total" colspan="2"></th>
+            <th id="coreml_total" colspan="2"></th>
           </tr>
         `;
 
@@ -789,19 +688,19 @@ Interested in contributing to this implementation status page? See <a href="http
     let spec_s = qSA('.spec').length / 2;
     qS('#spec_total').innerHTML = `${spec_s}`;
     qS('#spec2_total').innerHTML = `${spec_s}`;
-  
+
     let wpt_s = qSA('.wpt_s').length;
     let wpt_percentage = (wpt_s / spec_defined_total * 100).toFixed(1) ;
     qS('#wpt_total').innerHTML = `${wpt_s} / ${spec_defined_total}, ${wpt_percentage}%`;
 
-    let x_s = qSA('.x_s').length;
-    let x_pi = qSA('.x_pi').length;
-    let x_wip = qSA('.x_wip').length;
-    let x_percentage = (x_s / spec_defined_total * 100).toFixed(1) ;
-    qS('#x_total').innerHTML = `${x_s} / ${spec_defined_total}, ${x_percentage}%`;
-    qS('#x_supported').innerHTML = x_s;
-    qS('#x_partlyimplemented').innerHTML = x_pi;
-    qS('#x_workinprogress').innerHTML = x_wip;
+    let tflite_s = qSA('.tflite_s').length;
+    let tflite_pi = qSA('.tflite_pi').length;
+    let tflite_wip = qSA('.tflite_wip').length;
+    let tflite_percentage = (tflite_s / spec_defined_total * 100).toFixed(1) ;
+    qS('#tflite_total').innerHTML = `${tflite_s} / ${spec_defined_total}, ${tflite_percentage}%`;
+    qS('#tflite_supported').innerHTML = tflite_s;
+    qS('#tflite_partlyimplemented').innerHTML = tflite_pi;
+    qS('#tflite_workinprogress').innerHTML = tflite_wip;
 
     let dml_s = qSA('.dml_s').length;
     let dml_pi = qSA('.dml_pi').length;
@@ -812,14 +711,14 @@ Interested in contributing to this implementation status page? See <a href="http
     qS('#dml_partlyimplemented').innerHTML = dml_pi;
     qS('#dml_workinprogress').innerHTML = dml_wip;
 
-    let mlservice_s = qSA('.mlservice_s').length;
-    let mlservice_pi = qSA('.mlservice_pi').length;
-    let mlservice_wip = qSA('.mlservice_wip').length;
-    let mlservice_percentage = (mlservice_s / spec_defined_total * 100).toFixed(1) ;
-    qS('#mlservice_total').innerHTML = `${mlservice_s} / ${spec_defined_total}, ${mlservice_percentage}%`;
-    qS('#mlservice_supported').innerHTML = mlservice_s;
-    qS('#mlservice_partlyimplemented').innerHTML = mlservice_pi;
-    qS('#mlservice_workinprogress').innerHTML = mlservice_wip;
+    let coreml_s = qSA('.coreml_s').length;
+    let coreml_pi = qSA('.coreml_pi').length;
+    let coreml_wip = qSA('.coreml_wip').length;
+    let coreml_percentage = (coreml_s / spec_defined_total * 100).toFixed(1) ;
+    qS('#coreml_total').innerHTML = `${coreml_s} / ${spec_defined_total}, ${coreml_percentage}%`;
+    qS('#coreml_supported').innerHTML = coreml_s;
+    qS('#coreml_partlyimplemented').innerHTML = coreml_pi;
+    qS('#coreml_workinprogress').innerHTML = coreml_wip;
 
     let ed_s = qSA('.ed_s').length;
     let ed_pi = qSA('.ed_pi').length;
