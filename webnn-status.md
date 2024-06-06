@@ -191,7 +191,7 @@ sup {
       <th colspan="2">
         <div class="tile">
           <div>
-            <img src="../assets/images/implstatus/win.svg" alt="Windows" title="Windows">
+            <img src="https://wpt.fyi/static/win.svg" alt="Windows" title="Windows">
             Windows
           </div>
           <div>
@@ -203,7 +203,7 @@ sup {
             Android
           </div>
           <div>
-            <img src="../assets/images/implstatus/linux.svg" alt="Linux" title="Linux">
+            <img src="https://wpt.fyi/static/linux.svg" alt="Linux" title="Linux">
             Linux
           </div>
         </div>
@@ -211,7 +211,7 @@ sup {
       <th colspan="2">
         <div class="tile">
           <div>
-            <img src="../assets/images/implstatus/win.svg" alt="Windows" title="Windows">
+            <img src="https://wpt.fyi/static/win.svg" alt="Windows" title="Windows">
             Windows
           </div>
         </div>
@@ -219,7 +219,7 @@ sup {
       <th colspan="2">
         <div class="tile">
           <div>
-          <img src="../assets/images/implstatus/mac.svg" alt="macOS" title="macOS">
+          <img src="https://wpt.fyi/static/mac.svg" alt="macOS" title="macOS">
           macOS
           </div>
         </div>
