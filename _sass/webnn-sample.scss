@@ -130,6 +130,10 @@ $black: #000;
   background-size: 150%;
 }
 
+#bg_nnotepad {
+  background: url("../images/webnnsamples/nnotepad.png") center / cover no-repeat;
+}
+
 #bg_ic {
   background: url("../images/webnnsamples/ic.jpg") center / cover no-repeat;
 }
@@ -137,7 +141,6 @@ $black: #000;
 #bg_hr {
   background: url("../images/webnnsamples/handwritten.png") center / cover no-repeat;
 }
-
 
 #bg_st {
   background: url("../images/webnnsamples/starrynight.jpg") center / cover no-repeat;
