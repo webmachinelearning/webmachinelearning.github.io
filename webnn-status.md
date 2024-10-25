@@ -358,7 +358,7 @@ sup {
   The total number of WebNN ops is 78. These tables currently lists ops that are implemented or work in progress by multiple backends and JavaScript machine learning frameworks.
 </div>
 
-<sup id="note-1">[1]</sup> [TensorFlow Lite Builtin Options](https://source.chromium.org/chromium/chromium/src/+/main:third_party/tflite/src/tensorflow/lite/schema/schema_generated.h;l=1246?q=BuiltinOptions_SoftmaxOptions&ss=chromium%2Fchromium%2Fsrc)<br/>
+<sup id="note-1">[1]</sup> [TensorFlow Lite Builtin Options](https://source.chromium.org/chromium/chromium/src/+/main:services/webnn/tflite/op_resolver.cc)<br/>
 <sup id="note-2">[2]</sup> [DirectML](https://learn.microsoft.com/en-us/windows/win32/api/_directml/) API<br/>
 <sup id="note-3">[3]</sup> [Core ML](https://apple.github.io/coremltools/source/coremltools.converters.mil.mil.ops.defs.html) operators<br/>
 <sup id="note-4">[4]</sup> This feature is experimental. Can be enabled by setting `#web-machine-learning-neural-network` flag to `Enabled`.<br/>
@@ -683,7 +683,7 @@ sup {
   }
 
   const count = () => {
-    let spec_defined_total = 78;
+    let spec_defined_total = 91;
 
     let spec_s = qSA('.spec').length / 2;
     qS('#spec_total').innerHTML = `${spec_s}`;
