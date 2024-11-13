@@ -260,8 +260,8 @@
       "fw_tflite_progress": 2,
       "fw_tflite_version_added": "",
       "fw_ort_op": ["CumSum"],
-      "fw_ort_progress": 3,
-      "fw_ort_version_added": "1.20.0-dev",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.21.0-dev",
       "notes": ""
     },
     {
@@ -271,18 +271,18 @@
       "wpt": "dequantizeLinear",
       "wpt_progress": 4,
       "tflite_op": [
-        ""
+        "QUANTIZE"
       ],
-      "tflite_progress": 2,
-      "tflite_chromium_version_added": "",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M132",
       "dml_op": [
         "ELEMENT_WISE_DEQUANTIZE_LINEAR"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M132",
-      "coreml_op": ["dequantize"],
-      "coreml_progress": 4,
-      "coreml_chromium_version_added": "M132",
+      "coreml_op": ["dequantize_linear"],
+      "coreml_progress": 3,
+      "coreml_chromium_version_added": "M133",
       "fw_tflite_op": [""],
       "fw_tflite_progress": 2,
       "fw_tflite_version_added": "",
@@ -665,7 +665,7 @@
       "tflite_op": [
         "LOGICAL_AND"
       ],
-      "tflite_progress": 3,
+      "tflite_progress": 4,
       "tflite_chromium_version_added": "M132",
       "dml_op": [
         "ELEMENT_WISE_LOGICAL_AND"
@@ -681,8 +681,8 @@
       "fw_ort_op": [
         "And"
       ],
-      "fw_ort_progress": 3,
-      "fw_ort_version_added": "1.20.0-dev",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.21.0-dev",
       "notes": ""
     },
     {
@@ -694,7 +694,7 @@
       "tflite_op": [
         "LOGICAL_OR"
       ],
-      "tflite_progress": 3,
+      "tflite_progress": 4,
       "tflite_chromium_version_added": "M132",
       "dml_op": [
         "ELEMENT_WISE_LOGICAL_OR"
@@ -710,8 +710,8 @@
       "fw_ort_op": [
         "Or"
       ],
-      "fw_ort_progress": 3,
-      "fw_ort_version_added": "1.20.0-dev",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.21.0-dev",
       "notes": ""
     },
     {
@@ -721,9 +721,9 @@
       "wpt": "logical_xor",
       "wpt_progress": 4,
       "tflite_op": [
-        ""
+        "NOT_EQUAL"
       ],
-      "tflite_progress": 3,
+      "tflite_progress": 4,
       "tflite_chromium_version_added": "M132",
       "dml_op": [
         "ELEMENT_WISE_LOGICAL_XOR"
@@ -739,8 +739,8 @@
       "fw_ort_op": [
         "Xor"
       ],
-      "fw_ort_progress": 3,
-      "fw_ort_version_added": "1.20.0-dev",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.21.0-dev",
       "notes": ""
     },
     {
@@ -1247,10 +1247,10 @@
       "wpt": "gatherElements",
       "wpt_progress": 4,
       "tflite_op": [
-        ""
+        "Emulated with GATHER_ND"
       ],
-      "tflite_progress": 2,
-      "tflite_chromium_version_added": "",
+      "tflite_progress": 3,
+      "tflite_chromium_version_added": "M133",
       "dml_op": [
         "GATHER_ELEMENTS"
       ],
@@ -1370,9 +1370,9 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M125",
-      "coreml_op": [""],
-      "coreml_progress": 2,
-      "coreml_chromium_version_added": "",
+      "coreml_op": ["gru"],
+      "coreml_progress": 3,
+      "coreml_chromium_version_added": "M133",
       "fw_tflite_op": [""],
       "fw_tflite_progress": 2,
       "fw_tflite_version_added": "",
@@ -1397,9 +1397,9 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M125",
-      "coreml_op": [""],
-      "coreml_progress": 2,
-      "coreml_chromium_version_added": "",
+      "coreml_op": ["gru"],
+      "coreml_progress": 3,
+      "coreml_chromium_version_added": "M133",
       "fw_tflite_op": [""],
       "fw_tflite_progress": 2,
       "fw_tflite_version_added": "",
@@ -1585,35 +1585,6 @@
       "notes": ""
     },
     {
-      "op": "❔localResponseNormalization",
-      "op_id": "localresponsenormalization",
-      "version": "",
-      "wpt": "localResponseNormalization",
-      "wpt_progress": 3,
-      "tflite_op": [
-        ""
-      ],
-      "tflite_progress": 2,
-      "tflite_chromium_version_added": "",
-      "dml_op": [
-        "LOCAL_RESPONSE_NORMALIZATION"
-      ],
-      "dml_progress": 2,
-      "dml_chromium_version_added": "",
-      "coreml_op": [""],
-      "coreml_progress": 2,
-      "coreml_chromium_version_added": "",
-      "fw_tflite_op": [""],
-      "fw_tflite_progress": 2,
-      "fw_tflite_version_added": "",
-      "fw_ort_op": [
-        ""
-      ],
-      "fw_ort_progress": 2,
-      "fw_ort_version_added": "",
-      "notes": ""
-    },
-    {
       "op": "lstm",
       "op_id": "lstm",
       "version": "",
@@ -1767,7 +1738,7 @@
       "wpt": "pooling",
       "wpt_progress": 4,
       "tflite_op": [""],
-      "tflite_progress": 3,
+      "tflite_progress": 2,
       "tflite_chromium_version_added": "",
       "dml_op": [
         "LP_POOLING"
@@ -1837,8 +1808,8 @@
       "dml_progress": 4,
       "dml_chromium_version_added": "M120",
       "coreml_op": ["prelu"],
-      "coreml_progress": 4,
-      "coreml_chromium_version_added": "M126",
+      "coreml_progress": 3,
+      "coreml_chromium_version_added": "",
       "fw_tflite_op": [
         "Prelu"
       ],
@@ -1858,18 +1829,18 @@
       "wpt": "quantizeLinear",
       "wpt_progress": 4,
       "tflite_op": [
-        ""
+        "QUANTIZE"
       ],
-      "tflite_progress": 2,
-      "tflite_chromium_version_added": "",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M132",
       "dml_op": [
         "ELEMENT_WISE_QUANTIZE_LINEAR"
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M132",
-      "coreml_op": ["dequantize"],
-      "coreml_progress": 4,
-      "coreml_chromium_version_added": "M132",
+      "coreml_op": ["quantize_linear"],
+      "coreml_progress": 3,
+      "coreml_chromium_version_added": "M133",
       "fw_tflite_op": [""],
       "fw_tflite_progress": 2,
       "fw_tflite_version_added": "",
@@ -2258,16 +2229,45 @@
       "notes": ""
     },
     {
-      "op": "scatterElements",
-      "op_id": "scatterelements",
+      "op": "reverse",
+      "op_id": "reverse",
       "version": "",
-      "wpt": "gatherElements",
-      "wpt_progress": 4,
+      "wpt": "reverse",
+      "wpt_progress": 3,
       "tflite_op": [
         ""
       ],
       "tflite_progress": 2,
       "tflite_chromium_version_added": "",
+      "dml_op": [
+        "SLICE1"
+      ],
+      "dml_progress": 3,
+      "dml_chromium_version_added": "M133",
+      "coreml_op": [""],
+      "coreml_progress": 2,
+      "coreml_chromium_version_added": "",
+      "fw_tflite_op": [
+        ""
+      ],
+      "fw_tflite_progress": 2,
+      "fw_tflite_version_added": "",
+      "fw_ort_op": ["Slice"],
+      "fw_ort_progress": 3,
+      "fw_ort_version_added": "1.21.0-dev",
+      "notes": ""
+    },
+    {
+      "op": "scatterElements",
+      "op_id": "scatterelements",
+      "version": "",
+      "wpt": "scatterElements",
+      "wpt_progress": 4,
+      "tflite_op": [
+        "Emulated with SCATTER_ND and WHERE"
+      ],
+      "tflite_progress": 3,
+      "tflite_chromium_version_added": "M133",
       "dml_op": [
         "SCATTER_ELEMENTS"
       ],
@@ -2293,10 +2293,10 @@
       "wpt": "scatterND",
       "wpt_progress": 4,
       "tflite_op": [
-        ""
+        "SCATTER_ND"
       ],
-      "tflite_progress": 2,
-      "tflite_chromium_version_added": "",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M132",
       "dml_op": [
         "SCATTER_ND"
       ],
@@ -2371,8 +2371,8 @@
       "fw_ort_op": [
         "Sign"
       ],
-      "fw_ort_progress": 3,
-      "fw_ort_version_added": "1.20.0-dev",
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.21.0-dev",
       "notes": ""
     },
     {
