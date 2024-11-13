@@ -175,7 +175,7 @@ sup {
     </tr>
         <tr class="title">
       <th colspan="2">
-        TensorFlow Lite
+        LiteRT
         <sup><a href="#note-1">1</a></sup>
       </th>
       <th colspan="2">
@@ -249,7 +249,7 @@ sup {
 </table>
 
 <div class="impl_status">
-    <div class="title">TensorFlow Lite</div>
+    <div class="title">LiteRT</div>
     <div class="title">DirectML</div>
     <div class="title">Core ML</div>
     <div>
@@ -313,13 +313,13 @@ sup {
     </tr>
     <tr class="title">
       <th colspan="2">
-        <img src="https://onnxruntime.ai/images/svg/ONNX-Runtime-logo.svg" /><br />Execution Provider
+        <a title="WebNN EP of ONNX Runtime Web" href="https://onnxruntime.ai/docs/tutorials/web/ep-webnn.html"><img src="https://onnxruntime.ai/images/svg/ONNX-Runtime-logo.svg" /></a><br />Execution Provider
         <sup><a href="#note-7">7</a></sup>
       </th>
       <th colspan="2">
-          <img
-          src="https://www.gstatic.com/devrel-devsite/prod/v2ce49398fbedb6586ec054c8c0e071251fec28eb36277100a1795e671ae7c694/tensorflow/images/lockup.svg">
-        Lite for TF.js<br />External Delegate
+          <a title="LiteRT" href="https://developers.googleblog.com/en/tensorflow-lite-is-now-litert/"><img
+          src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/LiteRT_BlogGraphics_4209x1253px_1.original.jpg" alt="LiteRT"></a>
+        <br />External Delegate
         <sup><a href="#note-8">8</a></sup>
       </th>
     </tr>
@@ -339,7 +339,7 @@ sup {
 
 <div class="impl_status_framework">
     <div class="title">ONNX Runtime Web<br/>Execution Provider</div>
-    <div class="title">TensorFlow.js/TFLite<br/>External Delegate</div>
+    <div class="title">LiteRT<br/>External Delegate</div>
     <div>
         <div>✅ Supported (<span id="ep_supported"></span>)</div>
         <div>⏳ Partly Implemented (<span id="ep_partlyimplemented"></span>)</div>
@@ -358,14 +358,14 @@ sup {
   The total number of WebNN ops is 78. These tables currently lists ops that are implemented or work in progress by multiple backends and JavaScript machine learning frameworks.
 </div>
 
-<sup id="note-1">[1]</sup> [TensorFlow Lite Builtin Options](https://source.chromium.org/chromium/chromium/src/+/main:services/webnn/tflite/op_resolver.cc)<br/>
+<sup id="note-1">[1]</sup> [LiteRT Builtin Options](https://source.chromium.org/chromium/chromium/src/+/main:services/webnn/tflite/op_resolver.cc)<br/>
 <sup id="note-2">[2]</sup> [DirectML](https://learn.microsoft.com/en-us/windows/win32/api/_directml/) API<br/>
 <sup id="note-3">[3]</sup> [Core ML](https://apple.github.io/coremltools/source/coremltools.converters.mil.mil.ops.defs.html) operators<br/>
 <sup id="note-4">[4]</sup> This feature is experimental. Can be enabled by setting `#web-machine-learning-neural-network` flag to `Enabled`.<br/>
 <sup id="note-5">[5]</sup> This feature is experimental. Can be enabled by setting `#web-machine-learning-neural-network` flag to `Enabled`. Supported on GPUs on Windows 11 21H2 or higher.<br/>
 <sup id="note-6">[6]</sup> This feature is experimental. Can be enabled by setting `#web-machine-learning-neural-network` flag to `Enabled`.<br/>
 <sup id="note-7">[7]</sup> ONNX [`Operator Schemas`](https://github.com/onnx/onnx/blob/main/docs/Operators.md) and [`WebNN EP Helper`](https://github.com/microsoft/onnxruntime/blob/main/onnxruntime/core/providers/webnn/builders/helper.h)<br/>
-<sup id="note-8">[8]</sup> TensorFlow Lite built-in operators [`kTfLiteBuiltin*`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/delegates/xnnpack/xnnpack_delegate.cc)
+<sup id="note-8">[8]</sup> LiteRT built-in operators [`kTfLiteBuiltin*`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/delegates/xnnpack/xnnpack_delegate.cc)
 
 🏅🏅🏅 Interested in contributing to this implementation status page? See <a href="https://github.com/webmachinelearning/webmachinelearning.github.io/blob/main/CONTRIBUTING.md">contributing guidelines</a>.
 
