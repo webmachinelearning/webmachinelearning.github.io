@@ -683,7 +683,7 @@ sup {
   }
 
   const count = () => {
-    let spec_defined_total = 91;
+    let spec_defined_total = 92;
 
     let spec_s = qSA('.spec').length / 2;
     qS('#spec_total').innerHTML = `${spec_s}`;
