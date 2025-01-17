@@ -254,8 +254,8 @@
       "dml_progress": 4,
       "dml_chromium_version_added": "M131",
       "coreml_op": ["cumsum"],
-      "coreml_progress": 2,
-      "coreml_chromium_version_added": "",
+      "coreml_progress": 4,
+      "coreml_chromium_version_added": "M132",
       "fw_tflite_op": [""],
       "fw_tflite_progress": 2,
       "fw_tflite_version_added": "",
@@ -446,6 +446,37 @@
       ],
       "fw_ort_progress": 4,
       "fw_ort_version_added": "1.18.0",
+      "notes": ""
+    },
+    {
+      "op": "element-wise binary / notEqual",
+      "op_id": "binary",
+      "version": "",
+      "wpt": "not_equal",
+      "wpt_progress": 4,
+      "tflite_op": [
+        "NotEqual"
+      ],
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M134",
+      "dml_op": [
+        "Emulated with ELEMENT_WISE_LOGICAL_EQUALS and ELEMENT_WISE_LOGICAL_NOT"
+      ],
+      "dml_progress": 4,
+      "dml_chromium_version_added": "M134",
+      "coreml_op": ["not_equal"],
+      "coreml_progress": 4,
+      "coreml_chromium_version_added": "M134",
+      "fw_tflite_op": [
+        "NotEqual"
+      ],
+      "fw_tflite_progress": 3,
+      "fw_tflite_version_added": "Fork",
+      "fw_ort_op": [
+        "Not Equal"
+      ],
+      "fw_ort_progress": 4,
+      "fw_ort_version_added": "1.21.0-dev",
       "notes": ""
     },
     {
@@ -1371,7 +1402,7 @@
       "dml_progress": 4,
       "dml_chromium_version_added": "M125",
       "coreml_op": ["gru"],
-      "coreml_progress": 3,
+      "coreml_progress": 4,
       "coreml_chromium_version_added": "M133",
       "fw_tflite_op": [""],
       "fw_tflite_progress": 2,
@@ -1398,7 +1429,7 @@
       "dml_progress": 4,
       "dml_chromium_version_added": "M125",
       "coreml_op": ["gru"],
-      "coreml_progress": 3,
+      "coreml_progress": 4,
       "coreml_chromium_version_added": "M133",
       "fw_tflite_op": [""],
       "fw_tflite_progress": 2,
@@ -1598,9 +1629,9 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M125",
-      "coreml_op": [""],
-      "coreml_progress": 2,
-      "coreml_chromium_version_added": "",
+      "coreml_op": ["lstm"],
+      "coreml_progress": 4,
+      "coreml_chromium_version_added": "M133",
       "fw_tflite_op": [""],
       "fw_tflite_progress": 2,
       "fw_tflite_version_added": "",
@@ -1625,9 +1656,9 @@
       ],
       "dml_progress": 4,
       "dml_chromium_version_added": "M125",
-      "coreml_op": [""],
-      "coreml_progress": 2,
-      "coreml_chromium_version_added": "",
+      "coreml_op": ["lstm"],
+      "coreml_progress": 4,
+      "coreml_chromium_version_added": "M133",
       "fw_tflite_op": [""],
       "fw_tflite_progress": 2,
       "fw_tflite_version_added": "",
@@ -2233,18 +2264,18 @@
       "op_id": "reverse",
       "version": "",
       "wpt": "reverse",
-      "wpt_progress": 3,
+      "wpt_progress": 4,
       "tflite_op": [
-        ""
+        "Reverse"
       ],
-      "tflite_progress": 2,
-      "tflite_chromium_version_added": "",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M133",
       "dml_op": [
-        "SLICE1"
+        "SLICE1 Reverse"
       ],
-      "dml_progress": 3,
+      "dml_progress": 4,
       "dml_chromium_version_added": "M133",
-      "coreml_op": [""],
+      "coreml_op": ["reverse"],
       "coreml_progress": 2,
       "coreml_chromium_version_added": "",
       "fw_tflite_op": [
@@ -2253,7 +2284,7 @@
       "fw_tflite_progress": 2,
       "fw_tflite_version_added": "",
       "fw_ort_op": ["Slice"],
-      "fw_ort_progress": 3,
+      "fw_ort_progress": 4,
       "fw_ort_version_added": "1.21.0-dev",
       "notes": ""
     },
