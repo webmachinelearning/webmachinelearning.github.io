@@ -1280,7 +1280,7 @@
       "tflite_op": [
         "Emulated with GATHER_ND"
       ],
-      "tflite_progress": 3,
+      "tflite_progress": 4,
       "tflite_chromium_version_added": "M133",
       "dml_op": [
         "GATHER_ELEMENTS"
@@ -2266,7 +2266,7 @@
       "wpt": "reverse",
       "wpt_progress": 4,
       "tflite_op": [
-        "Reverse"
+        "REVERSE"
       ],
       "tflite_progress": 4,
       "tflite_chromium_version_added": "M133",
@@ -2297,7 +2297,7 @@
       "tflite_op": [
         "Emulated with SCATTER_ND and WHERE"
       ],
-      "tflite_progress": 3,
+      "tflite_progress": 4,
       "tflite_chromium_version_added": "M133",
       "dml_op": [
         "SCATTER_ELEMENTS"
