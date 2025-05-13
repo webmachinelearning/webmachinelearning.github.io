@@ -78,4 +78,24 @@ permalink: /incubations/
             </div>
         </div>
     </div>
+
+    <div class="card1 card">
+        <div class="cardwrapper">
+            <div style="font-size:200px;text-align:center">
+            🔎
+            </div>
+            <div class="data">
+                <div class="content">
+                    <h1 class="title">Proofreader API</h1>
+                    <p class="text">An API to help web users perform real-time proofreading of freeform text.</p>
+                    <div class="samplelink">
+                        <a href="https://github.com/webmachinelearning/proofreader-api">
+                        Explainer
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
