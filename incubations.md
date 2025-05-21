@@ -21,8 +21,8 @@ permalink: /incubations/
 <div class="g3">
     <div class="card1 card">
         <div class="cardwrapper">
-            <div style="font-size:200px;text-align:center">
-            🌍
+            <div class="icon">
+            <span role="img" aria-label="globe">🌍</span>
             </div>
             <div class="data">
                 <div class="content">
@@ -40,8 +40,8 @@ permalink: /incubations/
 
     <div class="card1 card">
         <div class="cardwrapper">
-            <div style="font-size:200px;text-align:center">
-            ✍️
+            <div class="icon">
+            <span role="img" aria-label="writing hand">✍️</span>
             </div>
             <div class="data">
                 <div class="content">
@@ -62,8 +62,8 @@ permalink: /incubations/
 
     <div class="card1 card">
         <div class="cardwrapper">
-            <div style="font-size:200px;text-align:center">
-            💬
+            <div class="icon">
+            <span role="img" aria-label="speech balloon">💬</span>
             </div>
             <div class="data">
                 <div class="content">
@@ -81,8 +81,8 @@ permalink: /incubations/
 
     <div class="card1 card">
         <div class="cardwrapper">
-            <div style="font-size:200px;text-align:center">
-            🔎
+            <div class="icon">
+            <span role="img" aria-label="magnifying glass">🔎</span>
             </div>
             <div class="data">
                 <div class="content">
