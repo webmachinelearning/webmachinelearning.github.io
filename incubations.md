@@ -29,6 +29,9 @@ permalink: /incubations/
                     <h1 class="title">Translator and Language Detector APIs</h1>
                     <p class="text">A set of APIs for translating and detection language of text.</p>
                     <div class="samplelink">
+                        <a href="https://webmachinelearning.github.io/translation-api/">
+                        Specification
+                        </a>
                         <a href="https://github.com/webmachinelearning/translation-api/">
                         Explainer
                         </a>
@@ -70,6 +73,9 @@ permalink: /incubations/
                     <h1 class="title">Prompt API</h1>
                     <p class="text">An API for prompting browser-provided language models.</p>
                     <div class="samplelink">
+                        <a href="https://webmachinelearning.github.io/prompt-api/">
+                        Specification
+                        </a>
                         <a href="https://github.com/webmachinelearning/prompt-api">
                         Explainer
                         </a>
