@@ -104,4 +104,23 @@ permalink: /incubations/
         </div>
     </div>
 
+    <div class="card1 card">
+        <div class="cardwrapper">
+            <div class="icon">
+            <span role="img" aria-label="robot">🤖</span>
+            </div>
+            <div class="data">
+                <div class="content">
+                    <h1 class="title">WebMCP API</h1>
+                    <p class="text">Enabling web apps to provide JavaScript-based tools to AI agents and assistive technologies.</p>
+                    <div class="samplelink">
+                        <a href="https://github.com/webmachinelearning/webmcp">
+                        Explainer
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
