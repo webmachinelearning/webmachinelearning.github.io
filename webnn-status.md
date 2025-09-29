@@ -179,7 +179,7 @@ sup {
         <sup><a href="#note-1">1</a></sup>
       </th>
       <th colspan="2">
-        DirectML
+        Windows ML
         <sup><a href="#note-2">2</a></sup>
       </th>
          <th colspan="2">
@@ -250,7 +250,7 @@ sup {
 
 <div class="impl_status">
     <div class="title">LiteRT</div>
-    <div class="title">DirectML</div>
+    <div class="title">Windows ML</div>
     <div class="title">Core ML</div>
     <div>
         <div>✅ Supported (<span id="tflite_supported"></span>)</div>
@@ -259,9 +259,9 @@ sup {
         <div>❌ Not Supported</div>
     </div>
     <div>
-        <div>✅ Supported (<span id="dml_supported"></span>)</div>
-        <div>⏳ Partly Implemented (<span id="dml_partlyimplemented"></span>)</div>
-        <div>🚀 Work in Progress (<span id="dml_workinprogress"></span>)</div>
+        <div>✅ Supported (<span id="windowsml_supported"></span>)</div>
+        <div>⏳ Partly Implemented (<span id="windowsml_partlyimplemented"></span>)</div>
+        <div>🚀 Work in Progress (<span id="windowsml_workinprogress"></span>)</div>
         <div>❌ Not Supported</div>
     </div>
         <div>
@@ -339,7 +339,7 @@ sup {
 
 <div class="impl_status_framework">
     <div class="title">ONNX Runtime Web<br/>Execution Provider</div>
-    <div class="title">LiteRT<br/>External Delegate</div>
+    <div class="title">LiteRT.js<br/>External Delegate</div>
     <div>
         <div>✅ Supported (<span id="ep_supported"></span>)</div>
         <div>⏳ Partly Implemented (<span id="ep_partlyimplemented"></span>)</div>
@@ -355,15 +355,13 @@ sup {
 </div>
 
 <div class="mt-2">
-  The total number of WebNN ops is 78. These tables currently lists ops that are implemented or work in progress by multiple backends and JavaScript machine learning frameworks.
+  The total number of WebNN ops is 95. These tables currently lists ops that are implemented or work in progress by multiple backends and JavaScript machine learning frameworks.
 </div>
 
 <sup id="note-1">[1]</sup> [LiteRT Builtin Options](https://source.chromium.org/chromium/chromium/src/+/main:services/webnn/tflite/op_resolver.cc)<br/>
-<sup id="note-2">[2]</sup> [DirectML](https://learn.microsoft.com/en-us/windows/win32/api/_directml/) API<br/>
+<sup id="note-2">[2]</sup> [ONNX Operators](https://onnx.ai/onnx/operators/)<br/>
 <sup id="note-3">[3]</sup> [Core ML](https://apple.github.io/coremltools/source/coremltools.converters.mil.mil.ops.defs.html) operators<br/>
-<sup id="note-4">[4]</sup> This feature is experimental. Can be enabled by setting `#web-machine-learning-neural-network` flag to `Enabled`.<br/>
-<sup id="note-5">[5]</sup> This feature is experimental. Can be enabled by setting `#web-machine-learning-neural-network` flag to `Enabled`. Supported on GPUs on Windows 11 21H2 or higher.<br/>
-<sup id="note-6">[6]</sup> This feature is experimental. Can be enabled by setting `#web-machine-learning-neural-network` flag to `Enabled`.<br/>
+<sup id="note-4">[4]</sup><sup id="note-5">[5]</sup><sup id="note-6">[6]</sup> This feature is experimental. Visit [WebNN Installation Guide](https://webnn.io/en/learn/get-started/installation) for the latest and most reliable installation instructions<br/>
 <sup id="note-7">[7]</sup> ONNX [`Operator Schemas`](https://github.com/onnx/onnx/blob/main/docs/Operators.md) and [`WebNN EP Helper`](https://github.com/microsoft/onnxruntime/blob/main/onnxruntime/core/providers/webnn/builders/helper.h)<br/>
 <sup id="note-8">[8]</sup> LiteRT built-in operators [`kTfLiteBuiltin*`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/delegates/xnnpack/xnnpack_delegate.cc)
 
@@ -455,50 +453,50 @@ sup {
             tflite = `<td></td><td>${s.tflite_chromium_version_added}</td>`;
           }
 
-          let dml = '';
-          if (s.dml_op.toString().trim() === "") {
-            dml = `<td></td><td>${s.dml_chromium_version_added}</td>`;
-          } else if (s.dml_progress === 4) {
-            let dml_ops = '';
-            if (s.dml_op.length > 1) {
-              for (let o of s.dml_op) {
-                dml_ops = `✅ ${o} <br/>`;
-                dml += dml_ops;
+          let windowsml = '';
+          if (s.windowsml_op.toString().trim() === "") {
+            windowsml = `<td></td><td>${s.windowsml_chromium_version_added}</td>`;
+          } else if (s.windowsml_progress === 4) {
+            let windowsml_ops = '';
+            if (s.windowsml_op.length > 1) {
+              for (let o of s.windowsml_op) {
+                windowsml_ops = `✅ ${o} <br/>`;
+                windowsml += windowsml_ops;
               }
-            } else if (s.dml_op.length === 1) {
-              dml = '✅ ' + s.dml_op;
+            } else if (s.windowsml_op.length === 1) {
+              windowsml = '✅ ' + s.windowsml_op;
             } else {
-              dml = ``
+              windowsml = ``
             }
-            dml = `<td class="dml_s">${dml}</td><td>${s.dml_chromium_version_added}</td>`;
-          } else if (s.dml_progress === 3) {
-            let dml_ops = '';
-            if (s.dml_op.length > 1) {
-              for (let o of s.dml_op) {
-                dml_ops = `🚀 ${o} <br/>`;
-                dml += dml_ops;
+            windowsml = `<td class="windowsml_s">${windowsml}</td><td>${s.windowsml_chromium_version_added}</td>`;
+          } else if (s.windowsml_progress === 3) {
+            let windowsml_ops = '';
+            if (s.windowsml_op.length > 1) {
+              for (let o of s.windowsml_op) {
+                windowsml_ops = `🚀 ${o} <br/>`;
+                windowsml += windowsml_ops;
               }
-            } else if (s.dml_op.length === 1) {
-              dml = '🚀 ' + s.dml_op;
+            } else if (s.windowsml_op.length === 1) {
+              windowsml = '🚀 ' + s.windowsml_op;
             } else {
-              dml = ``
+              windowsml = ``
             }
-            dml = `<td class="dml_wip">${dml}</td><td>${s.dml_chromium_version_added}</td>`;
-          } else if (s.dml_progress === 2) {
-            let dml_ops = '';
-            if (s.dml_op.length > 1) {
-              for (let o of s.dml_op) {
-                dml_ops = `📅 ${o} <br/>`;
-                dml += dml_ops;
+            windowsml = `<td class="windowsml_wip">${windowsml}</td><td>${s.windowsml_chromium_version_added}</td>`;
+          } else if (s.windowsml_progress === 2) {
+            let windowsml_ops = '';
+            if (s.windowsml_op.length > 1) {
+              for (let o of s.windowsml_op) {
+                windowsml_ops = `📅 ${o} <br/>`;
+                windowsml += windowsml_ops;
               }
-            } else if (s.dml_op.length === 1) {
-              dml = '📅 ' + s.dml_op;
+            } else if (s.windowsml_op.length === 1) {
+              windowsml = '📅 ' + s.windowsml_op;
             } else {
-              dml = ``
+              windowsml = ``
             }
-            dml = `<td class="dml_plan">${dml}</td><td>${s.dml_chromium_version_added}</td>`;
+            windowsml = `<td class="windowsml_plan">${windowsml}</td><td>${s.windowsml_chromium_version_added}</td>`;
           } else {
-            dml = `<td></td><td>${s.dml_chromium_version_added}</td>`;
+            windowsml = `<td></td><td>${s.windowsml_chromium_version_added}</td>`;
           }
 
           let coreml = '';
@@ -644,7 +642,7 @@ sup {
                 ${spec}
                 ${wpt}
                 ${tflite}
-                ${dml}
+                ${windowsml}
                 ${coreml}
               </tr>
           `;
@@ -663,7 +661,7 @@ sup {
             <th id="spec_total"></th>
             <th id="wpt_total"></th>
             <th id="tflite_total" colspan="2"></th>
-            <th id="dml_total" colspan="2"></th>
+            <th id="windowsml_total" colspan="2"></th>
             <th id="coreml_total" colspan="2"></th>
           </tr>
         `;
@@ -683,7 +681,7 @@ sup {
   }
 
   const count = () => {
-    let spec_defined_total = 92;
+    let spec_defined_total = 95;
 
     let spec_s = qSA('.spec').length / 2;
     qS('#spec_total').innerHTML = `${spec_s}`;
@@ -702,14 +700,14 @@ sup {
     qS('#tflite_partlyimplemented').innerHTML = tflite_pi;
     qS('#tflite_workinprogress').innerHTML = tflite_wip;
 
-    let dml_s = qSA('.dml_s').length;
-    let dml_pi = qSA('.dml_pi').length;
-    let dml_wip = qSA('.dml_wip').length;
-    let dml_percentage = (dml_s / spec_defined_total * 100).toFixed(1) ;
-    qS('#dml_total').innerHTML = `${dml_s} / ${spec_defined_total}, ${dml_percentage}%`;
-    qS('#dml_supported').innerHTML = dml_s;
-    qS('#dml_partlyimplemented').innerHTML = dml_pi;
-    qS('#dml_workinprogress').innerHTML = dml_wip;
+    let windowsml_s = qSA('.windowsml_s').length;
+    let windowsml_pi = qSA('.windowsml_pi').length;
+    let windowsml_wip = qSA('.windowsml_wip').length;
+    let windowsml_percentage = (windowsml_s / spec_defined_total * 100).toFixed(1) ;
+    qS('#windowsml_total').innerHTML = `${windowsml_s} / ${spec_defined_total}, ${windowsml_percentage}%`;
+    qS('#windowsml_supported').innerHTML = windowsml_s;
+    qS('#windowsml_partlyimplemented').innerHTML = windowsml_pi;
+    qS('#windowsml_workinprogress').innerHTML = windowsml_wip;
 
     let coreml_s = qSA('.coreml_s').length;
     let coreml_pi = qSA('.coreml_pi').length;
