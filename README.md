@@ -5,7 +5,7 @@ W3C Web Machine Learning Working Group and Community Group website.
 ## Environment Setup
 
 ```
-gem install bundler jekyll
+gem install bundler jekyll github-pages
 ```
 
 ## Run
@@ -14,6 +14,14 @@ gem install bundler jekyll
 bundle install
 bundle exec jekyll serve
 Server address: http://127.0.0.1:4000/
+```
+
+## Update Jekyll and Dependencies
+
+The [GitHub Pages gem](https://github.com/github/pages-gem) (`github-pages`) helps maintain a Jekyll build environment that most closely matches the GitHub Pages build environment. To update Jekyll and its dependencies:
+
+```
+bundle update github-pages
 ```
 
 ## Contributing
