@@ -95,6 +95,9 @@ permalink: /incubations/
                     <h1 class="title">Proofreader API</h1>
                     <p class="text">An API to help web users perform real-time proofreading of freeform text.</p>
                     <div class="samplelink">
+                        <a href="https://webmachinelearning.github.io/proofreader-api/">
+                        Specification
+                        </a>
                         <a href="https://github.com/webmachinelearning/proofreader-api">
                         Explainer
                         </a>
@@ -111,9 +114,12 @@ permalink: /incubations/
             </div>
             <div class="data">
                 <div class="content">
-                    <h1 class="title">WebMCP API</h1>
+                    <h1 class="title">WebMCP</h1>
                     <p class="text">Enabling web apps to provide JavaScript-based tools to AI agents and assistive technologies.</p>
                     <div class="samplelink">
+                        <a href="https://webmachinelearning.github.io/webmcp/">
+                        Specification
+                        </a>
                         <a href="https://github.com/webmachinelearning/webmcp">
                         Explainer
                         </a>
