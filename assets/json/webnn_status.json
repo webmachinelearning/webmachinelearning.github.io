@@ -2347,10 +2347,10 @@
       "wpt": "pooling",
       "wpt_progress": 4,
       "tflite_op": [
-        ""
+        "Emulated as sqrt(AveragePool(x^2) * window_size)"
       ],
-      "tflite_progress": 2,
-      "tflite_chromium_version_added": "",
+      "tflite_progress": 4,
+      "tflite_chromium_version_added": "M146",
       "dml_op": [
         "LP_POOLING"
       ],
