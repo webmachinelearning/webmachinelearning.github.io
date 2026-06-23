@@ -135,6 +135,85 @@
     border: 1px solid #efefef;
 }
 
+.community .spec-box {
+    position: relative;
+    padding-right: 4rem;
+}
+
+.community.deliverables-grid {
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    grid-template-rows: auto;
+    grid-template-areas: none;
+    gap: 1rem;
+    align-items: stretch;
+    margin-bottom: 2rem;
+}
+
+.community.deliverables-grid .spec-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.community .spec-github-link {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    opacity: 0.9;
+    transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.community .spec-github-link:hover,
+.community .spec-github-link:focus {
+    opacity: 1;
+    transform: translateY(-1px);
+}
+
+.community .spec-github-link:focus {
+    outline: 2px solid rgba(255, 255, 255, 0.8);
+    outline-offset: 2px;
+    border-radius: 999px;
+}
+
+.community .spec-github-link img {
+    display: block;
+    width: 1.35rem;
+    height: 1.35rem;
+    margin: 0;
+    transform: none;
+}
+
+.community .spec-title-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.45rem;
+    margin-bottom: 0.35rem;
+}
+
+.community .spec-title-row h3 {
+    margin-bottom: 0;
+    line-height: 1.25;
+}
+
+.community .group-pill {
+    padding: 0.2rem 0.55rem;
+    border: 1px solid rgba(255, 255, 255, 0.38);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.14);
+    color: #fff;
+    font-size: 0.68rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
 
 .community h3 {
     margin-bottom: 2px;
@@ -888,6 +967,14 @@ ul.c4 li {
 
     .faqs.gr {
         display: block !important;
+    }
+
+    .community.deliverables-grid {
+        display: grid !important;
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+        grid-template-areas: none;
+        align-items: stretch;
     }
 
     .typing {
