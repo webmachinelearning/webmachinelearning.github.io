@@ -27,7 +27,7 @@ permalink: /incubations/
             <div class="data">
                 <div class="content">
                     <h1 class="title">Translator and Language Detector APIs</h1>
-                    <p class="text">A set of APIs for translating and detection language of text.</p>
+                    <p class="text">A set of APIs for translating and detecting language of text.</p>
                     <div class="samplelink">
                         <a href="https://webmachinelearning.github.io/translation-api/">
                         Specification
