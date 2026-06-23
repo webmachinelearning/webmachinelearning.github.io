@@ -163,6 +163,7 @@
     justify-content: center;
     width: 2.25rem;
     height: 2.25rem;
+    flex-shrink: 0;
     opacity: 0.9;
     transition: opacity 0.15s ease, transform 0.15s ease;
 }
@@ -179,10 +180,12 @@
     border-radius: 999px;
 }
 
-.community .spec-github-link img {
+.community.deliverables-grid .spec-box .spec-github-link img {
     display: block;
     width: 1.35rem;
     height: 1.35rem;
+    max-width: none;
+    flex: 0 0 auto;
     margin: 0;
     transform: none;
 }
