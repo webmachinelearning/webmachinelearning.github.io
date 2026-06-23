@@ -436,6 +436,11 @@ nav a {
         display: none;
     }
 
+    .active .menu>ol {
+        display: flex;
+        flex-direction: column;
+    }
+
     .menu>ol>.menu-item {
         flex: none;
         display: inline-block;
