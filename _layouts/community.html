@@ -20,78 +20,87 @@
 
     <div class="wrapper">
 
-      <div class="cap">
-        <p class="title">Specifications</p>
+      <div class="cap mb1">
+        <p class="title">Deliverables</p>
       </div>
 
-      <div class="community gr">
-        <div>
-          <div class="bgr box">
-            <div>
-              <h3>Web Neural Network API</h3>
-              <p>A dedicated low-level API for neural network inference hardware acceleration.</p>
-            </div>
+      <div class="community gr deliverables-grid">
+        <div class="bgr box spec-box">
+          <div class="spec-title-row">
+            <span class="group-pill">Working Group</span>
+            <h3>Web Neural Network API</h3>
           </div>
-          <ul>
-            <li><svg role="img" viewBox="0 0 512 512">
-                <path fill="currentColor"
-                  d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z">
-                </path>
-              </svg>W3C Working Group specification</li>
-            <li><svg role="img" viewBox="0 0 512 512">
-                <path fill="currentColor"
-                  d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z">
-                </path>
-              </svg>Stabilizing implementations</li>
-          </ul>
-          <a class="learn" href="https://www.w3.org/TR/webnn/"> Read the specification
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              class="w-4 h-4" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </a>
-          <a class="learn" href="{{ 'webnn-status' | relative_url }}"> Implementation status
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              class="w-4 h-4" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
+          <p>A dedicated low-level API for neural network inference hardware acceleration.</p>
+          <a class="spec-github-link" href="https://github.com/webmachinelearning/webnn/"
+            aria-label="View Web Neural Network API on GitHub">
+            <img src="{{ '/assets/images/github-mark.svg' | relative_url }}" alt="" aria-hidden="true">
           </a>
         </div>
-        <div>
-          <div class="bgr box">
-            <h3>Task-specific APIs, Prompt API, WebMCP API</h3>
-            <p>Reuse built-in models, expose tools to AI agents.</p>
+        <div class="bgr box spec-box">
+          <div class="spec-title-row">
+            <span class="group-pill">Community Group</span>
+            <h3>WebMCP</h3>
           </div>
-          <ul>
-            <li><svg role="img" viewBox="0 0 512 512">
-                <path fill="currentColor"
-                  d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z">
-                </path>
-              </svg><span>W3C Community Group incubations</span></li>
-            <li><svg role="img" viewBox="0 0 512 512">
-                <path fill="currentColor"
-                  d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z">
-                </path>
-              </svg><span>Experimental implementations</span></li>
-          </ul>
-
-          <a class="learn" href="{{ 'incubations' | relative_url }}"> Explore incubations
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              class="w-4 h-4" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
+          <p>Enabling web apps to provide JavaScript-based tools to AI agents and assistive technologies.</p>
+          <a class="spec-github-link" href="https://github.com/webmachinelearning/webmcp"
+            aria-label="View WebMCP on GitHub">
+            <img src="{{ '/assets/images/github-mark.svg' | relative_url }}" alt="" aria-hidden="true">
+          </a>
+        </div>
+        <div class="bgr box spec-box">
+          <div class="spec-title-row">
+            <span class="group-pill">Community Group</span>
+            <h3>Prompt API</h3>
+          </div>
+          <p>An API for prompting browser-provided language models.</p>
+          <a class="spec-github-link" href="https://github.com/webmachinelearning/prompt-api"
+            aria-label="View Prompt API on GitHub">
+            <img src="{{ '/assets/images/github-mark.svg' | relative_url }}" alt="" aria-hidden="true">
+          </a>
+        </div>
+        <div class="bgr box spec-box">
+          <div class="spec-title-row">
+            <span class="group-pill">Community Group</span>
+            <h3>Translator and Language Detector APIs</h3>
+          </div>
+          <p>A set of APIs for translating text and detecting its language.</p>
+          <a class="spec-github-link" href="https://github.com/webmachinelearning/translation-api/"
+            aria-label="View Translator and Language Detector APIs on GitHub">
+            <img src="{{ '/assets/images/github-mark.svg' | relative_url }}" alt="" aria-hidden="true">
+          </a>
+        </div>
+        <div class="bgr box spec-box">
+          <div class="spec-title-row">
+            <span class="group-pill">Community Group</span>
+            <h3>Writing Assistance APIs</h3>
+          </div>
+          <p>A set of APIs to help web users with writing text.</p>
+          <a class="spec-github-link" href="https://github.com/webmachinelearning/writing-assistance-apis/"
+            aria-label="View Writing Assistance APIs on GitHub">
+            <img src="{{ '/assets/images/github-mark.svg' | relative_url }}" alt="" aria-hidden="true">
+          </a>
+        </div>
+        <div class="bgr box spec-box">
+          <div class="spec-title-row">
+            <span class="group-pill">Community Group</span>
+            <h3>Proofreader API</h3>
+          </div>
+          <p>An API to help web users perform real-time proofreading of freeform text.</p>
+          <a class="spec-github-link" href="https://github.com/webmachinelearning/proofreader-api"
+            aria-label="View Proofreader API on GitHub">
+            <img src="{{ '/assets/images/github-mark.svg' | relative_url }}" alt="" aria-hidden="true">
           </a>
         </div>
       </div>
 
       <div class="cap mb1">
-        <p class="title">W3C Groups</p>
+        <p class="title">Developed by</p>
       </div>
 
       <div class="community gr">
         <div class="moreitem">
 
-          <h3><a href="https://www.w3.org/groups/wg/webmachinelearning">Working Group</a></h3>
+          <h3><a href="https://www.w3.org/groups/wg/webmachinelearning">Web Machine Learning Working Group</a></h3>
           <div>Standardizes Web APIs for on-device
             machine learning inference working together with the W3C ecosystem using
             well-received Community
@@ -121,7 +130,7 @@
           </ul>
         </div>
         <div class="moreitem">
-          <h3><a href="https://www.w3.org/groups/cg/webmachinelearning">Community Group</a></h3>
+          <h3><a href="https://www.w3.org/groups/cg/webmachinelearning">Web Machine Learning Community Group</a></h3>
           <div>Incubates new proposals for on-device
             machine learning inference and agentic web. A group where new ideas are discussed and explored
             before formal standardization.</div>
@@ -152,8 +161,8 @@
       </div>
 
       <div class="cap">
-        <p class="title" id="join">Join the Community</p>
-        <p class="subtitle">interested in helping advance these web specifications?</p>
+        <p class="title" id="join">Join us</p>
+        <p class="subtitle">Join a global community of contributors building open standards for machine learning and AI on the web.</p>
       </div>
 
       <div class="join">
@@ -193,60 +202,6 @@
         </div>
 
       </div>
-
-      <div class="cap">
-        <p class="title">How to Contribute</p>
-        <p class="subtitle">specifications and related projects in <a
-            href="https://github.com/webmachinelearning/">GitHub</a> welcome your contributions!</p>
-      </div>
-
-      <ul class="c4">
-        <li><svg viewBox="0 0 320 512">
-            <path fill="currentColor"
-              d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
-            </path>
-          </svg> <a href="https://github.com/webmachinelearning/webnn/">webnn</a>
-        </li>
-        <li><svg viewBox="0 0 320 512">
-            <path fill="currentColor"
-              d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
-            </path>
-          </svg> <a href="https://github.com/webmachinelearning/model-loader/">model-loader</a>
-        </li>
-        <li><svg viewBox="0 0 320 512">
-            <path fill="currentColor"
-              d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
-            </path>
-          </svg> <a href="https://github.com/webmachinelearning/meetings/">meetings</a>
-        </li>
-        <li><svg viewBox="0 0 320 512">
-            <path fill="currentColor"
-              d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
-            </path>
-          </svg> <a href="https://github.com/webmachinelearning/webnn-polyfill">webnn-polyfill</a>
-        </li>
-        <li><svg viewBox="0 0 320 512">
-            <path fill="currentColor"
-              d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
-            </path>
-          </svg> <a href="https://github.com/webmachinelearning/webnn-samples">webnn-samples</a></li>
-        <li><svg viewBox="0 0 320 512">
-            <path fill="currentColor"
-              d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
-            </path>
-          </svg> <a href="https://github.com/webmachinelearning/webnn-native">webnn-native</a></li>
-        <li><svg viewBox="0 0 320 512">
-            <path fill="currentColor"
-              d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
-            </path>
-          </svg> <a href="https://github.com/webmachinelearning/proposals">proposals</a></li>
-        <li><svg viewBox="0 0 320 512">
-            <path fill="currentColor"
-              d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
-            </path>
-          </svg> <a href="https://github.com/webmachinelearning/webmachinelearning.github.io">including this website
-            😊</a></li>
-      </ul>
 
       {{ content }}
 
