@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+
+{%- include head.html -%}
+
+<body>
+
+  {%- include header.html -%}
+
+  <main>
+
+    <div class="wrapper">
+      {{ content }}
+
+      <div class="herobar">
+        <div class="hb-item">
+          <div class="titleeffect">
+            <div class="box">
+              <div class="title">
+                <span class="block"></span>
+                <h1 class="t">WebMCP<span></span></h1>
+              </div>
+              <div class="role">
+                <div class="block"></div>
+                <p class="t">Web apps as tools for AI agents</p>
+              </div>
+              <p class="des">A new web API that enables web apps to provide JavaScript-based tools to AI agents and
+                assistive technologies, allowing users and agents to collaborate on the same page.</p>
+            </div>
+
+            <div class="buttons">
+              <a class="button button--atlas getstarted" href="https://webmachinelearning.github.io/webmcp/"><span>Specification</span>
+                <div class="marquee" aria-hidden="true">
+                  <div class="marqueeinner"><span>Specification</span><span>Specification</span><span>Specification</span><span>Specification</span></div>
+                </div>
+              </a>
+              <a class="button buttonwhite" href="https://github.com/webmachinelearning/webmcp">GitHub</a>
+            </div>
+            <div class="hlink">
+              <a href="https://github.com/webmachinelearning/webmcp"><span>Explainer</span></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </main>
+
+  {%- include footer.html -%}
+
+</body>
+
+</html>
