@@ -7,11 +7,13 @@
     justify-content: center;
 }
 
-.webmcp-banner {
+.webmcp-banner,
+.webnn-banner {
     position: relative;
 }
 
-.webmcp-banner .hero {
+.webmcp-banner .hero,
+.webnn-banner .hero {
     position: absolute;
     inset: 0;
 }
@@ -19,6 +21,10 @@
 .webmcp-banner .typing {
     // Fit the shorter label while retaining the shared typing animation.
     width: 161px;
+}
+
+.webnn-banner .typing {
+    width: 329px;
 }
 
 .heart {
