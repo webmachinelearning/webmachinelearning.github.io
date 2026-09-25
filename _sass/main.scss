@@ -812,7 +812,8 @@ table th {
             "." !important;
     }
 
-    .buttons {
+    .buttons,
+    .hlink {
         text-align: center;
     }
 
@@ -902,6 +903,12 @@ ul.c4 li {
     margin: 0 0.5rem;
     width: 100px;
     text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.hlink a:hover {
+    border: 1px solid $brand-color;
 }
 
 .typing {
@@ -920,7 +927,8 @@ ul.c4 li {
 
 @media screen and (max-width: 640px) {
     .hlink a {
-        width: 90px;
+        padding: 0.6rem 1rem;
+        width: 100px;
     }
 
     .modelloader {
