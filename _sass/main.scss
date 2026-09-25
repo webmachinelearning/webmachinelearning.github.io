@@ -449,6 +449,11 @@ table th {
     border: 1px solid $brand-color;
 }
 
+.herobar.my {
+    height: auto;
+    min-height: 380px;
+}
+
 .herobar.my .buttons {
     display: flex;
     flex-direction: column;
