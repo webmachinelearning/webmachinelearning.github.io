@@ -14,12 +14,11 @@
 .webmcp-banner .hero {
     position: absolute;
     inset: 0;
-    margin: 0;
-    display: flex !important;
 }
 
 .webmcp-banner .typing {
-    width: 170px;
+    // Fit the shorter label while retaining the shared typing animation.
+    width: 161px;
 }
 
 .heart {
