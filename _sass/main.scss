@@ -455,6 +455,15 @@ table th {
     align-items: center;
 }
 
+.herobar.my .contribute-text {
+    margin: 0.75rem 0 0.25rem;
+    color: $grey-color;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: none;
+}
+
 .herobar.my .button-row {
     display: flex;
     flex-wrap: wrap;
