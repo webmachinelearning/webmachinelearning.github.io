@@ -449,6 +449,18 @@ table th {
     border: 1px solid $brand-color;
 }
 
+.herobar.my .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.herobar.my .button-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .button::before,
 .button::after {
     position: absolute;
