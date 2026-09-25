@@ -64,11 +64,11 @@
 
 .footer_menu {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-template-areas:
-    ". . . .";
+    ". . . . .";
 }
 
 .footer_menu  ul {
@@ -163,13 +163,6 @@
   .footer-col-3 {
     width:         calc(100% - (#{$spacing-unit} / 2));
   }
-}
-
-@include media-query($on-palm) {
-  .footer-col {
-    float: none;
-    width:         calc(100% - (#{$spacing-unit} / 2));
-  }
 
   .footer_menu {
     display: grid;
@@ -182,6 +175,13 @@
 
   .footer_menu ul {
     margin: 4px 0 12px 0;
+  }
+}
+
+@include media-query($on-palm) {
+  .footer-col {
+    float: none;
+    width:         calc(100% - (#{$spacing-unit} / 2));
   }
 
   .nav-grid {
